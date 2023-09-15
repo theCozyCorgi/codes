@@ -34,3 +34,36 @@
   font-size: 18px; 
   text-shadow: 2px 2px var(--color); 
 }
+
+.long {
+  background: linear-gradient(90deg, var(--main) 0%, var(--medium) 50%, var(--strong) 100%);
+  width: fit-content;
+  position: relative;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  margin: auto;
+  border-radius: 5px 10px;
+  box-shadow: 2px 2px var(--strong);
+}
+
+.long img {
+  display: inline;
+  position: inherit;
+  mix-blend-mode: hard-light;
+  filter: brightness(0.6);
+  border-radius: 5px 10px;
+}
+
+.long span {
+  color: #111;
+  z-index: 1;
+  font-family: carbon, sans-serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px rgba(255 255 255 / 30%);
+  align-self: flex-end;
+  line-height: 10px;
+}

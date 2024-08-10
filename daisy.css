@@ -3297,3 +3297,195 @@ label {display: flex; }
     justify-content: center;
     column-gap: 5px;
 }
+
+@import url("https://use.typekit.net/luv4ava.css");
+.ownway br {display:none}
+.ownway {--owb: rgb(241 241 241); --owm: rgb(140 57 27); --owt: rgb(51 51 51); --ows: rgb(208 179 179);}
+.ownway-quote strong,.ownway-quote i,.ownway-quote em {color:var(--owm); font-family: ff-cocon-pro, sans-serif;}
+.ownway-quote i,.ownway-quote em {color:var(--ows);}
+.ownway:hover .ownway-quote {margin-bottom: 0px;transition: 0.5s; }
+.ownway-quote br {display:inherit;}
+
+.ownway {
+    display: flex;
+    width: min-content;
+    background: var(--owb);
+    margin: auto;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    position: relative;
+    border-radius: 10px;
+    row-gap: 5px;
+    overflow: hidden;
+    line-height:normal;
+}
+
+.ownway-quote {
+    padding: 15px 10px;
+    font-size: 7px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 0px;
+    font-family: "margin-mvb-light",sans-serif;
+    font-weight: bold;
+    color:var(--owt);
+    position: absolute;
+    background: var(--owb);
+    padding: 10px;
+    margin-bottom: -100px;
+    transition: 0.5s;
+    line-height:normal;
+}
+
+.ownway-image {
+    width: 280px;
+    margin: 5px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+
+/* solitare */
+.solitaire {--som: rgb(64 110 115);--sot: rgb(242 242 242);}
+.solitaire br {display: none}
+.solitaire:hover .solitaire-image {filter: grayscale(1); mix-blend-mode: multiply;transition-delay: 0s;}
+.solitaire:hover .solitaire-quote {opacity: 1; transition: 0.5s; transition-delay: 0.5s;} 
+
+.solitaire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    flex-direction: column;
+    position: relative;
+    background: var(--som);
+    margin: auto;
+    transition: 0.5s;
+    line-height:normal;
+}
+
+.solitaire-quote {
+    padding: 20px;
+    font-family: ff-cocon-pro, sans-serif;
+    color: var(--sot);
+    font-size: 11px;
+    font-weight: lighter;
+    hyphens: initial;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+    line-height:normal;
+}
+
+.solitaire-image {
+    width: 280px;
+    margin: 5px;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(0);
+    mix-blend-mode: normal;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+/* enough */
+.enough br {display: none;}
+.enough {--enm: rgb(217 121 156); --ent: rgb(255 255 255);}
+
+.enough {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 360px;
+    margin: auto;
+    line-height:normal;
+}
+
+.enough-set {
+    display: flex;
+    align-self: stretch;
+    column-gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.enough-image {
+    width: 100%;
+    aspect-ratio: 1/0.6;
+    border-radius: 3px;
+}
+
+.enough-quote {
+    background: var(--enm);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: calibri;
+    font-size: 7px;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    color: var(--ent);
+    letter-spacing: 1px;
+    font-weight: bold;
+    line-height:normal;
+}
+
+.enough-em {
+    font-family: "merengue-script",sans-serif;
+    color: var(--enm);
+    font-size: 18px;
+    line-height: 16px;
+}
+
+
+/*luisa*/
+.sign-luisa {
+    --lm: rgb(143 93 150 / 70%);
+    margin: auto;
+    width: 268px;
+    height: 181px;
+    overflow: hidden;
+    border: 3px solid rgb(255 255 255);
+    outline-offset: 3px;
+    outline: 1px solid rgb(255 255 255 / 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .sign-luisa-quote {
+    backdrop-filter: grayscale(1);
+    display: block;
+    font-family: calibri;
+    font-size: 9px;
+    line-height: normal;
+    text-align: justify;
+    text-align-last: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 1px 1px rgb(0 0 0 / 30%);
+    background: var(--lm);
+    padding: 20px;
+    border: 1px solid #fff;
+    margin-left: -485px;
+    width: 165px;
+    transform: rotate(0deg);
+     transition: 1s;
+}
+ .sign-luisa:hover .sign-luisa-quote {
+    margin-left: 0px !important;
+     transform: rotate(360deg) !important;
+     transition: 2s;
+}
+ .sign-luisa-quote em {
+    font-size: 9px;
+     font-weight: bolder;
+}

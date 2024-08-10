@@ -1808,7 +1808,7 @@ a.sceditor-button.sceditor-button-emoticon {display: none;}
 .content {
     font-weight: inherit !important;
     background: var(--co-light);
-    padding: 115px;
+    padding: 40px;
     border-radius: 15px;
     text-align: justify;
     font-family: var(--fo-post) !important; 
@@ -1832,9 +1832,9 @@ a.sceditor-button.sceditor-button-emoticon {display: none;}
 ::marker {color: var(--co-strong); font-weight: bolder; font-family: var(--fo-prin); }
 .post ul {list-style-type: none; }
 .post ul li {display: flex; align-items: center; }
-.content ul, .content ol {margin-bottom: 0px !important; }
-.content hr {border-top: 2px solid var(--co-main); }
-.post-content {font-weight: normal !important; width: 100%; }
+ ul,  ol {margin-bottom: 0px !important; }
+ hr {border-top: 2px solid var(--co-main); }
+.post-content {font-weight: normal !important; width: 645px; }
 
 .post ul li:before {
     font: var(--fa-font-solid);

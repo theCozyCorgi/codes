@@ -1808,7 +1808,7 @@ a.sceditor-button.sceditor-button-emoticon {display: none;}
 .content {
     font-weight: inherit !important;
     background: var(--co-light);
-    padding: 35px;
+    padding: 115px;
     border-radius: 15px;
     text-align: justify;
     font-family: var(--fo-post) !important; 

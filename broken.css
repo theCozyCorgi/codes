@@ -15,6 +15,7 @@ body#phpbb {overflow: visible!important; }
   margin: 50px auto;
   background-color: transparent;
   padding: 0px;
+  outline:none;
 }
 
 .nav-bar {

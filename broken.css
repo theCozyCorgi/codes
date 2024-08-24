@@ -2448,10 +2448,6 @@ dl.codebox code {
 }
 
 .msg-content i, .content i, .msg-content em, .content em {
-  font-family: var(--font-sub);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 115%;
   color: var(--color-strong);
 }
 

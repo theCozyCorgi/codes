@@ -746,7 +746,7 @@ h4 {
 }
 
 .generic-hover:hover {
-  box-shadow: 3px 3px var(--mode-border), 4px 4px var(--color-base); 
+  box-shadow: 3px 3px var(--mode-border); 
   transform: translateY(-0.25em) translateX(-2px); 
   transition: .1s;
   color: var(--mode-base);

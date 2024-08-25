@@ -1801,6 +1801,8 @@ p.right {
   gap: 5px;
   height: 100px;
   overflow: auto;
+  align-items: start;
+  justify-content: center;
 }
 
 .profile-info {

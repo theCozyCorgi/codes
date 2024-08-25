@@ -1865,7 +1865,7 @@ p.right {
 
 .profile-values span {
   border: 2px solid var(--color-border);
-  font-size: 11px;
+  font-size: 10px;
   text-transform: uppercase;
   padding: 5px 10px;
   border-radius: 5px;

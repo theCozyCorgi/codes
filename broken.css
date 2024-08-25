@@ -482,7 +482,7 @@ a.forumtitle:hover {text-decoration: none; color: var(--last-user) !important; }
 }
 
 .last-avatar > img { width: 15px; border-radius: 2px; }
-.last-topic > a {color: var(--color-emphasis); }
+.last-topic > a {color: var(--color-emphasis); white-space: nowrap; text-overflow: ellipsis; overflow: hidden; width: 95px; }
 .last-post-icon {color: var(--color-emphasis) !important; margin-left: -5px; font-size: 11px !important;}
 
 .last-topic {

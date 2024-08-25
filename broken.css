@@ -1585,7 +1585,12 @@ div.sceditor-group {
 
 /* preview */
 form[action*="/post"] #preview, form[action*="/post"] #postingbox, form[action*="/post"] .row3, form[action*="/privmsg"] #preview, 
-form[action*="/privmsg"] #postingbox, form[action*="/privmsg"] .row3 {background: var(--mode-border); margin: 15px 0; box-shadow: 5px 5px var(--mode-cont), 6px 6px var(--color-base);}
+form[action*="/privmsg"] #postingbox, form[action*="/privmsg"] .row3 {
+  background: var(--mode-border); 
+  margin: 15px 0; 
+  box-shadow: 5px 5px var(--mode-cont), 6px 6px var(--color-base);
+  width: auto;
+}
 .h3 {background: var(--mode-base); width: 535px; }
 form[action*="/post"] .content, .postbody .content, form[action*="/privmsg"] .content {--post-user: var(--color-logged); margin-top: 30px; width: 505px; }
 fieldset dl:hover dt label {color: var(--mode-text) !important;}

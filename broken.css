@@ -255,6 +255,8 @@ button#theme-toggler:before {
 .latest-topic { display: flex; flex-direction: column; }
 
 .latest-topic > a {
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
   width: 150px;
   color: var(--latest-user);

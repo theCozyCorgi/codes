@@ -434,6 +434,7 @@ a.forumtitle:hover {text-decoration: none; color: var(--last-user) !important; }
 .forum-description i, .forum-description em {
   font-size: 46px;
   color: var(--last-user);
+  -webkit-text-stroke: 1px var(--color-base);
 }
 
 .forum_unread .forum-description { background: var(--last-user); border-color: var(--color-base); }

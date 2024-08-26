@@ -396,6 +396,8 @@ a.forumtitle {
   outline-offset: -2px;
   box-shadow: 5px 5px var(--last-user);
   margin: 0 5px 5px 0px;
+  font-weight: bolder;
+  text-transform: math-auto;
 }
 
 a.forumtitle:hover {text-decoration: none; color: var(--last-user) !important; }
@@ -1016,9 +1018,9 @@ a.topictitle {
   font-size: 24px;
   line-height: 100%;
   color: var(--color-lasted);
-  font-weight: normal;
   margin: 0;
-  text-transform: uppercase;
+  font-weight: bolder;
+  text-transform: math-auto;
 }
 
 a.topictitle:hover {

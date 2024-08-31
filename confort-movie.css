@@ -101,7 +101,7 @@
     letter-spacing: 1px;
     font-weight: 100;
     margin-left: 1000px;
-    transition: .5s;
+    transition: 1.5s;
     transition-timing-function: ease-out;
 }
 
@@ -121,4 +121,45 @@
     text-shadow: 5px 1px var(--ch-emph);
     margin-top: -15px;
     align-self: flex-start;
+}
+
+.cozy-dreams {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.cozy-dreams em {
+	position: absolute;
+    z-index: 1;
+    font-family: 'Wilberty';
+    font-size: 124px;
+    font-style: normal;
+    color: #fff;
+    letter-spacing: -1px;
+    text-transform: lowercase;
+    mix-blend-mode: exclusion;
+    margin-top: -15px;
+}
+
+.cozy-dreams span {
+    position: absolute;
+    z-index: 2;
+    font-family: 'bagola';
+    color: #ffffff;
+    padding: 10px 25%;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-transform: lowercase;
+    line-height: 120%;
+}
+
+.cozy-dreams img {
+    filter: brightness(0.8);
 }

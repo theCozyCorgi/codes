@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Aelyn';
+  src: url('https://thecozycorgi.github.io/fonts/Aelyn.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Imoger';
+  src: url('https://thecozycorgi.github.io/fonts/imoger.otf') format('opentype');
+}
+
+.cozy-donna {
+	--cd-uno: #5c445e; 
+	--cd-dos: #718288; 
+	--cd-str: #473a5b; 
+    margin: 10px auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: fit-content;
+     border: 5px solid var(--cd-str);
+     background-color: var(--cd-uno);
+     background-image: linear-gradient(62deg, var(--cd-uno) 0%, var(--cd-dos) 100%);
+     position: relative;
+     overflow: hidden;
+}
+ .cozy-donna img {
+    width: 250px;
+     filter: brightness(0.5);
+     mix-blend-mode: luminosity;
+}
+ .cozy-donna > span {
+    line-height: normal;
+     text-align: justify;
+     text-align-last: center;
+     position: absolute;
+     z-index: 1;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 25px;
+}
+ .cozy-donna em {
+    position: absolute;
+     color: rgb(255 255 255 / 20%);
+     font-size: 92px;
+     font-family: 'Imoger';
+     font-style: normal;
+     line-height: 75%;
+     text-align: center
+}
+ .cozy-donna strong {
+    color: #fff;
+     text-transform: uppercase;
+     font-family: 'Aelyn';
+     letter-spacing: 1px;
+     font-size: 10px;
+     padding: 15px;
+}

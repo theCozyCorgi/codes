@@ -164,7 +164,7 @@
 .cozy-dreams img {
     filter: brightness(0.5);
 }
-
+/*
 .cozy-dreams:before {
     content: '';
     width: 100%;
@@ -176,3 +176,4 @@
     z-index: 1;
     mix-blend-mode: exclusion;
 }
+*/

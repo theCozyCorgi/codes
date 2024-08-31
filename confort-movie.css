@@ -67,14 +67,16 @@
 }
 
 .cozy-harry {
+	--ch-str: #0a2926;
     position: relative;
     width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px auto;
-    background: #0a2926;
+    background: var(--ch-str);
     padding: 5px;
+    overflow: hidden;
 }
 
 .cozy-harry span {
@@ -97,8 +99,16 @@
     mix-blend-mode: normal;
     letter-spacing: 1px;
     font-weight: 100;
+    margin-left: 1000px;
+    transition: .5s;
+    transition-timing-function: ease-out;
 }
 
+.cozy-harry:hover span {
+    margin-left: 0px;
+    transition: .5s;
+    transition-timing-function: ease-out;
+}
 
 .cozy-harry strong {
     font-size: 76px;

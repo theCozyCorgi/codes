@@ -68,6 +68,7 @@
 
 .cozy-harry {
 	--ch-str: #0a2926;
+	--ch-emph: #968270;
     position: relative;
     width: fit-content;
     display: flex;
@@ -117,7 +118,7 @@
     font-weight: normal;
     line-height: 120%;
     color: #fff !important;
-    text-shadow: 5px 1px #968270;
+    text-shadow: 5px 1px var(--ch-emph);
     margin-top: -15px;
     align-self: flex-start;
 }

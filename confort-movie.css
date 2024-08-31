@@ -10,6 +10,13 @@
   src: url('https://thecozycorgi.github.io/fonts/imoger.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Vellago';
+  src: url('https://thecozycorgi.github.io/fonts/Vellago.otf') format('opentype'),
+    url('https://thecozycorgi.github.io/fonts/Vellago.woff') format('woff'),
+    url('https://thecozycorgi.github.io/fonts/Vellago.ttf') format('ttf');
+}
+
 .cozy-donna {
 	--cd-uno: #5c445e; 
 	--cd-dos: #718288; 
@@ -57,4 +64,50 @@
      letter-spacing: 1px;
      font-size: 10px;
      padding: 15px;
+}
+
+.cozy-harry {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    background: #0a2926;
+    padding: 5px;
+}
+
+.cozy-harry span {
+    position: absolute;
+    padding: 10px 20%;
+    color: #fff;
+    font-family: 'expressway';
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 75%);
+    font-size: 7px;
+    line-height: normal;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: brightness(0.5);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: normal;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+
+.cozy-harry strong {
+    font-size: 76px;
+    text-transform: lowercase;
+    font-family: 'Vellago';
+    font-weight: normal;
+    line-height: 120%;
+    color: #fff !important;
+    text-shadow: 5px 1px #968270;
+    margin-top: -15px;
+    align-self: flex-start;
 }

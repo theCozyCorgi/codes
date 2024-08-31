@@ -17,6 +17,19 @@
     url('https://thecozycorgi.github.io/fonts/Vellago.ttf') format('ttf');
 }
 
+@font-face {
+  font-family: 'bagola';
+  src: url('https://thecozycorgi.github.io/fonts/Bagola.woff2') format('woff2'),
+    url('https://thecozycorgi.github.io/fonts/Bagola.otf') format('opentype'),
+    url('https://thecozycorgi.github.io/fonts/Bagola.woff') format('woff'),
+    url('https://thecozycorgi.github.io/fonts/Bagola.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Wilberty';
+  src: url('https://thecozycorgi.github.io/fonts/Wilberty.otf') format('opentype');
+}
+
 .cozy-donna {
 	--cd-uno: #5c445e; 
 	--cd-dos: #718288; 

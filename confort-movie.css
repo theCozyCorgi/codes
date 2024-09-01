@@ -35,15 +35,15 @@
 	--cd-dos: #718288; 
 	--cd-str: #473a5b; 
     margin: 10px auto;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     width: fit-content;
-     border: 5px solid var(--cd-str);
-     background-color: var(--cd-uno);
-     background-image: linear-gradient(62deg, var(--cd-uno) 0%, var(--cd-dos) 100%);
-     position: relative;
-     overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	border: 5px solid var(--cd-str);
+	background-color: var(--cd-uno);
+	background-image: linear-gradient(62deg, var(--cd-uno) 0%, var(--cd-dos) 100%);
+	position: relative;
+	overflow: hidden;
 }
  .cozy-donna img {
     width: 250px;
@@ -62,7 +62,7 @@
      margin: 25px;
 }
  .cozy-donna em {
-    position: absolute;
+	 position: absolute;
      color: rgb(255 255 255 / 20%);
      font-size: 92px;
      font-family: 'Imoger';
@@ -71,7 +71,7 @@
      text-align: center
 }
  .cozy-donna strong {
-    color: #fff;
+	 color: #fff;
      text-transform: uppercase;
      font-family: 'Aelyn';
      letter-spacing: 1px;
@@ -172,10 +172,6 @@
     font-size: 18px;
     text-transform: lowercase;
     line-height: 120%;
-}
-
-.cozy-dreams img {
-    filter: brightness(0.5);
 }
 /*
 .cozy-dreams:before {

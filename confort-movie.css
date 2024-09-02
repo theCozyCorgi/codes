@@ -60,11 +60,12 @@
      align-items: center;
      justify-content: center;
      margin: 25px;
+	 hyphens: none;
 }
  .cozy-donna em {
 	 position: absolute;
      color: rgb(255 255 255 / 20%);
-     font-size: 92px;
+     font-size: 40px;
      font-family: 'Imoger';
      font-style: normal;
      line-height: 75%;

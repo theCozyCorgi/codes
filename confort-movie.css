@@ -216,3 +216,53 @@
     left: 20px;
     text-shadow: 1px 1px 1px rgba(0 0 0 / 50%);
 }
+
+.cozy-aurora {
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    --ca-str: #FAACA8;
+    --ca-emp: #DDD6F3;
+    background-color: var(--ca-str);
+    background-image: linear-gradient(19deg, var(--ca-str) 0%, var(--ca-emp) 100%);
+    position: relative;
+}
+
+.cozy-aurora img {
+    border: 10px solid var(--ca-str);
+    filter: grayscale(1) brightness(0.5);
+    mix-blend-mode: hard-light;
+}
+
+.cozy-aurora span {
+    position: absolute;
+    padding: 30px 50px;
+    line-height: normal;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    text-align-last: center;
+    font-family: 'expressway';
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px var(--ca-str);
+    hyphens: none;
+}
+
+.cozy-aurora strong {
+    color: var(--ca-str);
+    text-transform: math-auto;
+    letter-spacing: 0;
+    font-size: 72px;
+    font-family: Bilagike;
+    font-weight: 100;
+    -webkit-text-stroke: .3px #fff;
+    mix-blend-mode: luminosity;
+    text-shadow: 3px 3px #8e8c8c;
+    line-height: 80%;
+}

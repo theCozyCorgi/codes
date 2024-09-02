@@ -245,7 +245,7 @@
     align-items: center;
     flex-direction: column;
     text-align: justify;
-    text-align-last: center;
+    text-align-last: left;
     font-family: 'expressway';
     font-size: 9px;
     text-transform: uppercase;
@@ -264,5 +264,5 @@
     -webkit-text-stroke: .3px #fff;
     mix-blend-mode: luminosity;
     text-shadow: 3px 3px #8e8c8c;
-    line-height: 80%;
+    line-height: 45%;
 }

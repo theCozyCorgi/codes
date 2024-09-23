@@ -279,7 +279,7 @@
 	--davy: #39668f;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-end;
 	margin: 10px auto;
 	width: fit-content;
 	position: relative;
@@ -302,6 +302,8 @@
     font-size: 35px;
     mix-blend-mode: soft-light;
     color: #fff;
+	margin-right: 15px;
+    margin-top: 10px;
 }
 
 .cz-davy u {

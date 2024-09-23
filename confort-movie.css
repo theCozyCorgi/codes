@@ -11,6 +11,12 @@
 }
 
 @font-face {
+  font-family: 'Humble';
+  src: url('https://thecozycorgi.github.io/fonts/Humble.otf') format('opentype'),
+    url('https://thecozycorgi.github.io/fonts/Humble.ttf') format('ttf');
+}
+
+@font-face {
   font-family: 'Vellago';
   src: url('https://thecozycorgi.github.io/fonts/Vellago.otf') format('opentype'),
     url('https://thecozycorgi.github.io/fonts/Vellago.woff') format('woff'),
@@ -266,4 +272,42 @@
     mix-blend-mode: luminosity;
     text-shadow: 2px 2px #8e8c8c;
     line-height: 45%;
+}
+
+/* davy */
+.cz-davy {
+	--davy: #39668f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px auto;
+	width: fit-content;
+	position: relative;
+	background: var(--davy);
+	padding: 5px;
+}
+
+.cz-davy img {
+    filter: brightness(0.6) grayscale(1);
+    mix-blend-mode: hard-light;
+}
+
+.cz-davy span {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Humble';
+    font-size: 35px;
+    mix-blend-mode: soft-light;
+    color: #fff;
+}
+
+.cz-davy u {
+    text-decoration: none;
+    font: normal 10px calibri;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: -10px;
 }

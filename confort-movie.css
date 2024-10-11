@@ -36,6 +36,12 @@
   src: url('https://thecozycorgi.github.io/fonts/Wilberty.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Mockads';
+  src: url('https://thecozycorgi.github.io/fonts/Mockads.otf') format('opentype'),
+    url('https://thecozycorgi.github.io/fonts/Mockads.ttf') format('ttf');
+}
+
 .cozy-donna {
 	--cd-uno: #5c445e; 
 	--cd-dos: #718288; 
@@ -314,3 +320,43 @@
     letter-spacing: 1px;
     margin-bottom: 5px;
 }
+
+/*post hr*/
+.cozy-home br {display: none; }
+.home-rol br {display: inherit; }
+
+.cozy-home {
+	--focus: #91cbc5;
+	background: #131313;
+	padding: 50px;
+	width: 450px;
+	border: 10px solid rgba(0 0 0 / 20%);
+}
+
+.home-title {
+	font-family: Mockads;
+    font-size: 30px;
+    text-transform: lowercase;
+    color: var(--focus);
+    text-align: center;
+}
+
+.home-dato {
+	display: flex;
+	gap: 5px;
+	font-size: 8px;
+	text-transform: uppercase;
+	color: #b1b1b1;
+	align-items: center;
+	justify-content: center;
+}
+
+.home-dato span:before {
+	font: var(--fa-font-solid);
+	content: "\e5d6";
+    color: var(--focus);
+	margin-right: 5px; 
+}
+
+.home-dato span:first-child:before {display: none; }
+.home-rol strong {color: var(--focus);}

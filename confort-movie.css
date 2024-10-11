@@ -360,3 +360,4 @@
 
 .home-dato span:first-child:before {display: none; }
 .home-rol strong {color: var(--focus);}
+.home-rol {margin-top: 30px;}

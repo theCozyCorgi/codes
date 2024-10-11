@@ -353,8 +353,7 @@
 }
 
 .home-dato span:before {
-	font: var(--fa-font-solid);
-	content: "\f219";
+	content: "✦";
     color: var(--focus);
 	margin-right: 5px; 
 }

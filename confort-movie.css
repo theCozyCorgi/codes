@@ -329,7 +329,8 @@
 	--focus: #91cbc5;
 	background: #131313;
 	padding: 50px;
-	width: 450px;
+	width: 350px;
+	margin: 10px auto;
 	border: 10px solid rgba(0 0 0 / 20%);
 }
 
@@ -353,7 +354,7 @@
 
 .home-dato span:before {
 	font: var(--fa-font-solid);
-	content: "\e5d6";
+	content: "\f219";
     color: var(--focus);
 	margin-right: 5px; 
 }

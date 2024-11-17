@@ -37,4 +37,4 @@
   bottom: -100px;
 }
 
-.sign-spell:hover .sign-spell span {transition: 1s ease-in-out; bottom: 0px;}
+.sign-spell:hover span {transition: 1s ease-in-out; bottom: 0px;}

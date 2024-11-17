@@ -11,6 +11,7 @@
   padding: 5px 5px 5px;
 }
 
+/* spell */
 .sign-spell {
   --spell: #182d28;
   background: var(--spell);
@@ -45,4 +46,31 @@
 .sign-spell:hover span {
   transition: 1s ease-in-out; 
   bottom: 5px; 
+}
+
+/* idiot */
+.sign-idiot {
+  --bold: #fff;
+  background: var(--bold);
+  align-items: end;
+  padding: 2px;
+}
+
+.sign-idiot > div {
+  width: 250px;
+  height: 150px;
+  background: var(--image) center;
+  background-size: 275px;
+}
+
+.sign-idiot span {
+  width: 95%;
+  font-family: social-gothic;
+  color: var(--bold);
+  hyphens: none;
+  font-size: 13px;
+  text-align: justify;
+  position: absolute;
+  text-align-last: justify;
+  line-height: normal;
 }

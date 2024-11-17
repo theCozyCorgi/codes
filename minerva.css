@@ -1,6 +1,6 @@
 @import url("https://use.typekit.net/mcd8ven.css");
 
-.sign-basic, .sign-spell, .sign-idiot {
+.sign-basic, .sign-spell, .sign-idiot, .sign-babbling, .sign-three, .sign-boom, .sign-unscrew {
   width: fit-content;
   margin: 10px auto;
   position: relative;
@@ -69,8 +69,7 @@
   color: var(--bold);
   hyphens: none;
   font-size: 13px;
-  text-align: justify;
+  text-align: end;
   position: absolute;
-  text-align-last: justify;
   line-height: normal;
 }

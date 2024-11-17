@@ -73,3 +73,33 @@
   position: absolute;
   line-height: normal;
 }
+
+/* bambbling */
+.sign-babbling {
+  --bambbling-bold: #566156;
+  --bambbling-emphasis: #635963;
+  background: linear-gradient(45deg, var(--bambbling-bold), var(--bambbling-emphasis));
+}
+
+.sign-babbling > div {
+  width: 250px;
+  height: 150px;
+  background: var(--image) center;
+  mix-blend-mode: multiply;
+}
+
+.sign-babbling span {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  hyphens: none;
+  color: rgb(255 255 255 / 55%);
+  text-transform: uppercase;
+  font: 8px / normal roboto;
+  letter-spacing: 1px;
+  mix-blend-mode: difference;
+  transition: 1s ease-in-out; 
+  opacity: 0;
+}
+
+.sign-babbling:hover span {transition: 1s ease-in-out; opacity: 1;}

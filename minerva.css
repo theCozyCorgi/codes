@@ -102,4 +102,5 @@
   opacity: 0;
 }
 
+.sign-babbling span:before, .sign-babbling span:after {content: ''}
 .sign-babbling:hover span {transition: 1s ease-in-out; opacity: 1;}

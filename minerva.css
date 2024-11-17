@@ -38,4 +38,7 @@
   transition-delay: 1s;
 }
 
-.sign-spell:hover span {transition: 1s ease-in-out; bottom: 5px; transition-delay: 1s;}
+.sign-spell:hover span {
+  transition: 1s ease-in-out; 
+  bottom: 5px; 
+}

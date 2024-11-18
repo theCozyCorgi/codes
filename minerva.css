@@ -5,3 +5,8 @@
   src: url('https://thecozycorgi.github.io/fonts/Marline.otf') format('opentype'),
     url('https://thecozycorgi.github.io/fonts/Marline.ttf') format('ttf');
 }
+
+@font-face {
+  font-family: 'Rasfire Regular';
+  src: url('https://thecozycorgi.github.io/fonts/Rasfire-Regular.otf') format('opentype');
+}

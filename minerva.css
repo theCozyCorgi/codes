@@ -19,6 +19,12 @@
 }
 
 @font-face {
+  font-family: 'Rofane';
+  src: url('https://thecozycorgi.github.io/fonts/Rofane.otf') format('opentype'),
+    url('https://thecozycorgi.github.io/fonts/Rofane.ttf') format('ttf');
+}
+
+@font-face {
   font-family: 'Imoger';
   src: url('https://thecozycorgi.github.io/fonts/imoger.otf') format('opentype');
 }

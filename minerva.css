@@ -543,7 +543,7 @@
   font: 8px / 130% Roboto;
   color: #fff !important;
   padding: 0 30px;
-  width: 40%;
+  width: min-content;
   text-align: end;
   text-shadow: 1px 1px 1px #333;
 }

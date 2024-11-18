@@ -17,3 +17,488 @@
   src: url('https://thecozycorgi.github.io/fonts/Fashion.otf') format('opentype'),
     url('https://thecozycorgi.github.io/fonts/Fashion.ttf') format('ttf');
 }
+
+/* firmas minerva */
+.sign-basic, .sign-spell, .sign-idiot, .sign-babbling, .sign-three, .sign-boom, .sign-severals,
+.sign-lucy, .sign-nico, .sign-rachel, .sign-mila, .sign-antonia, .sign-katie {
+  width: fit-content;
+  margin: 10px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 5px 5px 5px;
+}
+
+.sign-basic > div, .sign-spell > div, .sign-idiot > div, .sign-babbling > div, .sign-three > div, .sign-boom > div, .sign-severals > div, 
+.sign-lucy > div, .sign-nico > div, .sign-rachel > div, .sign-mila > div, .sign-antonia > div, .sign-katie > div {
+  width: 250px;
+  height: 150px;
+  background: var(--image) center;
+  background-size: cover;
+}
+
+/* spell */
+.sign-spell {
+  --spell: #182d28;
+  background: var(--spell);
+  align-items: end;
+}
+
+.sign-spell > div {
+  background-size: 270px;
+}
+
+.sign-spell span {
+  position: absolute;
+  background: var(--spell);
+  width: calc(100% - 10px);
+  font: 8px / 10px Roboto;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px;
+  text-align: center;
+  backdrop-filter: grayscale(1) brightness(0.3);
+  mix-blend-mode: plus-lighter;
+  text-shadow: 1px 1px #000;
+  transition: 1s ease-in-out;
+  bottom: -100px;
+  transition-delay: 1s;
+}
+
+.sign-spell:hover span {
+  transition: 1s ease-in-out; 
+  bottom: 5px; 
+}
+
+/* idiot */
+.sign-idiot {
+  --bold: #fff;
+  background: var(--bold);
+  align-items: end;
+  padding: 2px;
+}
+
+.sign-idiot > div {
+  background-size: 275px;
+}
+
+.sign-idiot span {
+  width: 95%;
+  font-family: social-gothic;
+  color: var(--bold);
+  hyphens: none;
+  font-size: 13px;
+  text-align: end;
+  position: absolute;
+  line-height: normal;
+}
+
+/* bambbling */
+.sign-babbling {
+  --bambbling-bold: #566156;
+  --bambbling-emphasis: #635963;
+  background: linear-gradient(45deg, var(--bambbling-bold), var(--bambbling-emphasis));
+}
+
+.sign-babbling > div {
+  background-size: 350px;
+  mix-blend-mode: multiply;
+}
+
+.sign-babbling span {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  hyphens: none;
+  color: rgb(255 255 255 / 55%);
+  text-transform: uppercase;
+  font: 8px / normal roboto;
+  letter-spacing: 1px;
+  mix-blend-mode: difference;
+  transition: 1s ease-in-out; 
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-babbling span:before, .sign-babbling span:after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  border-radius: 3px;
+  background: rgb(255 255 255 / 55%);
+}
+
+.sign-babbling:hover span {transition: 1s ease-in-out; opacity: 1;}
+
+/* three */
+.sign-three {
+  --three: #787049;
+  background: var(--three);
+}
+
+.sign-three > div {
+  background-size: 275px;
+  filter: grayscale(1) brightness(0.5);
+  mix-blend-mode: overlay;
+}
+
+.sign-three span {
+  position: absolute;
+  font: 9px / 10px Roboto;
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 1px 1px #333;
+  width: 75%;
+}
+
+.sign-three em {
+  font-family: liebelotte, sans-serif;
+  text-transform: lowercase;
+  font-size: 32px;
+  color: #fff !important;
+  mix-blend-mode: exclusion;
+}
+
+/* boom */
+.sign-boom {
+  --boom: #b4713b;
+  background: var(--boom);
+  padding: 0;
+  justify-content: flex-end;
+  border: 5px solid #000000;
+}
+
+.sign-boom > div {
+  filter: brightness(0.6);
+  mix-blend-mode: luminosity;
+  background-size: 295px;
+}
+
+.sign-boom > span {
+  position: absolute;
+  color: #fff;
+  font: 8px / 9px Roboto;
+  text-transform: uppercase;
+  width: 55%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  hyphens: none;
+  text-align: justify;
+}
+
+.sign-boom strong {
+  font-size: 42px;
+  color: #fff !important;
+  font-family: Marline;
+  text-shadow: 2px 1px var(--boom);
+  font-weight: 100;
+}
+
+/* severals */
+.sign-severals {
+  --said: #9f464c;
+  background: var(--said);
+  padding: 0;
+  border: 5px solid #000;
+}
+
+.sign-severals > div {
+  background-size: 275px;
+  position: relative;
+}
+
+.sign-severals > div:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--said);
+  backdrop-filter: grayscale(1) brightness(0.5);
+  mix-blend-mode: hue;
+  transition: 1s ease-in-out;
+  margin-left: -100%;
+}
+
+.sign-severals span {
+  position: absolute;
+  width: 75%;
+  font: 8px / 9px Roboto;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 50px;
+  hyphens: none;
+  transition: 1s ease-in-out;
+  margin-top: -300px;
+}
+
+.sign-severals strong {
+  color: var(--said) !important;
+  font: 42px Rasfire Regular;
+  text-shadow: 1px 1px rgba(255 255 255 / 75%);
+  flex-shrink: 0;
+  margin-top: 10px;
+}
+
+.sign-severals:hover div:after {transition: 1s ease-in-out; margin-left: 0;}
+.sign-severals:hover span {transition: 1s ease-in-out; margin-top: 0px;}
+
+/* lucy */
+.sign-lucy {
+  --lucy: #9c2127;
+  flex-direction: column-reverse;
+  background: var(--lucy);
+  padding: 0 0 5px;
+} 
+
+.sign-lucy span {
+  font: 8px / 9px Roboto;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+  text-shadow: 1px 1px 1px #000;
+  text-align: center;
+}
+
+.sign-lucy > div {height: 125px;}
+
+/* nico */
+.sign-nico {
+  --nico-bold: #a57d86;
+  --nico-back: #fff;
+  background: var(--nico-bold);
+} 
+
+.sign-nico > div {z-index: 1;} 
+
+.sign-nico span {
+  position: absolute;
+  font: 9px / 10px Roboto;
+  color: var(--nico-back);
+  text-transform: uppercase;
+  width: 75%;
+  padding: 10px;
+  hyphens: none;
+  text-align: justify;
+  text-align-last: center;
+  z-index: 1;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.sign-nico:before, .sign-nico:after, .sign-nico span:before, .sign-nico span:after {
+  content: '';
+  background: var(--nico-back);
+  width: 25%;
+  aspect-ratio: 1 / 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.sign-nico:after {top: 25%; left: 75%; }
+
+.sign-nico span:before, .sign-nico span:after {
+  background: transparent;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #fff;
+  left: auto;
+  right: 0;
+  top: 0;
+  width: 15%;
+  aspect-ratio: 2 / 1;
+}
+
+.sign-nico span:after {
+  border: none;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  left: 0;
+  top: auto;
+  bottom: 0
+}
+
+/* rachel */
+.sign-rachel {
+  --rachel: #8b4035;
+  background: var(--rachel);
+  padding: 0;
+  border: 5px solid #000;
+} 
+
+.sign-rachel:before {
+  content: ''; 
+  width: 100%;
+  height: 180%;
+  background: var(--rachel);
+  position: absolute;
+  top: -300px;
+  left: 0;
+  backdrop-filter: grayscale(1) brightness(0.5);
+  mix-blend-mode: overlay;
+  border-radius: 0 0 150px 150px;
+  transition: 1s ease-in-out; 
+} 
+
+.sign-rachel:hover:before {top: 0px; transition: 1s ease-in-out; }
+.sign-rachel:hover span {opacity: 1; transition: 1s ease-in-out; }
+
+.sign-rachel span {
+  position: absolute;
+  font: 9px / 10px Roboto;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  text-align: justify;
+  text-align-last: justify;
+  mix-blend-mode: soft-light;
+  opacity: 0; 
+  transition: 1s ease-in-out;
+}
+
+.sign-rachel strong {
+  color: #fff !important;
+  font: 32px / 100% Rofane;
+  text-shadow: 1px 1px var(--rachel);
+} 
+
+/* mila */
+.sign-mila {
+  --mila: #a6afae;
+  background: var(--mila);
+  transition: 1s ease-in-out;
+} 
+
+.sign-mila span {
+  position: absolute;
+  display: flex;
+  width: 75%;
+  font: 18px / 100% fashion;
+  text-transform: uppercase;
+  color: #fff;
+  align-items: flex-end;
+  gap: 5px;
+  text-align: end;
+  hyphens: none;
+  text-shadow: 1px 1px #222;
+  opacity: 0; 
+  transition: 1s ease-in-out;
+}
+
+.sign-mila em {
+  font: 8px / 9px Roboto;
+  color: #fff !important;
+  text-align: start;
+  border-left: 1px solid var(--mila);
+  padding-left: 5px;
+  flex-shrink: 0;
+  width: 45%;
+  align-self: stretch;
+  display: flex;
+  align-items: end;
+}
+
+.sign-mila > div {mix-blend-mode: normal; transition: 1s ease-in-out; } 
+.sign-mila:hover div {mix-blend-mode: multiply; transition: 1s ease-in-out; } 
+.sign-mila:hover span {opacity: 1; transition: 1s ease-in-out; } 
+
+/* antonia */
+.sign-antonia {
+  --antonia: #113740;
+  border: 5px solid var(--antonia);
+  padding: 0;
+  background: var(--antonia);
+  align-items: stretch;
+  justify-content: flex-end;
+  transition: 1s ease-in-out; 
+} 
+
+.sign-antonia:before {
+  content: ''; 
+  width: 50%;
+  height: 100%;
+  background: var(--antonia);
+  position: absolute;
+  right: -50%;
+  backdrop-filter: grayscale(1) brightness(0.5);
+  mix-blend-mode: color;
+  transition: 1s ease-in-out; 
+} 
+
+.sign-antonia span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 8px / 130% Roboto;
+  color: #fff !important;
+  right: -50%;
+  width: 50%;
+  height: 100%;
+  transition: 1s ease-in-out;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-align: justify;
+  hyphens: auto;
+  text-align-last: justify;
+  font-weight: bold; 
+}
+
+.sign-antonia i { color: #fff !important; font-size: 20px; }
+.sign-antonia:hover:before, .sign-antonia:hover span {right: 0px; transition: 1s ease-in-out; }
+
+/* katie */
+.sign-katie {padding: 0;} 
+.sign-katie > div { width: 260px; height: 160px; }
+
+.sign-katie span {
+  position: absolute;
+  height: 95%;
+  width: 110%;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  outline: 10px solid rgba(255 255 255 / 40%);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font: 8px / 130% Roboto;
+  color: #fff !important;
+  text-transform: uppercase;
+}
+
+.sign-katie strong {
+  font: 8px / 130% Roboto;
+  color: #fff !important;
+  padding: 0 30px;
+  width: 40%;
+  text-align: end;
+  text-shadow: 1px 1px 1px #333;
+}

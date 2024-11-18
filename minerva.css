@@ -18,6 +18,11 @@
     url('https://thecozycorgi.github.io/fonts/Fashion.ttf') format('ttf');
 }
 
+@font-face {
+  font-family: 'Imoger';
+  src: url('https://thecozycorgi.github.io/fonts/imoger.otf') format('opentype');
+}
+
 /* firmas minerva */
 .sign-basic, .sign-spell, .sign-idiot, .sign-babbling, .sign-three, .sign-boom, .sign-severals,
 .sign-lucy, .sign-nico, .sign-rachel, .sign-mila, .sign-antonia, .sign-katie {
@@ -75,25 +80,47 @@
 
 /* idiot */
 .sign-idiot {
-  --bold: #fff;
-  background: var(--bold);
-  align-items: end;
-  padding: 2px;
+  --bold: #7361a7;
+  background: #222;
+}
+
+.sign-idiot:before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(transparent, var(--bold) 65%);
+  backdrop-filter: brightness(0.8);
+  mix-blend-mode: hue;
+  background-position-y: -30px;
 }
 
 .sign-idiot > div {
-  background-size: 275px;
+  background-size: 290px;
 }
 
 .sign-idiot span {
-  width: 95%;
-  font-family: social-gothic;
-  color: var(--bold);
-  hyphens: none;
-  font-size: 13px;
-  text-align: end;
   position: absolute;
-  line-height: normal;
+  color: #fff;
+  width: 75%;
+  font: 8px / 100% Roboto;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.sign-idiot strong {
+  color: #fff !important;
+  font-size: 18px;
+  line-height: 100%;
+  font-family: 'Imoger';
+  mix-blend-mode: exclusion;
+  text-shadow: 2px 2px var(--bold);
+  text-transform: math-auto;
+  font-weight: normal;
 }
 
 /* bambbling */

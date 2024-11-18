@@ -1,1 +1,7 @@
 @import url("https://use.typekit.net/mcd8ven.css");
+
+@font-face {
+  font-family: 'Marline';
+  src: url('https://thecozycorgi.github.io/fonts/Marline.otf') format('opentype'),
+    url('https://thecozycorgi.github.io/fonts/Marline.ttf') format('ttf');
+}

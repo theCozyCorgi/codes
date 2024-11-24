@@ -1,0 +1,145 @@
+/* codember2024 - cradle */
+.cradle br {display: none; }
+.cradle-story br {display: inherit; }
+
+.cradle {
+  --cradle-bold: #dd8b2e;
+  --cradle-back: #d8d8d8;
+  --cradle-second: #c5c5c5;
+  --cradle-text: #333;
+  width: 450px;
+  box-sizing: border-box;
+  padding: 35px;
+  background: var(--cradle-back);
+  border: 10px solid var(--cradle-second);
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  margin: 0 auto;
+  font: 12px/125% Roboto;
+  color: var(--cradle-text);
+}
+
+.cradle-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.cradle-image {
+  background: var(--image) center;
+  background-size: cover;
+  width: 150px;
+  height: 290px;
+  flex-shrink: 0;
+  border: 5px solid var(--cradle-bold);
+}
+
+.cradle-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: end;
+  align-self: stretch;
+}
+
+.cradle-name {
+  font: 28px / 100% Aelyn;
+  text-transform: uppercase;
+  color: var(--cradle-bold);
+  text-align: start;
+}
+
+.cradle-data {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font: 9px / 100% Roboto;
+  text-transform: uppercase;
+  color: var(--cradle-text);
+}
+
+.cradle-data span {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex-grow: 1;
+}
+
+.cradle-data strong { color: var(--cradle-bold) !important; }
+
+.cradle-sub {
+  font: 16px / 100% Aelyn;
+  text-transform: uppercase;
+  color: var(--cradle-bold);
+  text-align: end;
+  width: 100%;
+  flex-grow: 1;
+  display: block !important;
+}
+
+.cradle-personality {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font: 9px / 10px Roboto;
+  text-transform: uppercase;
+  gap: 5px;
+  margin-top: auto;
+}
+
+.cradle-personality span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cradle-personality node {
+  width: 90px;
+  height: 2px;
+  border-radius: 3px;
+  background: var(--cradle-second);
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cradle-personality node:before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 8px;
+  background: var(--cradle-bold);
+  border-radius: 3px;
+  left: calc(var(--valor)* 10%);
+}
+
+.cradle-story .cradle-sub {margin-bottom: -10px;}
+
+.cradle-story {
+  position: relative;
+  height: 250px;
+  overflow: auto;
+  padding-right: 5px;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.cradle-short {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font: 16px / 100% Aelyn;
+  color: var(--cradle-bold);
+}
+
+.cradle-short:after {
+  @extend .cradle-image;
+  content: '';
+  width: 150px;
+  height: 100px;
+}
+
+.cradle-quote {text-align: center; width: 100%;}

@@ -136,10 +136,13 @@
 }
 
 .cradle-short:after {
-  @extend .cradle-image;
   content: '';
   width: 150px;
   height: 100px;
+  background: var(--image) center;
+  background-size: cover;
+  flex-shrink: 0;
+  border: 5px solid var(--cradle-bold);
 }
 
 .cradle-quote {text-align: center; width: 100%;}

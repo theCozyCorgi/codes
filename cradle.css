@@ -156,5 +156,6 @@
 .cradle ::-webkit-scrollbar-thumb{border-radius:10px;background:var(--cradle-bold);}
 .cradle-dark .cradle-header {flex-direction: row-reverse; }
 .cradle-dark .cradle-name {text-align: end; }
+.cradle-dark .cradle-sub {text-align: start; }
 .cradle-dark .cradle-data span {align-items: end; }
 .cradle-dark .cradle-short {flex-direction: row-reverse; }

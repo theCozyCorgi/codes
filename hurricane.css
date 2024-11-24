@@ -132,9 +132,11 @@
   text-transform: uppercase;
   color: var(--hurricane-complementary);
   border-bottom: 10px solid var(--hurricane-neutral);
-  height: 20px;
+  height: 10px;
+  line-height: 20px;
   display: flex;
   width: fit-content;
+  margin-top: 25px;
 }
 
 .hurricane-list {

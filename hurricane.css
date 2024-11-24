@@ -71,7 +71,6 @@
 }
 
 .hurricane-quote {
-  width: calc(100% - 65px);
   border-bottom: 1px solid var(--hurricane-back);
   display: flex;
   align-items: center;

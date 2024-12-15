@@ -146,45 +146,86 @@
 
 /* hellfire */
 @font-face {
-    font-family: 'Awesome Snowflakes';
-     src: url('https://thecozycorgi.github.io/fonts/Awesome Snowflakes.otf') format('opentype'), url('https://thecozycorgi.github.io/fonts/Awesome Snowflakes.ttf') format('ttf');
+  font-family: 'Awesome Snowflakes';
+   src: url('https://thecozycorgi.github.io/fonts/Awesome Snowflakes.otf') format('opentype'), url('https://thecozycorgi.github.io/fonts/Awesome Snowflakes.ttf') format('ttf');
 }
 .veil-over {
   --veil: #116060;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   position: relative;
-   width: fit-content;
-   background: var(--veil);
-   padding: 5px;
-   margin: 10px auto;
-   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: fit-content;
+  background: var(--veil);
+  padding: 5px;
+  margin: 10px auto;
+  overflow: hidden;
 }
 .veil-over img:first-child {
   filter: grayscale(1);
-   mix-blend-mode: hard-light;
+  mix-blend-mode: hard-light;
 }
 .veil-over img:nth-child(2) {
   position: absolute;
-   mix-blend-mode: lighten;
+  mix-blend-mode: lighten;
 }
 .veil-over span {
   position: absolute;
-   font: 8px / normal arial;
-   color: #fff;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   text-align: center;
+  font: 8px / normal arial;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .veil-over strong {
   font: 42px / 22px 'Awesome Snowflakes';
-   text-transform: lowercase;
-   letter-spacing: 0;
-   color: var(--veil);
-   mix-blend-mode: plus-lighter;
-   -webkit-text-stroke: 0.2px #fff;
+  text-transform: lowercase;
+  letter-spacing: 0;
+  color: var(--veil);
+  mix-blend-mode: plus-lighter;
+  -webkit-text-stroke: 0.2px #fff;
+}
+
+/* broken */
+.veil-broken {
+  --veil: #c49132;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--veil);
+  position: relative;
+  width: fit-content;
+}
+.veil-img {
+  width: 135px;
+  height: 145px;
+  background: var(--image);
+  background-position: center;
+  filter: grayscale(1) brightness(0.6);
+  mix-blend-mode: overlay;
+}
+.veil-img:first-child {
+  border-right: 5px solid #fff;
+  width: 140px;
+}
+.veil-broken rtext, .veil-broken ltext {
+  position: absolute;
+  color: #fff;
+  font: 9px / 9px verdana !important;
+  text-transform: uppercase;
+  bottom: 10px;
+  left: 55%;
+  text-shadow: 1px 1px rgba(0 0 0 / 50%);
+  width: 115px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+.veil-broken ltext {
+  top: 10px;
+  left: 5%;
+  text-align: right;
 }

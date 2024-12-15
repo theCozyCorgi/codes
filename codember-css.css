@@ -144,3 +144,47 @@
   color: #fff;
 }
 
+/* hellfire */
+@font-face {
+    font-family: 'Awesome Snowflakes';
+     src: url('https://thecozycorgi.github.io/fonts/Awesome Snowflakes.otf') format('opentype'), url('https://thecozycorgi.github.io/fonts/Awesome Snowflakes.ttf') format('ttf');
+}
+.veil-over {
+  --veil: #116060;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   width: fit-content;
+   background: var(--veil);
+   padding: 5px;
+   margin: 10px auto;
+   overflow: hidden;
+}
+.veil-over img:first-child {
+  filter: grayscale(1);
+   mix-blend-mode: hard-light;
+}
+.veil-over img:nth-child(2) {
+  position: absolute;
+   mix-blend-mode: lighten;
+}
+.veil-over span {
+  position: absolute;
+   font: 8px / normal arial;
+   color: #fff;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+.veil-over strong {
+  font: 42px / 22px 'Awesome Snowflakes';
+   text-transform: lowercase;
+   letter-spacing: 0;
+   color: var(--veil);
+   mix-blend-mode: plus-lighter;
+   -webkit-text-stroke: 0.2px #fff;
+}

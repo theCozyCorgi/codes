@@ -5,3 +5,11 @@
   src: url('https://thecozycorgi.github.io/fonts/Bumerang-Regular.otf') format('opentype'),
     url('https://thecozycorgi.github.io/fonts/Bumerang-Regular.ttf') format('ttf');
 }
+
+@font-face {
+  font-family: 'Cralika';
+  src: url('https://thecozycorgi.github.io/fonts/Cralika.woff2') format('woff2'),
+    url('https://thecozycorgi.github.io/fonts/Cralika.otf') format('opentype'),
+    url('https://thecozycorgi.github.io/fonts/Cralika.woff') format('woff'),
+    url('https://thecozycorgi.github.io/fonts/Cralika.ttf') format('ttf');
+}

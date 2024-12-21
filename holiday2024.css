@@ -1,1 +1,7 @@
 @import url("https://use.typekit.net/mcv2fux.css");
+
+@font-face {
+  font-family: 'Bumerang Regular';
+  src: url('https://thecozycorgi.github.io/fonts/Bumerang-Regular.otf') format('opentype'),
+    url('https://thecozycorgi.github.io/fonts/Bumerang-Regular.ttf') format('ttf');
+}

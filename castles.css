@@ -1652,7 +1652,6 @@ a.topictitle, a.topictitle:hover {
   gap: 5px;
   flex-flow: column;
   width: 320px;
-  overflow: hidden;
   position: -webkit-sticky;
   position: sticky !important;
   top: 80px !important;

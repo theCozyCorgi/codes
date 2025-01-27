@@ -2214,7 +2214,7 @@ input[type="text"], .inputbox {
   flex-basis: 300px;
   display: flex;
   flex-flow: column;
-  gap: 10px;
+  gap: 5px;
   align-items: stretch;
 }
 

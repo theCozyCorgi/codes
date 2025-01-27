@@ -2361,8 +2361,6 @@ userdata[target="imagen"] {
   width: 100%;
 }
 
-.profile-accounts {}
-
 .profile-rpg {
   display: flex;
   gap: 10px;
@@ -2415,4 +2413,5 @@ userdata[target="inventario"], userdata[target="medallero"] {
   flex-grow: 1;
   flex-basis: 220px;
   flex-flow: column;
+  height: 240px;
 }

@@ -1840,14 +1840,14 @@ userdata[target="atributos"] strong {
   text-shadow: 1px 1px var(--mode-back-90);
 }
 
-.user-knowledge {
+.user-knowledge, .user-medals {
   display: flex;
   flex-flow: column;
   gap: 5px;
   align-items: center;
 }
 
-.user-knowledge > span {
+.user-knowledge > span, .user-medals > span {
   background: var(--mode-back-100);
   width: 100%;
   padding: 10px;
@@ -1855,7 +1855,7 @@ userdata[target="atributos"] strong {
   text-align: right;
 }
 
-.user-knowledge-list {
+.user-knowledge-list, .user-medals-list {
   display: flex;
   flex-flow: column;
   width: 100%;

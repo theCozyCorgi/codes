@@ -2122,7 +2122,7 @@ dl.codebox code {font-family: roboto-mono, monospace; text-align: left; }
 fieldset dl:hover dt label {color: var(--mode-text-100); }
 
 input[type="text"], .inputbox {
-  color: var(--mode-text-100);
+  color: var(--mode-text-100) !important;
   border-bottom: none;
   background: var(--mode-opacity-50);
   border-radius: 3px;

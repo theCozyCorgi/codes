@@ -58,6 +58,7 @@
 
 .nav-menu {
   display: flex;
+  flex-flow: row-reverse;
   align-items: center;
   gap: 10px;
   position: relative;

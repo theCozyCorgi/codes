@@ -2047,7 +2047,7 @@ blockquote, dl.codebox, .spoiler, .hidecode {
   border-radius: 3px;    
   display: flex;
   flex-flow: column;
-  align-items: center;
+  align-items: stretch;
   gap: 5px;
 }
 

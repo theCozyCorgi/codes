@@ -2285,6 +2285,7 @@ input[type="text"], .inputbox {
 .profile-sheet strong { flex-shrink: 0; flex-basis: 80px; color: var(--user-color); }
 .profile-sheet userdata {flex-basis: 200px; text-align: end;}
 userdata[target="mascotas"] {text-align: left; flex-grow: 1; height: 40px; overflow: auto; padding-right: 5px; }
+userdata[target="varita"] {height: 30px; overflow: hidden; }
 
 .profile-stats {
   display: flex;

@@ -1520,10 +1520,10 @@ a.topictitle, a.topictitle:hover {
 
 .go-to {position: absolute; margin-top: -235px;}
 .post-content { font: var(--style-primary) !important; color: var(--mode-text-100) !important; text-align: justify; }
-.content b, .content strong { color: var(--post-user); }
-.content u { text-decoration: none; font-weight: 500; border-bottom: 1px solid var(--post-user) !important; }
-.content strike { text-decoration-style: wavy; text-decoration-color: var(--post-user); }
-.content a {color: var(--mode-back-60); }
+.content b, .content strong, .msg-content b, .msg-content strong { color: var(--post-user); }
+.content u, .msg-content u { text-decoration: none; font-weight: 500; border-bottom: 1px solid var(--post-user) !important; }
+.content strike, .msg-content strike { text-decoration-style: wavy; text-decoration-color: var(--post-user); }
+.content a, .msg-content a {color: var(--mode-back-60); }
 
 .post-first-message, .postbody .h3, .introduction .h3 {
   color: var(--mode-back-60) !important;

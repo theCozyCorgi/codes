@@ -1027,6 +1027,7 @@ a.forumtitle, a.forumtitle:hover {
   display: flex;
   flex-flow: column;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 .footer-content {

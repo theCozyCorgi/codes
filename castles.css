@@ -2597,10 +2597,10 @@ userdata[target="banner"] {
 .listgroup-header strong {
   font-family: var(--font-bold);
   letter-spacing: 1px;
-  color: var(--color-text-100);
+  color: var(--mode-text-100);
   font-size: 30px;
   line-height: 100%;
-  text-shadow: 1px 1px var(--color-complementary-100);
+  text-shadow: 1px 1px var(--mode-back-100);
 }
 
 .listgroup-info, .memberlist-basic, .memberlist-filter {

@@ -1883,8 +1883,9 @@ userdata[target="atributos"] strong {
 
 .poster:hover .poster-avatar {
   width: 140px;
-  flex-basis: 140px;
-  position: relative;
+  flex-basis: 140px;    
+  top: 80px;
+  right: 10px;
   transition: var(--transition);
 }
 

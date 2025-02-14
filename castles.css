@@ -1302,6 +1302,7 @@ fieldset.vf_jumpbox {
   color: var(--mode-text-100);
   position: relative;
   z-index: 1;
+  min-height: 90px;
 }
 
 .topic-icon {

@@ -2998,15 +2998,6 @@ userdata[target="banner"] {
 
 .password-container { width: 100%; }
 .show_hide_pwd { position: absolute; right: 10px; filter: invert(95%); }
-body.finvi .close-button { display: none; }
-
-body.finvi .monomer-overlay {
-  background: var(--image-background);
-  background-position: center;
-  background-size: cover;
-  background-color: var(--color-bold-100);
-  background-blend-mode: overlay;
-}
 
 /* Bouton de connexion */
 .switcheroo__form-button {

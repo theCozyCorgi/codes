@@ -279,7 +279,7 @@ button#theme-toggler:after {
   border-radius: 3px;
   overflow: hidden;
   background-color: var(--mode-back-70);
-  background-blend-mode: hard-light;
+  background-blend-mode: luminosity;
   display: flex;
   align-items: start;
   flex-flow: column;
@@ -288,6 +288,7 @@ button#theme-toggler:after {
   position: relative;
   padding: 10px;
   color: var(--color-text-100);
+  filter: brightness(0.8);
 }
 
 .points-item > i {
@@ -296,10 +297,10 @@ button#theme-toggler:after {
   font-size: 24px;
 }
 
-.points-item.points-gryffindor {background: var(--image-gryffindor); background-color: var(--group-gryffindor); background-size: cover; background-position: center; }
+.points-item.points-gryffindor {background: var(--image-gryffindor); background-color: var(--group-gryffindor); background-size: cover; background-position: bottom; }
 .points-item.points-hufflepuff {background: var(--image-hufflepuff); background-color: var(--group-hufflepuff); background-size: cover; background-position: center; }
-.points-item.points-ravenclaw {background: var(--image-ravenclaw); background-color: var(--group-ravenclaw); background-size: cover; background-position: center; }
-.points-item.points-slytherin {background: var(--image-slytherin); background-color: var(--group-slytherin); background-size: cover; background-position: center; }
+.points-item.points-ravenclaw {background: var(--image-ravenclaw); background-color: var(--group-ravenclaw); background-size: cover; background-position: top; }
+.points-item.points-slytherin {background: var(--image-slytherin); background-color: var(--group-slytherin); background-size: cover; background-position: top; }
 
 .board-staff .board-content, .board-plot .board-content, .board-actual {
   display: flex;

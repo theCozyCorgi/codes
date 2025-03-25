@@ -300,7 +300,7 @@ button#theme-toggler:after {
 .points-item.points-gryffindor {background: var(--image-gryffindor); background-color: var(--group-gryffindor); background-size: cover; background-position: bottom; }
 .points-item.points-hufflepuff {background: var(--image-hufflepuff); background-color: var(--group-hufflepuff); background-size: cover; background-position: center; }
 .points-item.points-ravenclaw {background: var(--image-ravenclaw); background-color: var(--group-ravenclaw); background-size: cover; background-position: top; }
-.points-item.points-slytherin {background: var(--image-slytherin); background-color: var(--group-slytherin); background-size: cover; background-position: top; }
+.points-item.points-slytherin {background: var(--image-slytherin); background-color: var(--group-slytherin); background-size: cover; background-position: center; }
 
 .board-staff .board-content, .board-plot .board-content, .board-actual {
   display: flex;

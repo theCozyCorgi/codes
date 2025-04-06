@@ -1817,6 +1817,7 @@ userdata[target="atributos"] strong {
   justify-content: center;
   flex-grow: 1;
   gap: 5px;
+  width: 135px;
 }
 
 .poster-stats userdata, .profile-stats userdata {

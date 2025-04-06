@@ -3464,3 +3464,1751 @@ fieldset.submit-buttons { display: flex; align-items: center; justify-content: c
   font: var(--style-link);
   text-transform: uppercase;
 }
+
+/* 16. TABLAS DEL FORO */
+.character-file br { display: none; }
+.character-content br, .character-basic userdata[target="mascotas"], .character-basic span[target="full-name"] br, code br, .hidecode br { display: inherit !important; }
+
+.character-file {
+  --background: linear-gradient(-45deg, var(--mode-back-70), var(--mode-back-100) 100%);
+  width: min(100%, 600px);
+  background: var(--mode-back-70);
+  padding: 5px;
+  gap: 5px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.character-section {
+  --h: 610px;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  flex-basis: 250px;
+  flex-grow: 1;
+  gap: 5px;
+}
+
+.character-image {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-bold-100);
+  border-radius: 3px;
+}
+
+.character-image:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: grayscale(1) brightness(0.5);
+  background: var(--color-bold-100);
+  mix-blend-mode: multiply;
+}
+
+.character-front {
+  width: 100%;
+  height: 245px;
+  flex-shrink: 0;
+  background: var(--image);
+  background-position: center;
+  background-size: cover;
+  transition: var(--transition);
+}
+
+.character-article {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  padding: 10px;
+  text-align: justify;
+  font-size: 13px;
+  background: var(--background);
+  border-radius: 3px;
+}
+
+.character-header {
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  top: -90px;
+  height: 80px;
+  color: var(--color-text-100);
+  align-items: start;
+  justify-content: center;
+  font-family: var(--font-bold);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 100%;
+  font-size: 40px;
+  text-shadow: 1px 1px var(--color-neutral-100);
+}
+
+.character-sub {
+  background: var(--color-bold-100);
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: right;
+  font: var(--style-link);
+  text-transform: uppercase;
+  color: var(--color-text-100);
+}
+
+.character-content { padding-right: 5px; overflow: auto; height: 440px; }
+
+.character-aside {
+  flex-basis: 250px;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  font: var(--style-link);
+  text-transform: uppercase;
+}
+
+.character-basic {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  padding: 15px;
+  background: var(--background);
+  border-radius: 3px;
+}
+
+.character-basic span:not(.character-sub), .character-basic userdata, .character-long-info span:not(.character-sub) {
+  background: var(--mode-opacity-50);
+  padding: 5px 10px 5px 5px;
+  border-radius: 3px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.character-basic span:before, .character-basic userdata:before, .character-long-info span:before {
+  background: var(--color-bold-100);
+  flex-shrink: 0;
+  padding: 5px 10px;
+  color: var(--color-text-100);
+  border-radius: 3px;
+  font: var(--style-link);
+  text-transform: uppercase;
+}
+
+.character-basic userdata[target="pb"], .character-basic span[target="rango"], .character-basic userdata[target="estudios"] {margin-bottom: 5px; }
+.character-basic userdata[target="varita"] { height: fit-content !important; }
+
+.character-basic [target="grupo"]:before { content: 'Grupo'; }
+.character-basic [target="full-name"]:before { content: 'Nombre Completo'; }
+.character-basic [target="rango"]:before { content: 'Rango'; }
+.character-basic [target="partido"]:before { content: 'Partido Político'; }
+.character-basic [target="edad"]:before { content: 'Edad'; }
+.character-basic [target="nacimiento"]:before { content: 'Nacimiento'; }
+.character-basic [target="pb"]:before { content: 'PB'; }
+.character-basic [target="residencia"]:before { content: 'Reside en'; }
+.character-basic [target="especie"]:before { content: 'Especie'; }
+.character-basic [target="linaje"]:before { content: 'Linaje'; }
+.character-basic [target="varita"]:before { content: 'Varita'; }
+.character-basic [target="estudios"]:before { content: 'Estudios'; }
+
+.character-plus [target="boggart"]:before { content: 'Boggart'; }
+.character-plus [target="relacion-victimas"]:before { content: 'Relaciones con las víctimas'; }
+.character-plus [target="sospechoso"]:before { content: 'Sospechoso'; }
+.character-plus [target="causa"]:before { content: 'Causa de sospecha'; }
+.character-plus [target="apellido-historia"]:before { content: 'Historia Familiar'; }
+.character-plus [target="apellido-características"]:before { content: 'Características de la familia'; }
+.character-plus [target="apellido-personajes-importantes"]:before { content: 'Miembros importantes'; }
+.character-plus [target="experiencia"]:before { content: 'Experiencia'; }
+.character-plus [target="experiencia"] exp:before { content: '- '; }
+
+.character-plus [target="car"]:before { content: '— Carisma:'; }
+.character-plus [target="con"]:before { content: '— Constitución:'; }
+.character-plus [target="des"]:before { content: '— Destreza:'; }
+.character-plus [target="fue"]:before { content: '— Fuerza:'; }
+.character-plus [target="int"]:before { content: '— Inteligencia:'; }
+.character-plus [target="sab"]:before { content: '— Sabiduria:'; }
+
+.character-plus [target="adivinación"]:before { content: '— adivinación:'; }
+.character-plus [target="alquimia"]:before { content: '— alquimia:'; }
+.character-plus [target="animagia"]:before { content: '— animagia:'; }
+.character-plus [target="aritmancia"]:before { content: '— aritmancia:'; }
+.character-plus [target="arpías"]:before { content: '— arpías:'; }
+.character-plus [target="arte"]:before { content: '— arte:'; }
+.character-plus [target="astronomía"]:before { content: '— astronomía:'; }
+.character-plus [target="banshees"]:before { content: '— banshees:'; }
+.character-plus [target="ccm"]:before { content: '— ccm:'; }
+.character-plus [target="combate físico"]:before { content: '— combate físico:'; }
+.character-plus [target="contrabando"]:before { content: '— contrabando:'; }
+.character-plus [target="curación"]:before { content: '— curación:'; }
+.character-plus [target="dcao"]:before { content: '— dcao:'; }
+.character-plus [target="duendes"]:before { content: '— duendes:'; }
+.character-plus [target="encantamientos"]:before { content: '— encantamientos:'; }
+.character-plus [target="estudios muggles"]:before { content: '— estudios muggles:'; }
+.character-plus [target="gigantes"]:before { content: '— gigantes:'; }
+.character-plus [target="herbología"]:before { content: '— herbología:'; }
+.character-plus [target="historia de la magia"]:before { content: '— historia de la magia:'; }
+.character-plus [target="legeremancia"]:before { content: '— legeremancia:'; }
+.character-plus [target="licántropos"]:before { content: '— licántropos:'; }
+.character-plus [target="liderazgo"]:before { content: '— liderazgo:'; }
+.character-plus [target="magia oscura"]:before { content: '— magia oscura:'; }
+.character-plus [target="magia no verbal"]:before { content: '— magia no verbal:'; }
+.character-plus [target="magia sin varita"]:before { content: '— magia sin varita:'; }
+.character-plus [target="magizoología"]:before { content: '— magizoología:'; }
+.character-plus [target="metamorfomagia"]:before { content: '— metamorfomagia:'; }
+.character-plus [target="música"]:before { content: '— música:'; }
+.character-plus [target="oclumancia"]:before { content: '— oclumancia:'; }
+.character-plus [target="pociones"]:before { content: '— pociones:'; }
+.character-plus [target="patronus"]:before { content: '— patronus:'; }
+.character-plus [target="pársel"]:before { content: '— pársel:'; }
+.character-plus [target="runas antiguas"]:before { content: '— runas antiguas:'; }
+.character-plus [target="sirenas"]:before { content: '— sirenas:'; }
+.character-plus [target="transformaciones"]:before { content: '— transformaciones:'; }
+.character-plus [target="videncia"]:before { content: '— videncia:'; }
+.character-plus [target="veelas"]:before { content: '— veelas:'; }
+.character-plus [target="vuelo"]:before { content: '— vuelo:'; }
+
+.character-quote {
+  height: 100%;
+  min-height: 130px;
+  background: var(--image);
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-100);
+  gap: 10px;
+}
+
+.character-quote span:before {
+  font: var(--fa-font-solid) !important;
+  content: "\f10d";
+  color: var(--color-bold-100);
+  font-size: 24px !important;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.character-quote span {
+  z-index: 1;
+  width: 85%;
+  text-align: center;
+  font-size: 12px;
+  text-transform: math-auto;
+  font-weight: 500;
+  hyphens: none;
+  line-height: normal;
+}
+
+.character-extra {
+  display: flex;
+  flex-flow: column;
+  gap: 3px;
+  position: relative;
+  font: var(--style-primary);
+  font-size: 12px;
+  text-transform: math-auto;
+  font-weight: lighter;
+  height: 85px;
+  overflow: auto;
+  padding-right: 5px;
+  flex-shrink: 0;
+}
+
+.v2 .character-front { height: 300px; }
+.v2 .character-header { top: -115px; height: auto; font-size: 72px; line-height: 75%; width: max-content; }
+.v2 .character-content { height: 400px; }
+.v2 .character-extra { height: 100px; }
+
+/* códigos ficha */
+.character-file .profile-admin { flex-basis: 100%; flex-grow: 1; height: auto; gap: 10px; }
+
+.character-plus {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 12px;
+  line-height: normal;
+  height: 300px;
+  overflow: auto; 
+}
+
+.character-plus span:not(.character-sub) {flex-basis: 135px; flex-grow: 1; }
+.character-plus span.long-info {flex-basis: 350px; flex-grow: 1; flex-flow: column; align-items: start; }
+
+.character-long-info {
+  flex-basis: 200px;
+  flex-grow: 1;
+  display: flex;
+  padding-right: 5px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.character-long-section {
+  flex-basis: 200px;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  padding-right: 5px;
+}
+
+.character-attributes, .character-knowledge  {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  background: var(--mode-opacity-50);
+  padding: 10px;
+  border-radius: 3px;
+}
+.character-attributes span:not(.character-sub) {background: transparent; padding: 0;}
+
+.character-attributes span:not(.character-sub):before, .character-knowledge span:not(.character-sub):before {
+  color: var(--color-bold-100); 
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.file-prevalidation {
+  flex-grow: 1;
+  margin: 30px 0;
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  background: var(--mode-opacity-50);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.file-prevalidation span:not(.character-sub) {
+  --color-bold-100: var(--validation-failed);
+  background: var(--mode-back-100);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 5px;
+  line-height: normal;
+}
+
+.file-prevalidation span:before {
+  font: var(--fa-font-solid) !important;
+  content: "\f057";
+  color: var(--color-bold-100);
+  font-size: 13px;
+  margin-right: 2px;
+}
+
+.alternante { display: flex; align-items: center; gap: 5px; margin-bottom: -20px; }
+.alternante:before {content: '≡'}
+.file-prevalidation span.validation-passed {--color-bold-100: var(--validation-passed); }
+.file-prevalidation span.validation-passed:before {content: "\f058";}
+.character-plus span.invalid-value {--color-bold-100: var(--validation-failed); }
+.show-more i {margin-left: 5px;}
+.show-more { transition: var(--transition); cursor: pointer; }
+.content-more { transition: var(--transition); display: none; }
+.content-more.show-content { display: flex; }
+ 
+/* personajes canon */
+.wiki-content, .action-content { 
+  display: flex; 
+  flex-flow: column;
+  gap: 20px;
+  font: var(--style-link);
+  text-transform: uppercase;
+  color: var(--mode-text-100);
+  background: transparent !important;
+  padding-top: 0 !important;
+}
+
+#wiki-filters, #action-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#wiki-filters h3, #action-filters h3 {
+  border: none;
+  font: var(--style-link);
+  background: var(--color-neutral-100);
+  color: var(--color-text-100);
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  flex-basis: 120px;
+  margin: 0;
+}
+
+.filter-options {
+  background: var(--mode-opacity-50);
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  justify-content: start;
+  margin-top: -15px;
+}
+
+#wiki-filters h3.active, #action-filters h3.active { background: var(--color-bold-100); flex-grow: 1; }
+.filter-labels { display: none; }
+.filter-labels.preactive { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
+
+.filter-check {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  line-height: 8px;
+  background: var(--mode-back-100);
+  padding: 5px;
+  padding-right: 15px;
+  border-radius: 3px;
+  margin: 0;
+  flex-basis: fit-content;
+}
+
+#wiki-selected, #action-selected { display: none; }
+#wiki-selected i, #action-selected i { cursor: pointer; }
+
+#wiki-selected:has(span), #action-selected:has(span) {
+  background: var(--mode-opacity-50);
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+}
+
+#wiki-selected span, #action-selected span {
+  background: var(--mode-back-80);
+  padding: 10px 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.wiki-all {
+  background: var(--mode-opacity-50);
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: stretch;
+  justify-content: start;
+}
+
+.canon-item {
+  flex-basis: 200px;
+  flex-grow: 1;
+  height: 250px;
+  background: var(--mode-back-60);
+  border-radius: 5px;
+  overflow: hidden;
+  flex-flow: column;
+  gap: 5px;
+  max-width: 206px;
+}
+
+.canon-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-bold);
+  height: 30px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: lighter;
+  color: var(--color-text-100) !important;
+  padding-top: 10px;
+  text-shadow: 1px 1px var(--color-complementary-100);
+  flex-shrink: 0;
+}
+
+.canon-desc {
+  background: var(--image);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  position: relative;
+  border-top: 5px solid var(--mode-back-70);
+  display: flex;
+  align-items: end;
+}
+
+.canon-desc:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background: var(--color-bold-100);
+  backdrop-filter: grayscale(1) brightness(0.5);
+  background: var(--color-bold-100);
+  mix-blend-mode: multiply;
+  transition: var(--transition);
+}
+
+.canon-item:hover .canon-desc:before {
+  height: 100%;
+  transition: var(--transition);
+}
+
+.canon-desc span {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  color: var(--color-text-100);
+  padding: 15px;
+  text-align: justify;
+  gap: 5px;
+  justify-content: space-between;
+  flex-flow: column;
+  height: 215px;
+  top: 100%; 
+  transition: var(--transition);
+}
+
+.canon-desc dato {
+  background: var(--color-neutral-100);
+  padding: 5px 10px;
+  display: flex;
+  border-radius: 5px;
+  height: fit-content;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.canon-desc cont { flex-basis: fit-content; flex-shrink: 0; flex-grow: 1; }
+.canon-desc label { color: var(--color-text-100); }
+.canon-desc descrip { margin-bottom: 10px; height: 100%; }
+.canon-item:hover .canon-desc span { top: 0; transition: var(--transition); }
+
+.canon-rules {
+  background: var(--mode-opacity-50);
+  padding: 15px;
+  border-radius: 5px;
+  margin: 0 15px 20px;
+  text-align: justify;
+  column-count: 3;
+  color: var(--mode-text-100);
+}
+
+.canon-rules a {
+  background: var(--color-bold-100);
+  padding: 5px 10px;
+  display: inline-flex;
+  border-radius: 5px;
+  font: var(--style-link);
+  text-transform: uppercase;
+  color: var(--color-text-100);
+  position: relative;
+  top: -3px;
+}
+
+.canon-item[data-estado="reservado"] { --mode-back-60: var(--color-bold-100); }
+.canon-item[data-estado="ocupado"] { --mode-back-60: var(--color-neutral-100); }
+
+/* guidebook */
+.guidebook-all {
+  display: flex;
+  gap: 15px;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  background: transparent !important;
+  padding: 0;
+  width: 75% !important;
+  margin-bottom: 50px;
+}
+
+.guidebook-index {
+  flex-basis: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  flex-grow: 1;
+  background: var(--mode-opacity-50);
+  border-radius: 5px;
+  padding: 15px;
+  font: var(--style-link);
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: var(--mode-text-100);
+  counter-reset: section;
+}
+
+.guidebook-index > span {
+  flex-basis: 250px;
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  gap: 5px;
+  counter-reset: item;
+  counter-increment: section;
+}
+
+.guidebook-index > span > label {
+  font-family: var(--font-bold);
+  letter-spacing: 1px;
+  font-size: 24px;
+  color: var(--mode-back-70);
+  line-height: 100%;
+  text-shadow: 1px 1px var(--mode-back-100);
+}
+
+.guidebook-index > span > a > label:before {  
+  counter-increment: item;
+  content: counter(section, decimal-leading-zero) "." counter(item, decimal-leading-zero) ". "; 
+  font-family: var(--font-complemntary); 
+  font-size: 16px;
+  color: var(--mode-back-70);
+  font-weight: bolder;
+  text-shadow: 1px 1px var(--mode-back-100);
+}
+
+.guidebook-index a { margin-left: 5px; display: flex; flex-flow: column; gap: 5px; counter-reset: sub;}
+.guidebook-index > span > label:before { content: counter(section, decimal-leading-zero) ". "; }
+.guidebook-index a a {margin-left: 20px; flex-flow: row; }
+.guidebook-index a a a {display: none; }
+.guidebook-index a a label:before { font: var(--fa-font-solid) !important; content: "\2d"; color: var(--color-bold-100); margin-right: 5px; }
+
+.guidebook-articles {
+  flex-basis: 500px;
+  padding: 15px;
+  background: var(--mode-opacity-50);
+  border-radius: 5px;
+  flex-grow: 50;
+  display: flex;
+  flex-flow: column;
+  gap: 25px;
+  text-align: justify;
+  font: var(--style-primary);
+  font-size: 13px;
+  color: var(--mode-text-100);
+  height: 800px;
+  overflow: auto;
+}
+
+.guidebook-section {
+  flex-grow: 1;
+  /*width: min(80%, 500px);
+  margin: 10% auto;*/
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+  padding: 15px;
+  background: var(--mode-back-100);
+  border-radius: 5px;
+}
+
+.guidebook-section > .go-to-guide {
+  font-family: var(--font-bold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 42px;
+  line-height: 110%;
+  background: var(--image-hufflepuff);
+  background-position: center;
+  background-size: contain;
+  color: var(--color-text-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 185px;
+  border-radius: 5px;
+  background-color: var(--mode-back-60);
+  background-blend-mode: hard-light;
+}
+
+.guidebook-content {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+  background: var(--mode-opacity-50);
+  padding: 15px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.guidebook-content > span:not(.go-to) {
+  text-transform: uppercase;
+  background: var(--color-bold-100);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-radius: 3px;
+  height: 50px;
+  color: var(--color-text-100);
+  text-shadow: 1px 1px var(--color-complementary-100);
+  font-family: var(--font-bold);
+  letter-spacing: 1px;
+  font-size: 24px;
+  line-height: 110%;
+  padding: 15px 15px 10px;
+  text-align: end;
+}
+
+.guidebook-content p { font-size: 13px; }
+.guidebook-content .fa-li { height: 20px;  color: var(--mode-back-60); }
+.guidebook-content strong, .guidebook-content a, .guidebook-content .fa-solid { color: var(--mode-back-60); }
+.guidebook-content u { text-decoration: none; font-weight: 500; border-bottom: 2px solid var(--mode-back-80) !important; color: var(--mode-back-60); }
+.guidebook-content .guidebook-content { background: transparent; gap: 10px; padding: 0px; }
+
+.guidebook-content .guidebook-content > span {
+  background: transparent;
+  color: var(--mode-back-60);
+  text-shadow: 1px 1px var(--mode-back-100);
+  border-bottom: 5px solid var(--mode-back-80);
+  justify-content: center;
+  font-size: 24px;
+  height: fit-content;
+  padding: 5px;
+  margin-top: 35px;
+}
+
+.plot-progress {
+  font: var(--style-link);
+  text-transform: uppercase;
+  background: var(--mode-back-100);
+  padding: 10px 15px;
+  display: flex;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.plot-progress detail {
+  --per: calc(var(--complete) / var(--total));
+  --label: calc(var(--per)* 100);
+  counter-reset: completed var(--label);
+  position: relative;
+  display: flex;
+  background: var(--color-neutral-100);
+  height: 20px;
+  width: 165px;
+  border-radius: 15px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.plot-progress detail:before {
+  content: ''; 
+  position: absolute;
+  height: 100%;
+  width: calc(var(--label) * 1%);
+  background: var(--color-bold-100);
+  left: 0;
+  border-radius: 15px;
+}
+
+.plot-progress detail:after {
+  content: counter(completed, decimal-leading-zero) "%"; 
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  right: 10px;
+  color: var(--color-text-100);
+}
+
+.plot-progress plot {flex-basis: 200px; flex-grow: 1; }
+[target="avance-de-la-trama"] { gap: 5px !important; }
+
+.guidebook-content .guidebook-content .guidebook-content > span { width: fit-content; border: none; color: var(--mode-back-60); font-size: 20px; }
+.guidebook-content .guidebook-content .guidebook-content > span:before, place label:before { font: var(--fa-font-solid) !important; content: "\f86c"; color: var(--color-bold-100); margin-right: 5px; } 
+
+requisito, consequence {
+  font: var(--style-link);
+  font-size: 10px;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 5px;
+  position: relative;
+  padding-left: 90px;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+requisito:before, consequence:before {
+  content: 'Requisitos';
+  background: var(--mode-back-80);
+  color: var(--mode-text-100);
+  border-radius: 3px;
+  padding: 5px 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#section-ambientacion { background: url('https://i.imgur.com/YCN0CdM.png'); background-position: center; background-size: cover; }
+#section-contexto { background: url('https://i.imgur.com/NaItwTm.png'); background-position: center; background-size: cover; }
+#section-grupos-y-rangos { background: url('https://i.imgur.com/gOVXZjG.png'); background-position: center; background-size: cover; }
+#section-sistema { background: url('https://i.imgur.com/QbDw7ve.png'); background-position: center; background-size: cover; }
+.guidebook-content rango:before { content: '✦ '; }
+.guidebook-content .guidebook-content .guidebook-content .guidebook-content > span:before { content: '\f00d'; }
+
+.guidebook-content grupo {    
+  --color: var(--mode-back-80);
+  background: var(--color);
+  color: var(--mode-text-100);
+  border-radius: 3px;
+  padding: 5px 10px;
+  display: inline-block;
+  font: var(--style-link);
+  text-transform: uppercase;
+  color: var(--color-text-100);
+}
+
+.guidebook-content rango, .guidebook-content .guidebook-content .guidebook-content .guidebook-content > span, place label {
+  font: var(--style-primary);
+  text-transform: math-auto;
+  padding: 0;
+  --color: var(--color-complementary-100);
+  color: var(--color);
+  line-height: 100%;
+  text-shadow: 1px 1px var(--mode-back-100);
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  font-size: 16px;
+}
+
+#ambientacion a a { display: none; }
+.guidebook-index [index="historia-de-la-magia"] a,
+.guidebook-index [index="sistema-de-magia"] a,
+.guidebook-index [index="economia-en-gran-bretania"] a, 
+.guidebook-index [index="religiones-magicas"] a, 
+.guidebook-index [index="cultura"] a, 
+.guidebook-index [index="sociedad-magicas-y-muggle"] a , 
+.guidebook-index [index="el-mandato-de-wilhelmina-tuft"] a {display: none; }
+
+/* tablas de rol */
+.rol-table br, .admin-notification br { display: none; }
+.rol-content br, .admin-info br { display: inherit; }
+
+.rol-table {
+  width: min(500px, 100%);
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+}
+
+.rol-title {
+  text-align: left;
+  font-family: var(--font-bold);
+  letter-spacing: 1px;
+  font-size: 2.4vw;
+  line-height: 80%;
+  color: var(--post-user);
+  text-shadow: 1px 1px var(--mode-back-100);
+  flex-basis: 100%;
+  flex-grow: 1;
+  margin-top: 10px;
+}
+
+.rol-content, .search-content {
+  background: var(--mode-back-100);
+  padding: 25px;
+  border-top: 5px solid var(--post-user);
+  border-bottom: 5px solid var(--post-user);
+  font-size: min(1.2vw, 14px);
+}
+
+.rol-data {
+  background: var(--mode-opacity-50);
+  flex-grow: 1;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  font: var(--style-link);
+  text-transform: uppercase;
+  color: var(--color-text-100);
+  padding: 15px;
+  font-weight: 500;
+  align-items: center;
+  position: relative;
+}
+
+.rol-data > *:not(.rol-title,i) { 
+  flex-basis: fit-content; 
+  flex-grow: 1; 
+  text-align: center; 
+  background: var(--post-user);
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.rol-data participantes:before { content: 'con: ';  }
+.rol-data .mentiontag { padding: 0; font: var(--style-link); background: transparent !important; font-weight: 500; }
+.rol-data > i { position: absolute; font-size: 3vw; color: var(--post-user); left: 1vw; }
+.rol-data:has(i) { padding-left: 5vw; }
+.data-bold { background: var(--post-user); padding: 10px 10px 5px; }
+.data-bold > * { padding: 0 !important; background: transparent !important; }
+
+.admin-notification { 
+  width: min(450px, 100%);
+  margin: auto;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  background: var(--mode-back-100);
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.admin-type {
+  background: var(--post-user);
+  flex-basis: 140px;
+  font-family: var(--font-bold);
+  color: var(--color-text-100);
+  text-shadow: 1px 1px var(--color-bold-100);
+  padding: 15px;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 100%;
+  font-size: 1.8vw;
+  position: relative;
+  z-index: 2;
+  align-self: stretch;
+  hyphens: none;
+  text-align: start;
+}
+
+.admin-type:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  top: 0;
+  right: -25px;
+  background: var(--post-user);
+  border-radius: 80% 90% 70% 60% / 60% 90% 60% 80%;
+  z-index: -1;
+}
+
+.admin-info {
+  flex-basis: 190px;
+  padding: 15px;
+  padding-left: 30px;
+  font-size: 11px;
+  line-height: normal;
+  flex-grow: 1;
+}
+
+.alert-notification .admin-type, .alert-notification .admin-type:after { background: var(--color-bold-100); }
+.pending-notification .admin-type, .pending-notification .admin-type:after { background: var(--color-neutral-100); }
+
+/* foro en construccion */
+.construction-time .nav-bar { z-index: 9 !important; }
+
+.construccion {
+  background: var(--image-background);
+  background-position: center;
+  background-size: cover;
+  background-color: var(--color-bold-100);
+  background-blend-mode: overlay;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.construccion span {
+  background: var(--mode-back-90);
+  padding: 15px;
+  border-radius: 3px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 400px;
+  color: var(--mode-text-100);
+  font: var(--style-link);
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  hyphens: manual;
+}
+
+.construccion strong {
+  font-family: var(--font-bold);
+  letter-spacing: 1px;
+  font-size: 24px;
+  text-shadow: 1px 1px var(--mode-back-100);
+  color: var(--color-bold-100);
+}
+
+/* lanzada de dados */
+.dice {
+  width: min(450px, 100%);
+  margin: auto;
+  display: flex;
+  flex-flow: column;    
+  align-items: stretch;
+  gap: 10px;
+  hyphens: manual;
+}
+
+.dice-header {
+  font-family: var(--font-bold);
+  text-transform: uppercase;
+  font-size: 3vw;
+  letter-spacing: 1px;
+  color: var(--post-user);
+  border-bottom: 5px solid var(--color-bold-100);
+  text-align: center;
+}
+
+.dice-roll {
+  background: var(--mode-back-100);
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  font: var(--style-link);
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.dice-roll > span {
+  flex-basis: 100%;
+  flex-grow: 1;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: var(--font-bold);
+  font-size: 20px;
+  line-height: 90%;
+  color: var(--color-bold-100);
+  letter-spacing: 1px;
+  text-transform: math-auto;
+  font-weight: lighter;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.roll-result {
+  background: var(--mode-opacity-50);
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: 500;
+  flex-basis: 50px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.dice-roll > span:before { 
+  font: var(--fa-font-thin) !important; 
+  content: "\f6cd"; 
+  font-size: 40px !important; 
+  color: var(--mode-back-80) !important;     
+  flex-basis: 80px;
+  text-align: center;
+}
+
+.dice-results { display: flex; flex-wrap: wrap; gap: 5px; width: 100%; }
+.roll-result:has(strong) { flex-basis: 100%; text-align: justify; }
+.roll-result strong:after{ content: ': '; }
+.roll-acción > span:before { content: "\f6cf"; }
+.roll-salud > span:before { content: "\f21e"; }
+.roll-felix-felicis > span:before { content: "\f6bf"; }
+.roll-result:has(i) { text-align: left; display: flex; align-items: center; flex-basis: 200px; }
+.roll-result i { font-size: 24px; color: var(--post-user) !important; width: 40px; text-align: left; flex-shrink: 0;}
+userdata[target="rango"] { hyphens: manual; }
+userdata[target="rango"] ur:not(:first-child):before { content: ' / '; }
+.poster-character userdata[target="rango"] { color: var(--color-text-100); margin-left: 45px; text-align: right; }
+
+.rol-subtitle {
+  font-family: var(--font-bold);
+  font-size: 20px;
+  font-weight: lighter;
+  color: var(--color-bold-100);
+  letter-spacing: .5px;
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+.rol-subtitle:before { content: "——— "; color: var(--post-user); margin-right: 5px; counter-reset: record; letter-spacing: -1px; margin: 5px 0; } 
+.record-content { display: flex; flex-wrap: wrap; }
+.record-item:before {content: "- "}
+.table-record { width: min(550px, 100%); }
+
+.record-item, job, .record-content[target="gryffindor"] >*:not(.record-subcontent), 
+.record-content[target="hufflepuff"] >*:not(.record-subcontent), 
+.record-content[target="ravenclaw"] >*:not(.record-subcontent), 
+.record-content[target="slytherin"] >*:not(.record-subcontent)  {
+  font: var(--style-link);
+  text-transform: uppercase;
+  font-size: 10px;
+  flex-basis: 166px;
+  flex-grow: 0;
+  font-weight: 500;
+  line-height: normal;
+  counter-increment: record;
+  text-align: left;
+}
+
+.rol-content .fa-ul { margin-left: 20px !important; }
+.rol-content .fa-li { height: 20px; font-size: 10px; }
+
+.record-subcontent { 
+  flex-basis: 100%; 
+  font: var(--style-link);
+  text-transform: uppercase;
+  font-size: 10px;
+  color: var(--mode-back-80);
+  line-height: normal;
+  border-bottom: 2px solid var(--mode-back-90);
+  margin: 5px 0;
+}
+
+/* apellidos */
+.record-content[target="apellido"] { display: flex; flex-wrap: wrap; gap: 5px; }
+
+.record-last {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  background: var(--mode-opacity-50);
+  padding: 5px 10px;
+  border-radius: 5px;
+  flex-basis: min(50%, 130px);
+  flex-grow: 1;
+  transition: var(--fast);
+}
+
+.record-last.last-taken, .record-last.last-taken .last-label { background: var(--color-bold-100); color: var(--color-text-100); }
+.record-last.record-oc, .record-last.record-oc .last-label { background: var(--color-bold-100); color: var(--color-text-100); }
+.record-last.record-restringido, .record-last.record-restringido .last-label { background: var(--mode-back-80); color: var(--mode-text-100); }
+.record-last.record-anacrónico, .record-last.record-anacrónico .last-label { background: var(--color-neutral-100); color: var(--color-text-100); }
+
+.last-label {
+  display: flex;
+  gap: 5px;
+  font: var(--style-link);
+  text-transform: uppercase;
+  flex-basis: 100%;
+  border-radius: 3px;
+  font-size: 10px;
+  line-height: normal;
+  font-weight: 500;
+  align-items: center;
+}
+
+.open-last { flex-basis: 100%; padding: 10px; background: var(--mode-opacity-50) !important; }
+.open-last .last-label { background: var(--color-bold-100); color: var(--color-text-100); padding: 5px 10px; }
+.last-label:after { font: var(--fa-font-solid) !important; content: "\f078"; }
+.open-last .last-label:after { font: var(--fa-font-solid) !important; content: "\f077"; }
+.last-label members { margin-left: auto; flex-shrink: 0; }
+.last-content { display: none; gap: 5px; flex-wrap: wrap; flex-grow: 1; height: 200px; color: var(--mode-text-100); }
+.open-last .last-content { display: flex; }
+.last-description u { display: block; }
+
+.last-description {
+  flex-grow: 1;
+  flex-basis: max(48%, 120px);
+  height: 100%;
+  overflow: auto;
+  font-size: 11px;
+  background: var(--mode-opacity-50);
+  border-radius: 3px;
+  padding: 10px;
+  line-height: normal;
+}
+
+.last-record { 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  flex-basis: max(48%, 150px);
+  flex-grow: 1;
+  flex-flow: column;
+  height: 100%;
+}
+
+.last-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  flex-grow: 1;
+}
+
+.last-tags > * {
+  background: var(--mode-back-60);
+  color: var(--color-text-100);
+  margin: 0 2px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  font: var(--style-link);
+  text-transform: uppercase;
+  flex-grow: 1;
+  flex-basis: 100px;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.last-tags a { color: var(--color-text-100) !important; }
+.last-tags a:before { content: 'responsable: '; }
+.last-tags linaje:before { content: 'origen sangre '; }
+
+.last-members {
+  height: 100%;
+  flex-basis: 100%;
+  background: var(--mode-opacity-50);
+  border-radius: 3px;
+  font: var(--style-link);
+  font-weight: 500;
+  display: flex;
+  flex-flow: column;
+  gap: 2px;
+  text-transform: uppercase;
+  padding: 5px;
+  overflow: auto;
+}
+
+.last-members .last-member:before { content: "- "; }
+
+.legend-last {
+  background: var(--mode-opacity-50);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font: var(--style-link);
+  font-weight: 500;
+  text-transform: uppercase;
+  hyphens: manual;
+}
+
+.legend-last.record-restringido { background: var(--mode-back-80); color: var(--mode-text-100); }
+.legend-last.record-anacrónico { background: var(--color-neutral-100); color: var(--color-text-100); }
+.legend-last.record-registrado { background: var(--color-bold-100); color: var(--color-text-100); }
+.rol-record { display: flex; flex-wrap: wrap; column-gap: 5px; align-items: flex-start; }
+.record-content { display: flex; flex-wrap: wrap; flex-basis: 150px; flex-grow: 1; }
+.record-item { flex-basis: 165px; flex-grow: 0; }
+.record-content .record-item:last-child {margin-bottom: 15px; }
+
+.find-jobs { display: flex; flex-flow: column; gap: 15px; }
+place { display: flex; flex-flow: column; }
+place location, .record-getjob { display: flex; flex-wrap: wrap; gap: 5px; }
+.record-getjob { align-items: start; }
+place location p { font: var(--style-link) !important; text-transform: uppercase; }
+place location p:not(:last-child):after {content: ','; }
+place label { text-transform: uppercase; font-size: 14px; color: var(--mode-back-60); cursor: text;} 
+place description { line-height: normal; }
+place label:before { content: '\2d'; }
+job, .rol-record .record-item { flex-grow: 1 !important; }
+job { flex-basis: 100% !important; }
+.record-content[target="historial"] .record-item { flex-basis: 250px; flex-grow: 1; }
+.record-content[target="historial"] { padding-right: 5px; max-height: 300px; overflow: auto; }
+job strong { color: var(--color-bold-100); }
+.record-content[dato="jugaadores"] .record-subcontent:after {content: ' de quidditch'; }
+.record-content[dato="neutral"] .record-subcontent, .rol-record br {display: none !important; }
+.record-content[dato="neutral"] .record-item { flex-grow: 0 !important; }
+.record-content[target="hogwarts"] .record-subcontent:not(:first-child), .record-content[target="ministerio"] .record-subcontent:not(:first-child) { margin-top: 15px; }
+.record-mdm .record-content, .record-getjob .record-content { flex-basis: 180px; }
+.record-mdm .record-content[dato="jefe"] .record-subcontent:after { content: ' del departamento'; }
+
+.record-content[dato="gran custodio"],
+.record-content[dato="coordinador"],
+.record-content[dato="jefe"],
+.record-content[dato="jefe supremo"],
+.record-content[dato="dueño"] { 
+  flex-basis: 100%;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.record-content[dato="gran custodio"] .record-subcontent,
+.record-content[dato="coordinador"] .record-subcontent,
+.record-content[dato="jefe"] .record-subcontent,
+.record-content[dato="jefe supremo"] .record-subcontent ,
+.record-content[dato="dueño"] .record-subcontent {
+  flex-basis: auto;
+  border: none;
+  margin-right: 5px;
+}
+
+.record-content[dato="gran custodio"] .record-item:last-child,
+.record-content[dato="jefe"] .record-item:last-child,
+.record-content[dato="jefe supremo"] .record-item:last-child 
+.record-content[dato="dueño"] .record-item:last-child { margin-bottom: 0 !important; }
+
+/* se terminó el código feo de registros, perdón por todo el caos */
+
+/* muestra info segun lo que se indica */
+.show-data { display: none; }
+.show-data { display: block; }
+
+.table-record .rol-data { background: transparent; padding: 0; }
+.table-record .rol-title { font-size: 2.5vw; text-align: center; color: var(--color-bold-100); }
+
+/* tabla lugares de interés */
+.show-places { display: flex; flex-flow: column; gap: 15px; }
+
+.show-places place { 
+  position: relative; 
+  padding: 15px;
+  padding-left: 80px; 
+  border-radius: 5px;
+  background: var(--mode-opacity-50);
+}
+
+.show-places place:before { 
+  font: var(--fa-font-thin);
+  content: '\f279';
+  position: absolute;
+  left: 15px;
+  top: 16%;
+  font-size: 70px;
+  opacity: 0.5;
+  color: var(--mode-back-80);
+}
+
+.show-places label {
+  position: relative; 
+  font-family: var(--font-bold);
+  letter-spacing: 1px;
+  font-size: 24px;
+  line-height: 26px;
+  color: var(--color-bold-100);
+  margin: 0;
+}
+
+/* normativa */
+#section-codex-de-los-usuarios { background: url('https://i.imgur.com/YSxWXRv.png'); background-position: center; background-size: cover; }
+#section-codex-de-magos-y-brujas { background: url('https://i.imgur.com/omTaA9C.png'); background-position: center; background-size: cover; }
+#section-sistema-arce { background: url('https://i.imgur.com/OhJZONG.png'); background-position: center; background-size: cover; }
+
+.codex-all .guidebook-content .guidebook-content .guidebook-content { padding-left: 25px; }
+.codex-all { counter-reset: number; }
+.codex-all .guidebook-content .guidebook-content > span,
+.codex-all .guidebook-content .guidebook-content .guidebook-content > span, 
+.codex-all .guidebook-content .guidebook-content .guidebook-content .guidebook-content > span {
+  width: fit-content;
+  border: none;
+  background: var(--mode-back-60);
+  color: var(--mode-text-100);
+  text-shadow: none;
+  font: var(--style-link);
+  padding: 5px 10px;
+  font-size: 11px;
+  flex-basis: fit-content;
+  text-transform: uppercase;
+  margin-top: 0px !important;
+}
+
+.codex-all .guidebook-content .guidebook-content .guidebook-content > span { background: var(--mode-back-70); }
+.codex-all .guidebook-content .guidebook-content .guidebook-content .guidebook-content > span { background: var(--mode-back-80); }
+consequence:before { content: 'consecuencias'; background: var(--color-neutral-100); color: var(--color-text-100); }
+consequence { padding-left: 120px; margin-bottom: 15px; }
+#codex-de-magos-y-brujas > a a, #sistema-arce > a a { display: none; }
+
+.guidebook-content[target="regulaciones-para-estudiantes-hogwarts"] { counter-reset: norma; }
+.guidebook-content[target="regulaciones-para-estudiantes-hogwarts"] p:before { 
+  counter-increment: norma; 
+  content: counter(norma, decimal-leading-zero) ". ";
+  font: var(--style-link);
+  font-size: 13px;
+  color: var(--mode-back-70);
+}
+
+.guidebook-content[target="regulaciones-para-estudiantes-hogwarts"] p:has(strong):before { counter-increment: none; display: none; content: ''; }
+
+/* multicuentas */
+userdata[target="multicuentas"] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+userdata[target="multicuentas"] a {    
+  border-radius: 5px;
+  background: var(--user-color);
+  color: var(--color-text-100);
+  font: var(--style-link);
+  padding: 5px 10px;
+  flex-basis: fit-content;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+  flex-grow: 1;
+}
+
+/* acciones */
+.action-all { display: flex; gap: 5px; flex-wrap: wrap; }
+
+.action-item {
+  flex-basis: 240px;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  gap: 2px;
+  background: var(--mode-opacity-50);
+  padding: 15px;
+  border-radius: 5px;
+  --strong: var(--mode-back-60);
+  --neutral: var(--mode-back-60);
+  border-bottom: 5px solid var(--strong);
+}
+
+.action-title {
+  position: relative;
+  font-size: 32px;
+  font-family: var(--font-complemntary);
+  color: var(--strong);
+}
+
+.action-title i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 14vh;
+  color: var(--strong);
+  opacity: .2;
+}
+
+.action-title strong { z-index: 1; position: relative; line-height: 24px; hyphens: none; text-shadow: 1px 1px 1px var(--mode-back-100);}
+.action-tags know:after { content: ': '; }
+.action-type:before { content: 'Tipo: '; color: var(--strong); }
+.action-req:before { content: 'Requisitos: '; color: var(--strong); margin-right: 5px; }
+.action-info { width: 100%; text-align: justify; margin: 5px 0; height: 100%; }
+.action-req, .action-results { display: flex; flex-wrap: wrap; }
+.action-results { margin-top: 5px; gap: 2px; text-align: justify; }
+.action-req req { flex-basis: fit-content; }
+.action-req req:not(:last-child):after { content: ', '; margin-right: 3px; }
+#wiki[target="actions"] #wiki-filters h3[data-target="tipo-options"]:after { content: ' de acciones'; margin-left: 4px; flex-shrink: 0; }
+.wiki-item leve:before { content: 'Leve: '; color: var(--strong); }
+.wiki-item moderado:before { content: 'Moderado: '; color: var(--strong); }
+.wiki-item exitoso:before { content: 'Éxitoso: '; color: var(--strong); }
+.wiki-item critico:before { content: 'Crítico: '; color: var(--strong); }
+
+[data-conocimientos="adivinación"] { --strong: rgb(83 100 151 / 85%); }
+[data-conocimientos="alquimia"] { --strong: rgb(153 128 95 / 85%); }
+[data-conocimientos="animagia"] { --strong: rgb(82 116 132 / 85%); }
+[data-conocimientos="aritmancia"] { --strong: rgb(135 102 86 / 85%); }
+[data-conocimientos="arpías"] { --strong: rgb(176 120 90 / 85%); }
+[data-conocimientos="arte"] { --strong: rgb(116 97 139 / 85%); }
+[data-conocimientos="astronomía"] { --strong: rgb(70 119 119 / 85%); }
+[data-conocimientos="banshees"] { --strong: rgb(104 98 109 / 85%); }
+[data-conocimientos="ccm"] { --strong: rgb(111 118 74 / 85%); }
+[data-conocimientos="combate físico"] { --strong: rgb(138 76 87 / 85%); }
+[data-conocimientos="contrabando"] { --strong: rgb(103 87 85 / 85%); }
+[data-conocimientos="curación"] { --strong: rgb(67 90 83 / 85%); }
+[data-conocimientos="dcao"] { --strong: rgb(99 64 64 / 85%); }
+[data-conocimientos="duendes"] { --strong: rgb(146 99 143 / 85%); }
+[data-conocimientos="encantamientos"] { --strong: rgb(142 157 168 / 85%); }
+[data-conocimientos="estudios muggles"] { --strong: rgb(134 114 134 / 85%); }
+[data-conocimientos="gigantes"] { --strong: rgb(110 121 114 / 85%); }
+[data-conocimientos="herbología"] { --strong: rgb(64 100 69 / 85%); }
+[data-conocimientos="historia de la magia"] { --strong: rgb(126 114 76 / 85%); }
+[data-conocimientos="legeremancia"] { --strong: rgb(71 69 91 / 85%); }
+[data-conocimientos="liderazgo"] { --strong: rgb(101 73 110 / 85%); }
+[data-conocimientos="magia oscura"] { --strong: rgb(95 95 100 / 85%); }
+[data-conocimientos="magia sin varita"] { --strong: rgb(158 97 97 / 85%); }
+[data-conocimientos="magia no verbal"] { --strong: rgb(101 133 135 / 85%); }
+[data-conocimientos="metamorfomagia"] { --strong: rgb(135 124 153 / 85%); }
+[data-conocimientos="música"] { --strong: rgb(89 112 141 / 85%); }
+[data-conocimientos="oclumancia"] { --strong: rgb(99 95 79 / 85%); }
+[data-conocimientos="pársel"] { --strong: rgb(65 75 66 / 85%); }
+[data-conocimientos="pociones"] { --strong: rgb(107 97 70 / 85%); }
+[data-conocimientos="runas antiguas"] { --strong: rgb(175 124 77 / 85%); }
+[data-conocimientos="transformaciones"] { --strong: rgb(160 90 130 / 85%); }
+[data-conocimientos="videncia"] { --strong: rgb(102 110 134 / 85%); }
+[data-conocimientos="vuelo"] { --strong: rgb(115 133 157 / 85%); }
+[data-conocimientos="patronus"] { --strong: rgb(136 138 139 / 85%); }
+[data-conocimientos="licántropos"] { --strong: rgb(103 82 71 / 85%); }
+[data-conocimientos="veelas"] { --strong: rgb(146 136 111 / 85%); }
+[data-conocimientos="sirenas"] { --strong: rgb(75 118 140 / 85%); }
+
+.show-results line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: var(--strong);
+  padding: 5px;
+  border-radius: 3px;
+  overflow: hidden;
+  color: var(--color-text-100);
+  letter-spacing: .5px;
+  text-shadow: 1px 1px 1px var(--color-complementary-100);
+}
+
+.show-results cont { display: none; }
+.show-results line:after { font: var(--fa-font-solid) !important; content: "\f078"; }
+.show-results.visible-results cont { display: flex; flex-flow: column; gap: 5px; margin: 5px 0px 0; }
+.show-results.visible-results line:after { font: var(--fa-font-solid) !important; content: "\f077"; }
+
+.gui-li {display: flex; gap: 5px; flex-wrap: wrap; }
+.guidebook-list { font: var(--style-link); text-transform: uppercase; display: flex; gap: 5px; flex-basis: 100px; flex-grow: 1; }
+.guidebook-content[target="calendario-academico"] .guidebook-list { flex-basis: 100%; }
+.guidebook-content[target="liga-de-quidditch-britanica"] .guidebook-list { flex-basis: 160px; }
+.guidebook-content[target="campeonato-europeo"] .guidebook-list { flex-basis: 120px; }
+.guidebook-list:before { font: var(--fa-font-solid) !important; content: "\2d"; }
+
+.plant-item, .creature-item, .potion-item, .book-item {
+  flex-basis: 300px;
+  flex-grow: 1;
+  display: flex;
+  gap: 5px;
+  background: var(--mode-opacity-50);
+  padding: 15px;
+  border-radius: 5px;
+  height: 230px;
+}
+
+.plant-image, .creature-image, .potion-image, .book-image {
+  width: 100px;
+  height: 100%;
+  background: var(--image);
+  flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.creature-image:before,.book-image:before, .search-image:before {
+  content: '';
+  width: 110%;
+  height: 110%;
+  background: var(--strong);
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: grayscale(1) brightness(0.5);
+  mix-blend-mode: overlay;
+  transition: var(--transition);
+}
+
+.book-image strong {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  color: var(--color-text-100);
+  text-shadow: 1px 1px var(--color-complementary-100);
+  font-family: var(--font-bold);
+  padding: 15px;
+  hyphens: none;
+  font-size: 16px;
+  line-height: 90%;
+  font-weight: 100 !important;
+}
+
+.creature-item:hover .creature-image:before { height: 0%; transition: var(--transition); }
+
+.plant-content, .creature-content, .potion-content, .book-content {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  height: 100%;
+  overflow: auto;
+  padding: 5px;
+  width: 100%;
+}
+
+.plant-title, .creature-title, .potion-title {
+  font-family: var(--font-bold);
+  letter-spacing: .5px;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: -8px;
+  font-weight: normal;
+  color: var(--color-bold-100);
+  text-shadow: 1px 1px 1px var(--mode-back-100);
+}
+
+.plant-tags, .creature-tags, .potion-tags, .book-tags { display: flex; gap: 3px; flex-wrap: wrap; }
+.plant-tags > *:not(:first-child):before, .creature-tags > *:not(:first-child):before, .potion-tags > *:not(:first-child):before { content: ' - '; }
+.plant-description, .creature-description, .potion-description, .plant-cares { text-align: justify; }
+.plant-cares:before { content: 'Cuidados: '; color: var(--mode-back-60); }
+.plant-use:before { content: 'Usos: '; color: var(--mode-back-60); }
+.potion-ingredients:before { content: 'Ingredientes: '; color: var(--mode-back-60); }
+.potion-result:before { content: 'Éxito: '; color: var(--mode-back-60); }
+.book-year:before { content: 'Publicación: '; color: var(--strong); }
+.book-author:before { content: 'Autor: '; color: var(--strong); }
+.book-know:before { content: 'Conocimiento: '; color: var(--strong); }
+.book-exp:before { content: 'Experiencia: '; color: var(--strong); }
+.plant-use, .potion-ingredients { display: flex; flex-flow: column; gap: 2px; }
+.plant-use use:before, .potion-ingredients item:before { font: var(--fa-font-solid) !important; content: "\2d"; margin-right: 2px; }
+.book-results article:before { font: var(--fa-font-solid) !important; content: "\f00d"; margin-right: 2px; color: var(--strong); }
+
+.creature-description, .potion-description, .potion-results step, .book-results article {
+  text-transform: math-auto;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: normal;
+}
+
+.creature-item, .potion-item { --strong: var(--mode-back-60); }
+.potion-content { gap: 10px; }
+.creature-info { margin: 10px 0; }
+.creature-info atri:before { content: 'características: '; color: var(--mode-back-60); }
+.creature-info pv:before { content: ' / '; }
+.creature-info pv:after { content: ' PV'; }
+
+.potion-results cont { counter-reset: part; }
+.potion-results cont strong { color: var(--mode-back-60); counter-increment: part; counter-reset: step; font-size: 20px; font-weight: bolder; font-family: var(--font-complemntary); margin-top: 10px; }
+.potion-results cont strong:after { content: counter(part, decimal-leading-zero); margin-left: 3px; }
+.potion-results cont step { counter-increment: step; }
+.potion-results cont step:before { content: counter(step, decimal-leading-zero) ". "; color: var(--mode-back-60); font-weight: bolder; }
+
+.book-item { height: 180px; }
+.rol-table blockquote, .rol-table dl.codebox, .rol-table .spoiler, .rol-table .hidecode { background: var(--mode-opacity-50) !important; }
+
+/* paleta de colores */
+.table-palettes br, .table-lists br {display: none; }
+.table-palettes, .table-lists { display: flex; flex-wrap: wrap; gap: 5px; counter-rest: list; }
+
+.color-palette {
+  background: var(--mode-back-100);
+  border-radius: 5px;
+  padding: 2px;
+  font: var(--style-link);
+  font-family: roboto-mono, monospace;
+  color: var(--mode-text-100);
+  font-weight: lighter;
+  border: 15px solid var(--cp);
+  flex-basis: fit-content;
+  flex-grow: 1;
+}
+
+.table-lists a, .table-lists span {
+  flex-basis: 100%;
+  flex-grow: 1;
+  background: var(--mode-back-60);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font: var(--style-link);
+  text-transform: uppercase;
+  color: var(--color-text-100) !important;
+  letter-spacing: .3px;
+  counter-increment: list;
+}
+
+.table-lists span { background: var(--mode-opacity-50); color: var(--mode-text-100) !important; }
+.table-lists a:before, .table-lists span:before { content: counter(list, decimal-leading-zero) ". "; }
+
+.file-process span { display: flex; gap: 5px; align-items: center; line-height: 100%; margin-top: -10px; }
+.file-process span:before { font: var(--fa-font-solid); content: "\f058"; font-size: 14px; color: var(--validation-passed); }
+.file-process span.file-pending:before { content: "\f06a"; color: var(--validation-warning); }
+
+/* búsquedas */
+.search-content br { display:none; }
+.search-description br, .search-item article br { display: inherit; }
+.search-content { display: flex; flex-flow: column; gap: 10px; }
+
+.search-header { display: flex; flex-flow: column; align-items: center; margin-top: 20px; }
+.search-header > i { font-size: 64px; color: var(--post-user); opacity: .3; margin-bottom: 25px; }
+.search-title { font-family: var(--font-bold); font-size: 32px; letter-spacing: .5px; line-height: 100%; color: var(--mode-back-60); }
+.search-sub { font: var(--style-link); text-transform: uppercase; }
+.search-item { display: flex; gap: 10px; align-items: start; --strong: var(--post-user); margin: 15px 0; }
+.search-item .search-sub { color: var(--mode-back-60); }
+
+.search-description {
+  max-height: 190px;
+  overflow: auto;
+  padding: 15px;
+  display: block;
+  background: var(--mode-opacity-50);
+  border-radius: 5px;
+}
+
+.search-image { 
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  background: var(--image);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  flex-shrink: 0;
+  outline: 2px solid var(--strong);
+  outline-offset: -2px;
+  border-radius: 5px;
+}
+
+.search-info {
+  height: 220px;
+  overflow: hidden;
+  border-left: 5px solid var(--strong);
+  padding-left: 10px;
+  display: flex;
+  flex-flow: column;
+}
+
+.search-h2 {
+  display: block;
+  font-family: var(--font-bold);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.search-item article {
+  margin-top: 10px;
+  line-height: normal;
+  height: 100%;
+  overflow: auto;
+  padding-right: 5px;
+}
+
+.search-big-image .search-image { height: 220px; }
+.search-icon > i { flex-shrink: 0; font-size: 32px; color: var(--mode-back-60); }
+.search-icon .search-info { height: 150px; }
+.search-small-image .search-image { width: 95px; height: 95px; }
+
+.search-double .search-info { 
+  flex-basis: 200px; 
+  flex-grow: 1; 
+  border: none; 
+  padding: 0;
+  border-right: 5px solid var(--strong);
+  padding-right: 10px;
+  align-items: center; 
+  height: 320px;
+}
+
+.search-double { display: flex; flex-wrap: wrap; gap: 10px; }
+.search-double .search-info:nth-child(odd), .search-double .search-info:last-child { border: none; padding: 0; }
+.search-double .search-info > i { font-size: 32px; color: var(--strong); margin-bottom: 15px; line-height: normal; }
+.search-double .search-info .search-h2, .search-double .search-info .search-sub { text-align: center; }
+.search-info .search-image { width: 100%; height: 100px; margin-bottom: 15px; } 

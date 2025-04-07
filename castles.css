@@ -3718,6 +3718,7 @@ fieldset.submit-buttons { display: flex; align-items: center; justify-content: c
   font-weight: lighter;
   height: 85px;
   overflow: auto;
+  line-height: auto;
   padding-right: 5px;
   flex-shrink: 0;
 }

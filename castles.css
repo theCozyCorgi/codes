@@ -4911,10 +4911,10 @@ userdata[target="multicuentas"] a {
 .action-req req { flex-basis: fit-content; }
 .action-req req:not(:last-child):after { content: ', '; margin-right: 3px; }
 #wiki[target="actions"] #wiki-filters h3[data-target="tipo-options"]:after { content: ' de acciones'; margin-left: 4px; flex-shrink: 0; }
-.wiki-item leve:before { content: 'Leve: '; color: var(--strong); }
-.wiki-item moderado:before { content: 'Moderado: '; color: var(--strong); }
-.wiki-item exitoso:before { content: 'Éxitoso: '; color: var(--strong); }
-.wiki-item critico:before { content: 'Crítico: '; color: var(--strong); }
+leve:before { content: 'Leve: '; color: var(--strong); }
+moderado:before { content: 'Moderado: '; color: var(--strong); }
+exitoso:before { content: 'Éxitoso: '; color: var(--strong); }
+critico:before { content: 'Crítico: '; color: var(--strong); }
 
 [data-conocimientos="adivinación"] { --strong: rgb(83 100 151 / 85%); }
 [data-conocimientos="alquimia"] { --strong: rgb(153 128 95 / 85%); }

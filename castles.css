@@ -2541,7 +2541,7 @@ userdata[target="banner"] {
 }
 
 .profile-admin > * userdata {overflow: auto}
-.profile-admin:not(.box-visible) {display: none; }
+.profile-comments:not(.box-visible), .visible-author:not(.box-visible) {display: none; }
 
 /* 12. DESCRIPCION DE GRUPOS */
 .listgroup-title h2 {color: var(--group-color) !important; }

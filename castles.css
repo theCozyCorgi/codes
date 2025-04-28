@@ -963,6 +963,7 @@ a.forumtitle, a.forumtitle:hover {
 
 .stats-online {flex-flow: column; }
 .stats-since {flex-flow: column; align-items: end !important; }
+.stats-since strong { line-height: 90%; }
 .stats-newest {flex-flow: column; align-items: start !important; margin-top: auto; }
 
 .stats-online > span, .stats-today > span {
@@ -1123,6 +1124,8 @@ a.forumtitle, a.forumtitle:hover {
   margin-left: 30px;
   margin-top: 20px;
   line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .footer-links {
@@ -5045,11 +5048,10 @@ critico:before { content: 'Crítico: '; color: var(--strong); }
 }
 
 .plant-title, .creature-title, .potion-title {
-  font-family: var(--font-bold);
-  letter-spacing: .5px;
-  font-size: 24px;
-  line-height: 24px;
-  margin-bottom: -8px;
+  font-family: var(--font-complemntary);
+  letter-spacing: 1px;
+  font-size: 30px;
+  line-height: normal;
   font-weight: normal;
   color: var(--color-bold-100);
   text-shadow: 1px 1px 1px var(--mode-back-100);

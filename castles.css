@@ -4916,7 +4916,7 @@ userdata[target="multicuentas"] a {
 #wiki[target="actions"] #wiki-filters h3[data-target="tipo-options"]:after { content: ' de acciones'; margin-left: 4px; flex-shrink: 0; }
 leve:before { content: 'Leve: '; color: var(--strong); }
 moderado:before { content: 'Moderado: '; color: var(--strong); }
-exitoso:before { content: 'Éxitoso: '; color: var(--strong); }
+exitoso:before { content: 'Exitoso: '; color: var(--strong); }
 critico:before { content: 'Crítico: '; color: var(--strong); }
 
 [data-conocimientos="adivinación"] { --strong: rgb(83 100 151 / 85%); }

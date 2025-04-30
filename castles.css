@@ -4663,14 +4663,14 @@ userdata[target="rango"] ur:not(:first-child):before { content: ' / '; }
 .last-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 2px;
   flex-grow: 1;
 }
 
 .last-tags > * {
   background: var(--mode-back-60);
   color: var(--color-text-100);
-  margin: 0 2px;
+  margin: 0px;
   border-radius: 3px;
   padding: 5px 10px;
   font: var(--style-link);

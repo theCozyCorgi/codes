@@ -1635,7 +1635,7 @@ a.topictitle, a.topictitle:hover {
 
 ::marker { color: var(--post-user); font-family: var(--font-bold); letter-spacing: 1px; }
 .fa-ul li::marker {opacity: 0 !important; }
-.fa-ul li { display: flex; align-items: start; }
+.fa-ul li { display: block; align-items: start; }
 .fa-ul > br, ol > br {display: none; }
 
 .fa-ul, ol { 

@@ -3508,7 +3508,7 @@ fieldset.submit-buttons { display: flex; align-items: center; justify-content: c
   position: absolute;
   width: 100%;
   height: 100%;
-  backdrop-filter: grayscale(1) brightness(0.5);
+  backdrop-filter: grayscale(1) brightness(0.8);
   background: var(--color-bold-100);
   mix-blend-mode: multiply;
 }

@@ -5128,8 +5128,8 @@ critico:before { content: 'Crítico: '; color: var(--strong); }
 .table-lists span { background: var(--mode-opacity-50); color: var(--mode-text-100) !important; }
 .table-lists a:before, .table-lists span:before { content: counter(list, decimal-leading-zero) ". "; }
 
-.file-process span { display: flex; gap: 5px; align-items: center; line-height: 100%; margin-top: -10px; }
-.file-process span:before { font: var(--fa-font-solid); content: "\f058"; font-size: 14px; color: var(--validation-passed); }
+.file-process span { display: block; gap: 5px; align-items: center; line-height: 100%; margin-top: -10px; }
+.file-process span:before { font: var(--fa-font-solid); content: "\f058"; font-size: 14px; color: var(--validation-passed); margin-right: 5px; }
 .file-process span.file-pending:before { content: "\f06a"; color: var(--validation-warning); }
 
 /* búsquedas */

@@ -4310,7 +4310,7 @@ requisito:before, consequence:before {
 
 /* tablas de rol */
 .rol-table br, .admin-notification br { display: none; }
-.rol-content br, .admin-info br { display: inherit; }
+.rol-content br, .admin-info br { display: inline; }
 
 .rol-table {
   width: min(500px, 100%);

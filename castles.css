@@ -3586,7 +3586,7 @@ fieldset.submit-buttons { display: flex; align-items: center; justify-content: c
   background: var(--mode-opacity-50);
   padding: 5px 10px 5px 5px;
   border-radius: 3px;
-  display: inline;
+  display: flex;
   gap: 5px;
   align-items: center;
 }
@@ -3724,6 +3724,7 @@ fieldset.submit-buttons { display: flex; align-items: center; justify-content: c
   flex-shrink: 0;
 }
 
+.character-extra span { display: inline !important; }
 .v2 .character-front { height: 300px; }
 .v2 .character-header { top: -115px; height: auto; font-size: 72px; line-height: 75%; width: max-content; }
 .v2 .character-content { height: 400px; }

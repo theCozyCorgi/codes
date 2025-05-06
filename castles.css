@@ -3586,7 +3586,7 @@ fieldset.submit-buttons { display: flex; align-items: center; justify-content: c
   background: var(--mode-opacity-50);
   padding: 5px 10px 5px 5px;
   border-radius: 3px;
-  display: flex;
+  display: inline;
   gap: 5px;
   align-items: center;
 }

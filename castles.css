@@ -1548,6 +1548,8 @@ a.topictitle, a.topictitle:hover {
   padding: 5px 10px;
   font-weight: lighter;
   font-size: 11px;
+  display: inline-block;
+  margin: 2px 0;
 }
 
 .main-tooltip {

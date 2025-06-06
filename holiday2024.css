@@ -14,3 +14,306 @@
     url('https://thecozycorgi.github.io/fonts/Cralika.woff') format('woff'),
     url('https://thecozycorgi.github.io/fonts/Cralika.ttf') format('ttf');
 }
+
+/* holiday */
+.holiday {
+  width: fit-content;
+  margin: 10px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 5px 5px 5px;
+  font: 9px/10px expressway;
+}
+
+.holiday > div {
+  width: 250px;
+  height: 150px;
+  background: var(--image) center;
+  background-size: cover;
+}
+
+.holiday span {
+  font: 8px / 10px Expressway;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.holiday > span {
+  position: absolute;
+  width: 75%;
+  text-align: center;
+  letter-spacing: 1px;
+  hyphens: none;
+}
+
+.hate {
+  --holi-strong: #FBDA61;
+  --holi-second: #FF5ACD;
+  background-image: linear-gradient(45deg, var(--holi-strong) 0%, var(--holi-second) 100%);
+}
+
+.hate > div {
+  filter: grayscale(1) brightness(0.5);
+  mix-blend-mode: normal;
+}
+
+.hate > span {
+  background-image: linear-gradient(45deg, var(--holi-strong) 0%, var(--holi-second) 100%);
+  color: transparent;
+  background-clip: text;
+  mix-blend-mode: lighten;
+  font-weight: bold;
+}
+
+.hate strong {
+  display: block;
+  font-family: "aw-conqueror-std-stincilla";
+  font-size: 18px;
+  line-height: normal;
+  background-image: linear-gradient(45deg, var(--holi-strong) 0%, var(--holi-second) 100%);
+  color: transparent !important;
+  background-clip: text;
+  margin-bottom: -4px;
+}
+
+.dragons {
+  --holi-strong: #a8adb5;
+  --holi-second: #8980a4;
+  background-image: linear-gradient(135deg, var(--holi-strong) 0%, var(--holi-second) 100%);
+  flex-direction: column;
+  height: 160px;
+  overflow: hidden;
+  justify-content: start;
+}
+
+.dragons > div {
+  mix-blend-mode: normal;
+  filter: grayscale(1) brightness(0.6);
+  height: 150px;
+  flex-shrink: 0;
+  transition: 1s ease-in-out;
+}
+
+.dragons:hover > div {
+  flex-shrink: 1;
+  transition: 1s ease-in-out;
+}
+
+.dragons span {
+  position: inherit;
+  width: 250px;
+  display: flex;
+  gap: 15px;
+  text-align: end;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 10px;
+  color: var(--holi-second);
+  mix-blend-mode: screen;
+}
+
+.dragons i {
+  color: var(--holi-strong) !important;
+  font-size: 16px;
+}
+
+.broken {
+  --holi-strong: #2e3037;
+  flex-direction: row-reverse;
+  gap: 5px;
+  align-items: start;
+  width: 260px;
+  padding: 0;
+}
+
+.broken > div {
+  width: 100%; 
+  height: 160px;
+  border-bottom: 20px solid var(--holi-strong);
+}
+
+.broken > span {
+  position: relative;
+  min-width: 55px;
+  width: min-content;
+  flex-shrink: 0;
+  text-align: end;
+  color: var(--holi-strong);
+  font: 14px / 100% Bumerang Regular;
+}
+
+.americana {
+  padding: 0;
+  outline: 1px solid #eee;
+  outline-offset: -10px;
+}
+
+.americana > div {
+  background-color: #262626;
+  background-blend-mode: exclusion;
+  width: 260px;
+  height: 160px;
+}
+
+.americana > span {
+  font-family: Cralika;
+  text-transform: lowercase;
+  font-size: 14px;
+  line-height: 100%;
+  hyphens: none;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  display: flex;
+  align-items: center;
+  text-shadow: none;
+  padding: 0 50px;
+  color: transparent;
+  transition: 1s ease-in-out;
+  backdrop-filter: none;
+}
+
+.americana:hover > span {
+  color: #fff;
+  text-shadow: 1px 1px rgba(0 0 0 / 50%);
+  backdrop-filter: grayscale(1);
+  transition: 1s ease-in-out;
+}
+
+.windows {
+  --holi-strong: #a896aa;
+  background: var(--holi-strong);
+  align-items: end;
+}
+
+.windows > span {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  height: 75%;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: exclusion;
+  top: -260px;
+  transition: 1s ease-in-out;
+}
+
+.windows:hover > span {
+  top: 5px;
+  transition: 1s ease-in-out;
+}
+
+.windows strong {
+  background: #423c3c;
+  padding: 5px;
+  border-radius: 3px 5px / 5px 5px 50% 65%;
+  color: var(--holi-strong) !important;
+  font-family: "dreaming-outloud-sans", sans-serif;
+  font-size: 10px;
+  backdrop-filter: grayscale(1);
+}
+
+.windows i {
+  color: var(--holi-strong) !important;
+  font-size: 16px;
+}
+
+.windows > span:before {
+  content: '';
+  height: 100%;
+  width: 1px;
+  background: var(--holi-strong);
+}
+
+.romantics {
+  --holi-strong: #2c90a1;
+  padding: 0;
+  background: var(--holi-strong);
+  outline: 1px solid var(--holi-strong);
+  outline-offset: -5px;
+}
+
+.romantics > div {
+  width: 260px;
+  height: 160px;
+}
+
+.romantics > span {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font: normal 7px / 100% Roboto;
+  text-shadow: 1px 1px var(--holi-strong);
+  min-width: 75px;
+  width: min-content;
+  top: -150%;
+  transition: 1s ease-in-out;
+}
+
+.romantics strong {
+  font: normal 48px / 60% limon-script;
+  text-transform: lowercase;
+  color: var(--holi-strong) !important;
+  text-shadow: 1px 1px rgba(0 0 0 / 50%);
+  mix-blend-mode: difference;
+  letter-spacing: 0;
+}
+
+.romantics:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--holi-strong);
+  backdrop-filter: grayscale(1) brightness(0.5);
+  mix-blend-mode: soft-light;
+  top: 75%; 
+  transition: 1s ease-in-out;
+}
+
+.romantics:hover:before {top: 0; transition: 1s ease-in-out;}
+.romantics:hover > span {top: 0; transition: 1s ease-in-out;}
+
+.champagne {
+  --holi-strong: #8b7246;
+  padding: 0px;
+  background: var(--holi-strong);
+  outline: 2px solid #555;
+  border-radius: 5px;
+}
+
+.champagne > div {
+  width: 260px;
+  height: 160px;
+}
+
+.champagne > span {
+  height: 100%;
+  width: 100%;
+  left: -100%;
+  background: #000;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 50px;
+  text-align: justify;
+  color: var(--holi-strong);
+  mix-blend-mode: difference;  
+  transition: 1s ease-in-out;
+}
+
+.champagne span:before, .champagne span:after {
+  content: '';
+  background: #f2f2f2;
+  width: 10px;
+  aspect-ratio: 1/1;
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+.champagne:hover span {left: 0; transition: 1s ease-in-out;}

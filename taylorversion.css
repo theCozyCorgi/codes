@@ -87,7 +87,6 @@
   position: absolute;
   bottom: 0;
   background: var(--our);
-  mix-blend-mode: darken;
   z-index: 2;
 }
 

@@ -43,6 +43,12 @@
   src: url('https://thecozycorgi.github.io/fonts/Gagisra Rigade.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Racking';
+  src: url('https://thecozycorgi.github.io/fonts/Racking.otf') format('opentype'),
+    url('https://thecozycorgi.github.io/fonts/Racking.ttf') format('ttf');
+}
+
 /* taylor */
 .taylor {
   width: fit-content;

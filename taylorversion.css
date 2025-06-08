@@ -67,6 +67,7 @@
   font: 8px / 10px Roboto;
   color: #fff;
   text-transform: uppercase;
+  word-break: break-word;
 }
 
 .taylor > span {

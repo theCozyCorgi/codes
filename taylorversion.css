@@ -352,7 +352,7 @@
   height: calc(100% - 10px);
   background: var(--hoax);
   backdrop-filter: grayscale(1) brightness(0.5);
-  mix-blend-mode: multiply;
+  mix-blend-mode: overlay;
   transition: .5s;
   box-sizing: border-box !important;
 }

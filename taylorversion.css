@@ -430,6 +430,7 @@
   flex-flow: column;
   letter-spacing: 2px;
   transition: .5s;
+  box-sizing: border-box !important;
 }
 
 .brokenHeart strong {
@@ -458,6 +459,7 @@
   padding-right: 60px;
   right: 280px;
   transition: .5s;
+  box-sizing: border-box !important;
 }
 
 .peter strong {

@@ -237,6 +237,7 @@
   backdrop-filter: grayscale(1) blur(5px);
   mix-blend-mode: exclusion;
   transition: .5s;
+  box-sizing: border-box !important;
 }
 
 .suburban span {
@@ -245,6 +246,7 @@
   padding: 15px;
   height: 50px;
   transition: .5s;
+  box-sizing: border-box !important;
 }
 
 .suburban span > i {
@@ -302,6 +304,7 @@
   background: rgba(0 0 0 / 30%);
   right: 280px;
   transition: .5s;
+  box-sizing: border-box !important;
 }
 
 .missAmericana line {
@@ -345,6 +348,7 @@
   backdrop-filter: grayscale(1) brightness(0.5);
   mix-blend-mode: multiply;
   transition: .5s;
+  box-sizing: border-box !important;
 }
 
 .hoax span {
@@ -391,6 +395,7 @@
   padding: 35px;
   opacity: 0;
   transition: 1.5s;
+  box-sizing: border-box !important;
 }
 
 .kid strong {

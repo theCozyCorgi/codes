@@ -108,9 +108,8 @@
   --belong: #8f8861;
   width: 260px;
   height: 160px;
-  border-top: 5px solid var(--belong);
-  border-bottom: 5px solid var(--belong);
-  padding: 0;
+  bacground: var(--belong);
+  padding: 5px 0;
 }
 
 .belong > div { width: 260px; }

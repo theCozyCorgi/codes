@@ -4368,7 +4368,7 @@ requisito:before, consequence:before {
 }
 
 .rol-data participantes:before { content: 'con: ';  }
-.rol-data .mentiontag { padding: 0; font: var(--style-link); background: transparent !important; font-weight: 500; }
+.rol-data .mentiontag { padding: 0; margin: 0; font: var(--style-link); background: transparent !important; font-weight: 500; }
 .rol-data > i { position: absolute; font-size: 3vw; color: var(--post-user); left: 1vw; }
 .rol-data:has(i) { padding-left: 5vw; }
 .data-bold { background: var(--post-user); padding: 10px 10px 5px; }

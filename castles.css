@@ -707,7 +707,7 @@ nd label > *:before {
 }
 
 a.forumtitle, a.forumtitle:hover {
-  color: var(--forum-color) !important;
+  color: var(--color-text-100) !important;
   font-family: var(--font-bold);
   text-transform: uppercase;
   font-size: 28px;

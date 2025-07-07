@@ -1325,8 +1325,8 @@ fieldset.vf_jumpbox {
 }
 
 a.topictitle, a.topictitle:hover {
-  font-family: var(--font-bold);
-  font-size: 20px;
+  font-family: var(--font-complemntary);
+  font-size: 24px;
   line-height: 110%;
   color: var(--topic-color);
   letter-spacing: 1px;
@@ -1414,7 +1414,7 @@ a.topictitle, a.topictitle:hover {
 
 .post-title {
   color: var(--post-user) !important;
-  font-family: var(--font-bold);
+  font-family: var(--font-complemntary);
   letter-spacing: 1px;
   font-size: 24px;
   font-weight: lighter;
@@ -2603,7 +2603,7 @@ userdata[target="banner"] {
 }
 
 .listgroup-header strong {
-  font-family: var(--font-bold);
+  font-family: var(--font-complemntary);
   letter-spacing: 1px;
   color: var(--mode-text-100);
   font-size: 30px;
@@ -3309,7 +3309,7 @@ fieldset.submit-buttons { display: flex; align-items: center; justify-content: c
 
 .memberlist-name > a {
   counter-reset: item var(--number);
-  font-family: var(--font-bold);
+  font-family: var(--font-complemntary);
   letter-spacing: 1px;
   font-size: 20px;
   line-height: 95%;

@@ -29,7 +29,7 @@
   margin-top: -45px;
   font-weight: bold;
   font-family: var(--font-complemntary);
-  font-size: 24px;
+  font-size: 20px;
   line-height: 65%;
 }
 
@@ -310,8 +310,8 @@ button#theme-toggler:after {
 .board-plot .board-content {flex-flow: column; }
 .board-actual {height: 100%; }
 .board-staff .board-content {flex-wrap: wrap; }
-.staff-item.moderador {width: calc(50% - 3px); height: 45px; font-size: 1.5vw; }
-.staff-item.fundador {font-size: 3vw; }
+.staff-item.moderador {width: calc(50% - 3px); height: 45px; font-size: 1vw; }
+.staff-item.fundador {font-size: 2vw; }
 
 .staff-item, .board-image {
   width: 100%;
@@ -980,7 +980,7 @@ a.forumtitle, a.forumtitle:hover {
 
 .stats h4 {
   font-family: var(--font-complemntary);
-  font-size: 20px;
+  font-size: 16px;
   color: var(--mode-back-60);
   text-align: center;
   line-height: normal;

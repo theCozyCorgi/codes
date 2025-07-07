@@ -4891,7 +4891,7 @@ userdata[target="multicuentas"] a {
 
 .action-title {
   position: relative;
-  font-size: 32px;
+  font-size: 24px;
   font-family: var(--font-complemntary);
   color: var(--strong);
 }
@@ -5051,8 +5051,8 @@ critico:before { content: 'Crítico: '; color: var(--strong); }
 .plant-title, .creature-title, .potion-title {
   font-family: var(--font-complemntary);
   letter-spacing: 1px;
-  font-size: 30px;
-  line-height: normal;
+  font-size: 26px;
+  line-height: 100%;
   font-weight: normal;
   color: var(--color-bold-100);
   text-shadow: 1px 1px 1px var(--mode-back-100);

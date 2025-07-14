@@ -310,7 +310,7 @@ button#theme-toggler:after {
 .board-plot .board-content {flex-flow: column; }
 .board-actual {height: 100%; }
 .board-staff .board-content {flex-wrap: wrap; }
-.staff-item.moderador {width: calc(50% - 3px); height: 45px; font-size: 1vw; }
+.staff-item.moderador {width: calc(50% - 3px); height: 45px; font-size: .9vw; }
 .staff-item.fundador {font-size: 2vw; }
 
 .staff-item, .board-image {

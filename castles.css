@@ -5262,7 +5262,7 @@ critico:before { content: 'Crítico: '; color: var(--strong); }
 .reward-negative label:before { content: counter(list, decimal-leading-zero) ". [Penalidad] " !important; }
 .reward label { flex-grow: 1; cursor: text; text-align: left; }
 .reward > *:not(label) { width: 60px; text-align: center; flex-shrink: 0; }
-.reward > *:not(label):before { content: '+ '; } 
+.reward > *:not(label):not(note):before { content: '+'; } 
 .reward-negative > *:not(label):before { content: '-' !important; } 
 .reward note { flex-basis: 100%; text-align: left; font-weight: lighter; line-height: normal; font-size: 10px; text-transform: math-auto; }
 .reward-header { color: var(--mode-back-60); align-items: center; }

@@ -5254,8 +5254,8 @@ critico:before { content: 'Crítico: '; color: var(--strong); }
 
 /* recompensas */
 .rewards-list br {display: none !important;}
-.rewards-list { display: flex; flex-flow: column; gap: 10px; counter-reset: list; flex-wrap: wrap; }
-.reward { display: flex; gap: 5px; align-items: start; font: var(--style-link); text-transform: uppercase; font-size: 11px; }
+.rewards-list { display: flex; flex-flow: column; gap: 10px; counter-reset: list; }
+.reward { display: flex; gap: 5px; align-items: start; font: var(--style-link); text-transform: uppercase; font-size: 11px; flex-wrap: wrap; }
 .reward:not(.reward-header) { counter-increment: list; }
 .reward:not(.reward-header) label:before { content: counter(list, decimal-leading-zero) ". "; color: var(--color-bold-100); }
 .reward-auto label:before { content: counter(list, decimal-leading-zero) ". [Automático] " !important; }

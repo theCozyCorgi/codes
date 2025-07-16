@@ -5644,7 +5644,7 @@ critico:before { content: 'Crítico: '; color: var(--strong); }
   background: var(--mode-opacity-50); 
 }
 
-.rol-combat cont { 
+.visible-results .rol-combat cont { 
   display: flex; 
   gap: 15px !important; 
   flex-wrap: wrap; 

@@ -5267,9 +5267,9 @@ critico:before { content: 'Crítico: '; color: var(--strong); }
 .reward note { flex-basis: 100%; text-align: left; font-weight: lighter; line-height: normal; font-size: 10px; text-transform: math-auto; }
 .reward-header { color: var(--mode-back-60); align-items: center; }
 .reward-header label { color: var(--mode-back-60); text-align: center; font-family: var(--font-bold); font-size: 20px; letter-spacing: 1px; font-weight: lighter; }
-.reward-header > *:not(label):before { font: var(--fa-font-light); content: "\e3fc"; font-size: 20px; }
-.reward-header arce:before { content: "\e42d"; }
-.reward-header point:before { content: "\f253"; }
+.reward-header > *:not(label):before { font: var(--fa-font-light); content: "\e3fc" !important; font-size: 20px; }
+.reward-header arce:before { content: "\e42d" !important; }
+.reward-header point:before { content: "\f253" !important; }
 
 /* get information */
 .get-information[target="relojes"] { display: flex; align-items: center; justify-content: space-evenly; }

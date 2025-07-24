@@ -1649,12 +1649,12 @@ a.topictitle, a.topictitle:hover {
 }
 
 .fa-li {
-  font-size: 12px;
+  font-size: 7px;
   color: var(--post-user);
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 24px;
+  height: 14px;
 }
 
 .viewtopic-poster {

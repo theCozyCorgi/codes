@@ -2081,6 +2081,7 @@ blockquote, dl.codebox, .spoiler, .hidecode {
   left: -1vw;
   background: var(--post-user);
   border-radius: 0 60% 70% 0 / 0 90% 60% 0;
+  padding: 5px;
 }
 
 .block-header i:before {

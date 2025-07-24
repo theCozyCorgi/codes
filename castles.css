@@ -1451,7 +1451,7 @@ a.topictitle, a.topictitle:hover {
 }
 
 .post-action a:hover {background: var(--mode-back-70); transition: var(--transition); }
-.post-action a {transition: var(--transition);}
+.post-action a {transition: var(--transition); width: 30px; }
 .post-action i { font-size: 12px; }
 
 .poster-user {

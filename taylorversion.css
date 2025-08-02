@@ -253,6 +253,9 @@
   height: 50px;
   transition: .5s;
   box-sizing: border-box !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .suburban span > i {

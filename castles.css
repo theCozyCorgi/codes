@@ -4780,7 +4780,7 @@ job strong { color: var(--color-bold-100); }
 .show-data { display: block; }
 
 .table-record .rol-data { background: transparent; padding: 0; }
-.table-record .rol-title { font-size: 2.5vw; text-align: center; color: var(--color-bold-100); }
+.table-record .rol-title { font-size: 2.5vw; text-align: center; color: var(--color-bold-100); hyphens: none; }
 
 /* tabla lugares de interés */
 .show-places { display: flex; flex-flow: column; gap: 15px; }

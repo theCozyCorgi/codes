@@ -5374,7 +5374,7 @@ critico:before { content: 'Crítico: '; color: var(--strong); }
 .trunk-time, .trunk-relationships, .trunk-pets { flex-flow: column; flex-wrap: wrap !important; }
 .trunk-time-list { display:none; }
 
-.trunk-time:before, .trunk-relationships:before, .trunk-pets:before, .table-knowledge:before { 
+.trunk-time:before, .trunk-relationships:before, .trunk-pets:before, .table-knowledge:before, .character-stats:before { 
   content: 'cronología del personaje' !important; 
   text-align: center;
   font-family: var(--font-bold);

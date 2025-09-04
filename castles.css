@@ -362,6 +362,7 @@ button#theme-toggler:after {
   gap: 10px;
   text-align: right;
   min-width: 50px;
+  align-items: end;
 }
 
 .board-image {height: 100%;}

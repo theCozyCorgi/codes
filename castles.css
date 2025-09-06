@@ -5769,8 +5769,12 @@ critico:before { content: 'Crítico: '; color: var(--strong); }
   background-blend-mode: multiply;
 }
 
-.spread-result.spread-invert[type="runa"] { color: transparent; text-shadow: none; transition: var(--transition); border-radius: 75px 60px 65px 55px; }
-.spread-result.spread-invert[type="runa"]:hover { color: var(--color-neutral-100); text-shadow: 1px 1px var(--mode-back-60); transition: var(--transition); border-radius: 60% 40% 70% 30% / 40% 60% 30% 70%; }
+.action-result .spread-result[type="runa"]:nth-child(4n + 1) { border-radius: 60% 40% 70% 30% / 50% 60% 40% 70%; }
+.action-result .spread-result[type="runa"]:nth-child(4n + 2) { border-radius: 50% 35% 60% 45% / 55% 65% 35% 50%; }
+.action-result .spread-result[type="runa"]:nth-child(4n + 3) { border-radius: 70% 30% 50% 60% / 40% 60% 70% 30%; }
+.action-result .spread-result[type="runa"]:nth-child(4n) { border-radius: 80% 40% 60% 50% / 60% 70% 40% 60%; }
+.spread-result.spread-invert[type="runa"] { color: transparent; text-shadow: none; transition: var(--transition); transform: rotateY(180deg); }
+.spread-result.spread-invert[type="runa"]:hover { color: var(--color-neutral-100); text-shadow: 1px 1px var(--mode-back-60); transition: var(--transition); transform: rotateY(0deg); }
 
 .spread-result[type="arcanos"] img { width: 125px; }
 .spread-result.spread-invert[type="arcanos"] img { transform: rotate(180deg); }

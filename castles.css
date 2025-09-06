@@ -5755,20 +5755,22 @@ critico:before { content: 'Crítico: '; color: var(--strong); }
 .spread-result[type="runa"] {
   background: var(--color-bold-100);
   padding: 15px;
-  color: var(--color-neutral-100);
-  text-shadow: 1px 1px var(--mode-back-60);
-  font-size: 24px;
+  color: var(--color-text-100);
+  font-size: 30px;
   width: 50px;
   height: 70px;
   display: flex;
   align-items: center;
+  border-radius: 60% 40% 70% 30% / 40% 60% 30% 70%;
   justify-content: center;
-  border-radius: 55px 75px 60px 75px;
   box-shadow: 2px 1px var(--mode-back-80);
+  background-image: url(https://i.imgur.com/bBpVCGe.png);
+  background-size: cover;
+  background-blend-mode: multiply;
 }
 
-.spread-result.spread-invert[type="runa"] { color: var(--color-bold-100); text-shadow: none; transition: var(--transition); border-radius: 75px 60px 65px 55px; }
-.spread-result.spread-invert[type="runa"]:hover { color: var(--color-neutral-100); text-shadow: 1px 1px var(--mode-back-60); transition: var(--transition); border-radius: 55px 75px 60px 75px; }
+.spread-result.spread-invert[type="runa"] { color: transparent; text-shadow: none; transition: var(--transition); border-radius: 75px 60px 65px 55px; }
+.spread-result.spread-invert[type="runa"]:hover { color: var(--color-neutral-100); text-shadow: 1px 1px var(--mode-back-60); transition: var(--transition); border-radius: 60% 40% 70% 30% / 40% 60% 30% 70%; }
 
 .spread-result[type="arcanos"] img { width: 125px; }
 .spread-result.spread-invert[type="arcanos"] img { transform: rotate(180deg); }

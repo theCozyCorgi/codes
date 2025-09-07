@@ -5774,7 +5774,7 @@ critico:before { content: 'Crítico: '; color: var(--strong); }
 .action-result .spread-result[type="runa"]:nth-child(4n + 3) { border-radius: 70% 30% 50% 60% / 40% 60% 70% 30%; }
 .action-result .spread-result[type="runa"]:nth-child(4n) { border-radius: 80% 40% 60% 50% / 60% 70% 40% 60%; }
 .spread-result.spread-invert[type="runa"] { color: transparent; text-shadow: none; transition: var(--transition); transform: rotateY(180deg); transform-style: preserve-3d; }
-.spread-result.spread-invert[type="runa"]:hover { transition: var(--transition); transform: rotateY(0deg); }
+.spread-result.spread-invert[type="runa"]:hover { transition: var(--transition); transform: rotateY(0deg); color: var(--color-text-100); }
 
 .spread-result[type="arcanos"] img { width: 125px; }
 .spread-result.spread-invert[type="arcanos"] img { transform: rotate(180deg); }

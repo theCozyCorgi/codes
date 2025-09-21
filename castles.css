@@ -4962,6 +4962,7 @@ critico:before { content: 'Crítico: '; color: var(--strong); }
 
 .show-results line {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
   background: var(--strong);

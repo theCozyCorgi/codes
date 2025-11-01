@@ -5390,7 +5390,7 @@ critico:before { content: 'Crítico: '; color: var(--strong); }
   text-transform: uppercase;
 }
 
-.character-stats:before { content: "Estadísticas del Personaje" !important; }
+.character-stats:before { display: none !important; }
 
 .trunk-content { 
   flex-basis: 100%; 

@@ -49,6 +49,11 @@
     url('https://thecozycorgi.github.io/fonts/Racking.ttf') format('ttf');
 }
 
+@font-face {
+  font-family: 'Cabinest';
+  src: url('https://thecozycorgi.github.io/fonts/Cabinest.otf') format('opentype');
+}
+
 /* taylor */
 .taylor {
   width: fit-content;
@@ -474,4 +479,51 @@
   text-shadow: 1px 1px 3px #000;
   letter-spacing: 0;
   text-transform: lowercase;
+}
+
+.hermes {
+  --hermes: #172321;
+  margin: 10px auto;
+  position: relative;
+  border: 5px solid var(--hermes);
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.hermes span {
+  height: 100%;
+  position: absolute;
+  text-transform: uppercase;
+  color: var(--hermes);
+  padding: 30px 65px;
+  backdrop-filter: contrast(0.5);
+  text-align: right;
+  font-family: roboto;
+  font-size: 10px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  line-height: 10px;
+  font-weight: bold;
+}
+
+.hermes strong {
+  font-family: Cabinest;
+  font-size: 28px;
+  display: block;
+  text-align: right;
+  line-height: 23px;
+  color: var(--hermes);
+}
+
+.hermes em {
+  font-style: normal;
+  color: #fff;
+  display: block;
+  text-align: left;
+  line-height: 10px;
+  margin-left: 5px;
+  font-weight: normal;
 }

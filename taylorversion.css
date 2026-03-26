@@ -507,6 +507,13 @@
   justify-content: center;
   line-height: 10px;
   font-weight: bold;
+  opacity: 0;
+  transition: .5s;
+}
+
+.hermes:hover span {
+  opacity: 1;
+  transition: .5s;
 }
 
 .hermes strong {

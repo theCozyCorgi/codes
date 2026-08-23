@@ -1,0 +1,293 @@
+@font-face {
+  font-family: 'Mourgen';
+  src: url('https://thecozycorgi.github.io/fonts/MOURGEN.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Sagite Italic';
+  src: url('https://thecozycorgi.github.io/fonts/Sagite Italic.otf') format('opentype'),
+    url('https://thecozycorgi.github.io/fonts/Sagite Italic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Treifany Bold';
+  src: url('https://thecozycorgi.github.io/fonts/Treifany Bold.otf') format('opentype'),
+    url('https://thecozycorgi.github.io/fonts/Treifany Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Stand For Honour';
+  src: url('https://thecozycorgi.github.io/fonts/Stand For Honour.otf') format('opentype'),
+    url('https://thecozycorgi.github.io/fonts/Stand For Honour.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Goldine';
+  src: url('https://thecozycorgi.github.io/fonts/Goldine.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Wisdom';
+  src: url('https://thecozycorgi.github.io/fonts/Wisdom.otf') format('opentype');
+}
+
+/* firmas six of crows */
+.crow {
+  width: fit-content;
+  margin: 10px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.crow > div {
+  width: 250px;
+  height: 150px;
+  background: var(--image) center;
+  background-size: cover;
+}
+
+.crow span {
+  font: 8px / 10px Roboto;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  hyphens: none;
+}
+
+/* kaz */
+.kaz {
+  --kaz: #14140f;
+  background: var(--kaz);
+}
+
+.kaz > div {
+  filter: grayscale(1) brightness(0.4);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 85% 100%, 0 100%);
+}
+
+.kaz span {
+  position: absolute;
+  width: 80%;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.kaz strong {
+  font-family: 'Mourgen';
+  font-size: 20px;
+  font-weight: normal;
+  color: #fff !important;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px var(--kaz);
+}
+
+.kaz:hover span {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+/* inej */
+.inej {
+  --inej: #1b1f3b;
+  background: var(--inej);
+}
+
+.inej > div {
+  mix-blend-mode: luminosity;
+}
+
+.inej:before {
+  content: '';
+  position: absolute;
+  width: 140%;
+  height: 2px;
+  background: #fff;
+  transform: rotate(-25deg);
+  top: 50%;
+  left: -20%;
+  opacity: .4;
+  transition: 1s ease-in-out;
+}
+
+.inej span {
+  position: absolute;
+  width: 75%;
+  color: #fff;
+  opacity: 0;
+  transition: 1s ease-in-out .2s;
+}
+
+.inej strong {
+  font-family: 'Sagite Italic';
+  font-size: 22px;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--inej);
+}
+
+.inej:hover span {
+  opacity: 1;
+  transition: 1s ease-in-out .2s;
+}
+
+.inej:hover:before {
+  width: 100%;
+  left: 0;
+  opacity: .8;
+  transition: 1s ease-in-out;
+}
+
+/* nina */
+.nina {
+  --nina: #a13d43;
+  background: var(--nina);
+  border-radius: 12px;
+}
+
+.nina > div {
+  border-radius: 8px;
+  mix-blend-mode: multiply;
+}
+
+.nina span {
+  position: absolute;
+  width: 75%;
+  color: #fff;
+  bottom: -100px;
+  transition: 1s ease-in-out;
+}
+
+.nina strong {
+  font-family: 'Treifany Bold';
+  font-size: 18px;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--nina);
+}
+
+.nina:hover span {
+  bottom: 5px;
+  transition: 1s ease-in-out;
+}
+
+/* matthias */
+.matthias {
+  --matthias: #7a94a3;
+  background: var(--matthias);
+}
+
+.matthias > div {
+  filter: grayscale(1) brightness(0.7);
+}
+
+.matthias:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--matthias);
+  backdrop-filter: brightness(1.2) blur(2px);
+  mix-blend-mode: overlay;
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.matthias span {
+  position: absolute;
+  width: 75%;
+  color: #fff;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.matthias strong {
+  font-family: 'Stand For Honour';
+  font-size: 16px;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--matthias);
+}
+
+.matthias:hover:before {
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.matthias:hover span {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+/* jesper */
+.jesper {
+  --jesper: #af8130;
+  background: #222;
+}
+
+.jesper:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(transparent, var(--jesper) 70%);
+  mix-blend-mode: color-dodge;
+  transform: rotate(0deg);
+  transition: 1s ease-in-out;
+}
+
+.jesper:hover:before {
+  transform: rotate(180deg);
+  transition: 1s ease-in-out;
+}
+
+.jesper span {
+  position: absolute;
+  width: 75%;
+  color: #fff;
+}
+
+.jesper strong {
+  font-family: 'Goldine';
+  font-size: 22px;
+  font-weight: normal;
+  color: var(--jesper) !important;
+  text-shadow: 1px 1px #fff;
+}
+
+/* wylan */
+.wylan {
+  --wylan: #8a9a6b;
+  background: var(--wylan);
+}
+
+.wylan > div {
+  filter: grayscale(.6) brightness(.9);
+}
+
+.wylan span {
+  position: absolute;
+  width: 70%;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 1s ease-in-out;
+}
+
+.wylan strong {
+  font-family: 'Wisdom';
+  font-size: 18px;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--wylan);
+}
+
+.wylan:hover span {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s ease-in-out;
+}

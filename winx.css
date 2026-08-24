@@ -156,6 +156,7 @@
   letter-spacing: 2px;
   color: #fff !important;
   text-shadow: 2px 2px var(--bloom-dark);
+  text-transform: lowercase;
 }
 
 .bloom em {
@@ -248,10 +249,10 @@
 }
 
 .stella em {
-  font-family: 'FancyGlow';
+  font-family: 'Arial';
   font-style: normal;
-  font-size: 12px;
-  line-height: 140%;
+  font-size: 9px;
+  line-height: 110%;
   background: linear-gradient(90deg, #fff, var(--stella-sun), #fff);
   background-size: 200% auto;
   -webkit-background-clip: text;

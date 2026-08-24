@@ -51,8 +51,8 @@
 }
 
 @font-face {
-  font-family: 'Sisterhood';
-  src: url('https://thecozycorgi.github.io/fonts/Sisterhood.ttf') format('ttf');
+  font-family: 'Stanger';
+  src: url('https://thecozycorgi.github.io/fonts/Stanger.otf') format('opentype');
 }
 
 @font-face {
@@ -426,7 +426,7 @@
   background: radial-gradient(circle, #fff, var(--gandalf) 60%, transparent 70%);
   opacity: 0;
   transform: scale(0.5);
-  mix-blend-mode: color-dodge;
+  mix-blend-mode: overlay;
   transition: 1s ease-in-out;
 }
 
@@ -497,6 +497,7 @@
   transition: 1s ease-in-out;
   display: flex;
   flex-flow: column;
+  align-items: end;
 }
 
 .boromir strong {
@@ -506,6 +507,7 @@
   font-weight: normal;
   color: #fff !important;
   text-shadow: 1px 1px var(--boromir);
+  text-align: right;
 }
 
 .boromir:hover span {
@@ -586,7 +588,7 @@
 }
 
 .eowyn strong {
-  font-family: 'Sisterhood';
+  font-family: 'Stanger';
   font-size: 20px;
   line-height: 100%;
   font-weight: normal;
@@ -636,6 +638,7 @@
   font-weight: normal;
   color: #fff !important;
   text-shadow: 1px 1px var(--bilbo);
+  text-transform: lowercase;
 }
 
 .bilbo:hover span {

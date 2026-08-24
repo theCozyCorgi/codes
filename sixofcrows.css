@@ -167,6 +167,7 @@
   transition: 1s ease-in-out;
   display: flex;
   flex-flow: column;
+  gap: 5px;
 }
 
 .nina strong {

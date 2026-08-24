@@ -1,0 +1,587 @@
+@font-face {
+  font-family: 'BasicBold';
+  src: url('https://thecozycorgi.github.io/fonts/BasicBitch_Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Roadblock';
+  src: url('https://thecozycorgi.github.io/fonts/Roadblock-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Brilliant Signature';
+  src: url('https://thecozycorgi.github.io/fonts/Brilliant Signature.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Orchestra Regular';
+  src: url('https://thecozycorgi.github.io/fonts/Orchestra Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Grinjake';
+  src: url('https://thecozycorgi.github.io/fonts/Grinjake.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Casley';
+  src: url('https://thecozycorgi.github.io/fonts/Casley.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Groth';
+  src: url('https://thecozycorgi.github.io/fonts/Groth.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'MilkyWalky';
+  src: url('https://thecozycorgi.github.io/fonts/MilkyWalky-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Chesalova';
+  src: url('https://thecozycorgi.github.io/fonts/Chesalova-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Black Bones';
+  src: url('https://thecozycorgi.github.io/fonts/Black Bones.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'OMANY';
+  src: url('https://thecozycorgi.github.io/fonts/OMANY.otf') format('opentype');
+}
+
+/* firmas kahan */
+.kahan {
+  width: fit-content;
+  margin: 10px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 5px solid #000;
+}
+
+.kahan > div {
+  width: 250px;
+  height: 150px;
+  background: var(--image) center;
+  background-size: cover;
+}
+
+.kahan span {
+  font: 8px / 10px Roboto;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  hyphens: none;
+  display: flex;
+  flex-flow: column;
+}
+
+/* everywhere, everything */
+.everywhere {
+  --everywhere: #a78bc9;
+  border-color: #111;
+  background: #f5f1ea;
+}
+
+.everywhere > div {
+  filter: grayscale(1) brightness(0.95) contrast(1.05);
+}
+
+.everywhere:before {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(255, 255, 255, .8);
+  pointer-events: none;
+}
+
+.everywhere span {
+  position: absolute;
+  width: 78%;
+  gap: 6px;
+}
+
+.everywhere strong {
+  font-family: 'BasicBold';
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px #111;
+}
+
+.everywhere em {
+  font-style: normal;
+  font-size: 7px;
+  letter-spacing: 2px;
+  background: var(--everywhere);
+  color: #fff !important;
+  padding: 4px 8px;
+  align-self: center;
+  transform: translateX(40px);
+  opacity: 0;
+  transition: .6s ease-in-out;
+}
+
+.everywhere:hover em {
+  transform: translateX(0);
+  opacity: 1;
+  transition: .6s ease-in-out;
+}
+
+/* stick season */
+.stickseason {
+  --stick: #4a4a3e;
+  border-color: #000;
+  background: #111;
+}
+
+.stickseason > div {
+  filter: grayscale(1) brightness(0.5);
+}
+
+.stickseason:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(var(--stick) 1px, transparent 1px), linear-gradient(90deg, var(--stick) 1px, transparent 1px);
+  background-size: 50px 37.5px;
+  opacity: .5;
+}
+
+.stickseason:after {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 1px;
+  background: #fff;
+  top: 32%;
+  left: -25%;
+  transform: rotate(-15deg);
+  opacity: .5;
+}
+
+.stickseason span {
+  position: absolute;
+  width: 75%;
+  gap: 2px;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.stickseason:hover span {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.stickseason strong {
+  font-family: 'Roadblock';
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--stick);
+}
+
+.stickseason em {
+  font-family: 'Brilliant Signature';
+  font-style: normal;
+  text-transform: lowercase;
+  font-size: 22px;
+  line-height: 100%;
+  color: #cdc6b2 !important;
+}
+
+/* homesick */
+.homesick {
+  border-color: #000;
+  background: #000;
+}
+
+.homesick > div {
+  filter: grayscale(1) contrast(1.1) brightness(0.85);
+}
+
+.homesick:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 32%;
+  top: 39%;
+  background: #000;
+}
+
+.homesick span {
+  position: absolute;
+  width: calc(100% - 20px);
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  top: 39%;
+  height: 32%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.homesick em {
+  font-style: normal;
+  text-align: left;
+  font-size: 7px;
+  letter-spacing: 1px;
+  width: 45%;
+}
+
+.homesick strong {
+  font-family: 'Orchestra Regular';
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  text-align: right;
+  width: 55%;
+  color: #fff !important;
+}
+
+/* dial drunk */
+.dialdrunk {
+  --dial: #9c2b2b;
+  border-color: #000;
+  background: #1a1a1a;
+}
+
+.dialdrunk > div {
+  filter: grayscale(1) brightness(0.75);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+  transition: 1s ease-in-out;
+}
+
+.dialdrunk:hover > div {
+  filter: grayscale(0.3) brightness(0.85);
+  transition: 1s ease-in-out;
+}
+
+.dialdrunk:before {
+  content: '';
+  position: absolute;
+  width: 140%;
+  height: 2px;
+  background: #fff;
+  top: 55%;
+  left: -20%;
+  transform: rotate(-18deg);
+  opacity: .5;
+}
+
+.dialdrunk:after {
+  content: '';
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--dial);
+  box-shadow: 0 0 8px var(--dial);
+}
+
+.dialdrunk span {
+  position: absolute;
+  width: 75%;
+  bottom: -100px;
+  transition: 1s ease-in-out;
+}
+
+.dialdrunk:hover span {
+  bottom: 5px;
+  transition: 1s ease-in-out;
+}
+
+.dialdrunk strong {
+  font-family: 'Grinjake';
+  font-size: 20px;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--dial);
+}
+
+.dialdrunk em {
+  font-style: normal;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: var(--dial) !important;
+  margin-top: 4px;
+}
+
+/* the view between villages */
+.villages {
+  --villages: #7a6a55;
+  border-color: #000;
+  padding: 0;
+}
+
+.villages > div {
+  width: 125px;
+}
+
+.villages > div:nth-child(1) {
+  filter: sepia(0.4) brightness(0.9);
+}
+
+.villages > div:nth-child(2) {
+  filter: grayscale(1) brightness(0.55);
+}
+
+.villages:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #fff;
+  opacity: .5;
+}
+
+.villages span {
+  position: absolute;
+  width: 80%;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.villages:hover span {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.villages strong {
+  font-family: 'Casley';
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px #000;
+}
+
+.villages em {
+  font-style: normal;
+  font-size: 7px;
+  letter-spacing: 1px;
+  color: var(--villages) !important;
+  background: #fff;
+  padding: 2px 6px;
+  margin-top: 4px;
+  align-self: center;
+}
+
+/* all my love */
+.allmylove {
+  --allmylove: #7a2e2e;
+  border-color: #000;
+  background: #b7b7b2;
+}
+
+.allmylove > div {
+  filter: grayscale(0.3) sepia(0.15) contrast(1.1);
+  mix-blend-mode: multiply;
+}
+
+.allmylove b.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  writing-mode: vertical-rl;
+  font: 7px / 10px Roboto;
+  font-weight: normal;
+  letter-spacing: 6px;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: .8;
+}
+
+.allmylove span {
+  position: absolute;
+  width: 70%;
+}
+
+.allmylove strong {
+  font-family: 'Groth';
+  font-size: 26px;
+  line-height: 90%;
+  font-weight: normal;
+  text-transform: lowercase;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--allmylove);
+}
+
+/* new perspective */
+.newperspective {
+  border-color: #000;
+  background: #ddd;
+}
+
+.newperspective > div {
+  filter: grayscale(1) contrast(1.1);
+}
+
+.newperspective span {
+  position: absolute;
+  width: 75%;
+}
+
+.newperspective strong {
+  --newperspective: #6a5acd;
+  font-family: 'MilkyWalky';
+  font-size: 20px;
+  line-height: 110%;
+  font-weight: normal;
+  color: var(--newperspective) !important;
+  text-shadow: 2px 2px #fff;
+  display: inline-block;
+  transform: rotate(-3deg);
+  transition: .5s ease-in-out;
+}
+
+.newperspective:hover strong {
+  transform: rotate(3deg) scale(1.05);
+  transition: .5s ease-in-out;
+}
+
+/* she calls me back */
+.shecallsmeback {
+  --shecalls: #b23a6b;
+  border-color: #000;
+}
+
+.shecallsmeback > div {
+  filter: grayscale(0.6) brightness(0.7);
+  mix-blend-mode: luminosity;
+}
+
+.shecallsmeback:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--shecalls);
+  mix-blend-mode: color;
+  opacity: .5;
+  transition: 1s ease-in-out;
+}
+
+.shecallsmeback:hover:before {
+  opacity: .8;
+  transition: 1s ease-in-out;
+}
+
+.shecallsmeback span {
+  position: absolute;
+  width: 75%;
+}
+
+.shecallsmeback strong {
+  font-family: 'Chesalova';
+  font-size: 22px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 2px 2px var(--shecalls);
+}
+
+/* northern attitude */
+.northernattitude {
+  --northern: #8a1414;
+  border-color: #000;
+  background: #0d0d0d;
+}
+
+.northernattitude > div {
+  filter: grayscale(1) brightness(0.5) contrast(1.2);
+}
+
+.northernattitude span {
+  position: absolute;
+  width: 80%;
+  opacity: 0;
+  transform: scale(1.1);
+  transition: .4s ease-in-out;
+}
+
+.northernattitude:hover span {
+  opacity: 1;
+  transform: scale(1);
+  transition: .4s ease-in-out;
+}
+
+.northernattitude strong {
+  font-family: 'Black Bones';
+  font-size: 24px;
+  line-height: 100%;
+  font-weight: normal;
+  color: var(--northern) !important;
+  text-shadow: 2px 0 #430a0a, -2px 0 #c94040;
+}
+
+.northernattitude em {
+  font-style: normal;
+  font-size: 7px;
+  letter-spacing: 1px;
+  color: #ccc !important;
+  margin-top: 4px;
+}
+
+/* mess */
+.mess {
+  --mess: #6a3fa0;
+  border-color: #000;
+}
+
+.mess > div {
+  filter: grayscale(1) contrast(1.1);
+  clip-path: polygon(0 0, 60% 0, 60% 100%, 0 100%);
+}
+
+.mess:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  background: var(--mess);
+  mix-blend-mode: color;
+  opacity: .7;
+}
+
+.mess strong {
+  font-family: 'OMANY';
+  font-size: 54px;
+  position: absolute;
+  left: 8px;
+  top: -8px;
+  font-weight: normal;
+  color: var(--mess) !important;
+  opacity: .9;
+}
+
+.mess span {
+  position: absolute;
+  width: 60%;
+  right: 8px;
+  left: auto;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.mess em {
+  font-style: italic;
+  font-family: Georgia, serif;
+  font-size: 7px;
+  line-height: 130%;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #fff !important;
+}

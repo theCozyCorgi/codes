@@ -273,6 +273,7 @@
   color: #fff;
   display: flex;
   flex-flow: column;
+  gap: 5px;
 }
 
 .jesper strong {

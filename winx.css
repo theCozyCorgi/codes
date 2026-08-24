@@ -536,7 +536,6 @@
   --tecna-glow: #1fd6c9;
   background: #0e0b1a;
   border: 1px solid var(--tecna-glow);
-  animation: tecna-pulse 1.6s ease-in-out infinite;
 }
 
 .tecna>div {

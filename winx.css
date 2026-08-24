@@ -412,10 +412,10 @@
 }
 
 .musa em {
-  font-family: 'Talks';
+  font-family: Arial;
   font-style: normal;
-  font-size: 11px;
-  line-height: 140%;
+  font-size: 9px;
+  line-height: 110%;
   color: #ffd6ec !important;
   margin-top: 4px;
 }

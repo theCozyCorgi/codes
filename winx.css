@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: 'Aurantiaca';
-  src: url('https://thecozycorgi.github.io/fonts/Aurantiaca.ttf') format('ttf');
+  font-family: 'Fineta';
+  src: url('https://thecozycorgi.github.io/fonts/Fineta.ttf') format('ttf');
 }
 
 @font-face {
@@ -105,12 +105,12 @@
 }
 
 .bloom>div {
-  filter: grayscale(1) brightness(0.4);
+  filter: grayscale(0) brightness(0.9) saturate(1.2);
   transition: 1.2s ease-in-out;
 }
 
 .bloom:hover>div {
-  filter: grayscale(0) brightness(0.75) saturate(1.3);
+  filter: grayscale(1) brightness(0.35);
   transition: 1.2s ease-in-out;
 }
 
@@ -121,12 +121,12 @@
   height: 100%;
   background: linear-gradient(160deg, var(--bloom), var(--bloom-dark));
   mix-blend-mode: color-dodge;
-  opacity: 0;
+  opacity: .85;
   transition: 1.2s ease-in-out;
 }
 
 .bloom:hover:before {
-  opacity: .85;
+  opacity: 0;
   transition: 1.2s ease-in-out;
 }
 
@@ -160,7 +160,7 @@
 }
 
 .bloom em {
-  font-family: 'Aurantiaca';
+  font-family: 'Fineta';
   font-style: normal;
   font-size: 10px;
   line-height: 130%;
@@ -442,6 +442,9 @@
 .flora>div {
   filter: grayscale(0.4) brightness(0.8);
   transform-origin: bottom center;
+}
+
+.flora:hover>div {
   animation: flora-sway 4s ease-in-out infinite;
 }
 

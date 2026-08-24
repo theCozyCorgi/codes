@@ -76,7 +76,7 @@
   padding: 5px;
 }
 
-.winx > div {
+.winx>div {
   width: 250px;
   height: 150px;
   background: var(--image) center;
@@ -101,8 +101,15 @@
 
 /* bloom */
 @keyframes bloom-glow {
-  0%, 100% { box-shadow: 0 0 0 var(--bloom-dark); }
-  50% { box-shadow: 0 0 16px var(--bloom-dark); }
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 var(--bloom-dark);
+  }
+
+  50% {
+    box-shadow: 0 0 16px var(--bloom-dark);
+  }
 }
 
 .bloom {
@@ -112,12 +119,12 @@
   animation: bloom-glow 2.5s ease-in-out infinite;
 }
 
-.bloom > div {
+.bloom>div {
   filter: grayscale(1) brightness(0.4);
   transition: 1.2s ease-in-out;
 }
 
-.bloom:hover > div {
+.bloom:hover>div {
   filter: grayscale(0) brightness(0.75) saturate(1.3);
   transition: 1.2s ease-in-out;
 }
@@ -177,13 +184,23 @@
 
 /* stella */
 @keyframes stella-rays {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes stella-shimmer {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 200% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 200% 50%;
+  }
 }
 
 .stella {
@@ -208,12 +225,12 @@
   mix-blend-mode: overlay;
 }
 
-.stella > div {
+.stella>div {
   filter: grayscale(0.3) brightness(1) sepia(0.1);
   transition: 1s ease-in-out;
 }
 
-.stella:hover > div {
+.stella:hover>div {
   filter: grayscale(0.6) brightness(0.7) sepia(0);
   transition: 1s ease-in-out;
 }
@@ -261,9 +278,17 @@
 
 /* alisha */
 @keyframes wave-ripple {
-  0% { clip-path: polygon(0 20%, 15% 15%, 30% 20%, 45% 15%, 60% 20%, 75% 15%, 90% 20%, 100% 15%, 100% 100%, 0 100%); }
-  50% { clip-path: polygon(0 15%, 15% 20%, 30% 15%, 45% 20%, 60% 15%, 75% 20%, 90% 15%, 100% 20%, 100% 100%, 0 100%); }
-  100% { clip-path: polygon(0 20%, 15% 15%, 30% 20%, 45% 15%, 60% 20%, 75% 15%, 90% 20%, 100% 15%, 100% 100%, 0 100%); }
+  0% {
+    clip-path: polygon(0 20%, 15% 15%, 30% 20%, 45% 15%, 60% 20%, 75% 15%, 90% 20%, 100% 15%, 100% 100%, 0 100%);
+  }
+
+  50% {
+    clip-path: polygon(0 15%, 15% 20%, 30% 15%, 45% 20%, 60% 15%, 75% 20%, 90% 15%, 100% 20%, 100% 100%, 0 100%);
+  }
+
+  100% {
+    clip-path: polygon(0 20%, 15% 15%, 30% 20%, 45% 15%, 60% 20%, 75% 15%, 90% 20%, 100% 15%, 100% 100%, 0 100%);
+  }
 }
 
 .alisha {
@@ -272,12 +297,12 @@
   background: var(--alisha-deep);
 }
 
-.alisha > div {
+.alisha>div {
   filter: grayscale(0.5) brightness(0.7) hue-rotate(-10deg);
   transition: 1s ease-in-out;
 }
 
-.alisha:hover > div {
+.alisha:hover>div {
   filter: grayscale(0.1) brightness(0.9) hue-rotate(0deg);
   transition: 1s ease-in-out;
 }
@@ -320,16 +345,23 @@
 .alisha em {
   font-family: 'Elista';
   font-style: normal;
-  font-size: 10px;
-  line-height: 130%;
+  font-size: 9px;
+  line-height: 130% 11.7px;
   color: #bfe6f0 !important;
-  margin-top: 4px;
+  margin-top: -4px;
 }
 
 /* musa */
 @keyframes musa-eq {
-  0%, 100% { height: 6px; }
-  50% { height: 18px; }
+
+  0%,
+  100% {
+    height: 6px;
+  }
+
+  50% {
+    height: 18px;
+  }
 }
 
 .musa {
@@ -338,9 +370,9 @@
   background: linear-gradient(45deg, var(--musa), var(--musa-light));
 }
 
-.musa > div {
+.musa>div {
   filter: grayscale(0.6) brightness(0.7);
-  mix-blend-mode: luminosity;
+  mix-blend-mode: normal;
 }
 
 .musa i.bar {
@@ -355,12 +387,12 @@
   z-index: 2;
 }
 
-.musa i.bar + i.bar {
+.musa i.bar+i.bar {
   left: 18px;
   animation-delay: .15s;
 }
 
-.musa i.bar + i.bar + i.bar {
+.musa i.bar+i.bar+i.bar {
   left: 24px;
   animation-delay: .3s;
 }
@@ -404,8 +436,15 @@
 
 /* flora */
 @keyframes flora-sway {
-  0%, 100% { transform: rotate(-1.5deg); }
-  50% { transform: rotate(1.5deg); }
+
+  0%,
+  100% {
+    transform: rotate(-1.5deg);
+  }
+
+  50% {
+    transform: rotate(1.5deg);
+  }
 }
 
 .flora {
@@ -414,7 +453,7 @@
   background: var(--flora);
 }
 
-.flora > div {
+.flora>div {
   filter: grayscale(0.4) brightness(0.8);
   transform-origin: bottom center;
   animation: flora-sway 4s ease-in-out infinite;
@@ -457,21 +496,54 @@
 
 /* tecna */
 @keyframes tecna-scan {
-  0% { transform: translateY(-100%); }
-  100% { transform: translateY(400%); }
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(400%);
+  }
 }
 
 @keyframes tecna-glitch {
-  0%, 100% { clip-path: inset(0 0 0 0); transform: translate(0, 0); }
-  20% { clip-path: inset(10% 0 60% 0); transform: translate(-2px, 0); }
-  40% { clip-path: inset(60% 0 5% 0); transform: translate(2px, 0); }
-  60% { clip-path: inset(30% 0 40% 0); transform: translate(-1px, 0); }
-  80% { clip-path: inset(5% 0 70% 0); transform: translate(1px, 0); }
+
+  0%,
+  100% {
+    clip-path: inset(0 0 0 0);
+    transform: translate(0, 0);
+  }
+
+  20% {
+    clip-path: inset(10% 0 60% 0);
+    transform: translate(-2px, 0);
+  }
+
+  40% {
+    clip-path: inset(60% 0 5% 0);
+    transform: translate(2px, 0);
+  }
+
+  60% {
+    clip-path: inset(30% 0 40% 0);
+    transform: translate(-1px, 0);
+  }
+
+  80% {
+    clip-path: inset(5% 0 70% 0);
+    transform: translate(1px, 0);
+  }
 }
 
 @keyframes tecna-pulse {
-  0%, 100% { box-shadow: 0 0 4px var(--tecna-glow); }
-  50% { box-shadow: 0 0 14px var(--tecna-glow); }
+
+  0%,
+  100% {
+    box-shadow: 0 0 4px var(--tecna-glow);
+  }
+
+  50% {
+    box-shadow: 0 0 14px var(--tecna-glow);
+  }
 }
 
 .tecna {
@@ -482,7 +554,7 @@
   animation: tecna-pulse 1.6s ease-in-out infinite;
 }
 
-.tecna > div {
+.tecna>div {
   filter: grayscale(1) brightness(0.6) contrast(1.2) hue-rotate(200deg);
 }
 
@@ -501,6 +573,7 @@
   width: 75%;
   opacity: 0;
   transition: .4s ease-in-out;
+  gap: 10px;
 }
 
 .tecna:hover span {
@@ -529,5 +602,5 @@
   font-size: 10px;
   line-height: 130%;
   color: #cbb8ff !important;
-  margin-top: 4px;
+  margin-top: -10px;
 }

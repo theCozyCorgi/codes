@@ -43,7 +43,7 @@
   padding: 5px;
 }
 
-.crow > div {
+.crow>div {
   width: 250px;
   height: 150px;
   background: var(--image) center;
@@ -65,7 +65,7 @@
   background: var(--kaz);
 }
 
-.kaz > div {
+.kaz>div {
   filter: grayscale(1) brightness(0.4);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 85% 100%, 0 100%);
 }
@@ -98,7 +98,7 @@
   background: var(--inej);
 }
 
-.inej > div {
+.inej>div {
   mix-blend-mode: luminosity;
 }
 
@@ -121,6 +121,8 @@
   color: #fff;
   opacity: 0;
   transition: 1s ease-in-out .2s;
+  display: flex;
+  flex-flow: column;
 }
 
 .inej strong {
@@ -128,7 +130,9 @@
   font-size: 22px;
   font-weight: normal;
   color: #fff !important;
+  line-height: 130%;
   text-shadow: 1px 1px var(--inej);
+  margin-bottom: -5px;
 }
 
 .inej:hover span {
@@ -147,12 +151,10 @@
 .nina {
   --nina: #a13d43;
   background: var(--nina);
-  border-radius: 12px;
 }
 
-.nina > div {
-  border-radius: 8px;
-  mix-blend-mode: multiply;
+.nina>div {
+  mix-blend-mode: normal;
 }
 
 .nina span {
@@ -171,6 +173,17 @@
   text-shadow: 1px 1px var(--nina);
 }
 
+.nina:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(transparent, var(--nina) 70%);
+  mix-blend-mode: soft-light;
+  transform: rotate(0deg);
+  transition: 1s ease-in-out;
+}
+
 .nina:hover span {
   bottom: 5px;
   transition: 1s ease-in-out;
@@ -182,7 +195,7 @@
   background: var(--matthias);
 }
 
-.matthias > div {
+.matthias>div {
   filter: grayscale(1) brightness(0.7);
 }
 
@@ -204,6 +217,8 @@
   color: #fff;
   opacity: 0;
   transition: 1s ease-in-out;
+  display: flex;
+  flex-flow: column;
 }
 
 .matthias strong {
@@ -251,6 +266,8 @@
   position: absolute;
   width: 75%;
   color: #fff;
+  display: flex;
+  flex-flow: column;
 }
 
 .jesper strong {
@@ -267,7 +284,7 @@
   background: var(--wylan);
 }
 
-.wylan > div {
+.wylan>div {
   filter: grayscale(.6) brightness(.9);
 }
 

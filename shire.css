@@ -1,0 +1,621 @@
+@font-face {
+  font-family: 'Meditative';
+  src: url('https://thecozycorgi.github.io/fonts/Meditative.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Home Kitchen Sans Bold';
+  src: url('https://thecozycorgi.github.io/fonts/Home Kitchen Sans Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Milkshake';
+  src: url('https://thecozycorgi.github.io/fonts/Milkshake.otf') format('opentype'),
+    url('https://thecozycorgi.github.io/fonts/Milkshake.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Strawbale';
+  src: url('https://thecozycorgi.github.io/fonts/Strawbale.otf') format('opentype'),
+    url('https://thecozycorgi.github.io/fonts/Strawbale.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Orchid Regular';
+  src: url('https://thecozycorgi.github.io/fonts/Orchid Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Stone Runes';
+  src: url('https://thecozycorgi.github.io/fonts/Stone Runes.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Obelisk Stone';
+  src: url('https://thecozycorgi.github.io/fonts/Obelisk Stone.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'MEQANOR';
+  src: url('https://thecozycorgi.github.io/fonts/MEQANOR.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'MIDWATCHES';
+  src: url('https://thecozycorgi.github.io/fonts/MIDWATCHES.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Restful-Silent';
+  src: url('https://thecozycorgi.github.io/fonts/Restful-Silent.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Sisterhood';
+  src: url('https://thecozycorgi.github.io/fonts/Sisterhood.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'The Sugarploom';
+  src: url('https://thecozycorgi.github.io/fonts/The Sugarploom.otf') format('opentype');
+}
+
+/* firmas shire - señor de los anillos */
+.shire {
+  width: fit-content;
+  margin: 10px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 5px solid #000;
+}
+
+.shire > div {
+  width: 250px;
+  height: 150px;
+  background: var(--image) center;
+  background-size: cover;
+}
+
+.shire span {
+  font: 8px / 10px Roboto;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  hyphens: none;
+}
+
+/* frodo */
+.frodo {
+  --frodo: #4b5842;
+  border-color: var(--frodo);
+  background: var(--frodo);
+}
+
+.frodo > div {
+  filter: grayscale(1) brightness(0.6);
+  transition: 1s ease-in-out;
+}
+
+.frodo:hover > div {
+  filter: grayscale(0.3) brightness(0.9);
+  transition: 1s ease-in-out;
+}
+
+.frodo span {
+  position: absolute;
+  width: 75%;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 1s ease-in-out;
+}
+
+.frodo strong {
+  font-family: 'Meditative';
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--frodo);
+}
+
+.frodo:hover span {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s ease-in-out;
+}
+
+/* sam */
+.sam {
+  --sam: #6b4a30;
+  border-color: var(--sam);
+  background: var(--sam);
+}
+
+.sam > div {
+  filter: sepia(0.6) brightness(0.6);
+  transition: 1s ease-in-out;
+}
+
+.sam:hover > div {
+  filter: sepia(0.2) brightness(0.9);
+  transition: 1s ease-in-out;
+}
+
+.sam span {
+  position: absolute;
+  width: 75%;
+  bottom: -100px;
+  transition: 1s ease-in-out;
+}
+
+.sam span:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  margin: 0 auto 8px;
+  transition: 1s ease-in-out;
+}
+
+.sam:hover span:before {
+  width: 40px;
+  transition: 1s ease-in-out;
+}
+
+.sam strong {
+  font-family: 'Home Kitchen Sans Bold';
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--sam);
+}
+
+.sam:hover span {
+  bottom: 5px;
+  transition: 1s ease-in-out;
+}
+
+/* pippin */
+.pippin {
+  --pippin: #c9a227;
+  border-color: var(--pippin);
+  background: var(--pippin);
+}
+
+.pippin > div {
+  transition: .4s ease-in-out;
+}
+
+.pippin:hover > div {
+  transform: rotate(-3deg) scale(1.05);
+  transition: .4s ease-in-out;
+}
+
+.pippin span {
+  position: absolute;
+  width: 75%;
+  color: #fff;
+  opacity: 0;
+  transform: scale(1.3);
+  transition: .4s ease-in-out;
+}
+
+.pippin strong {
+  font-family: 'Milkshake';
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--pippin);
+}
+
+.pippin:hover span {
+  opacity: 1;
+  transform: scale(1);
+  transition: .4s ease-in-out;
+}
+
+/* merry */
+.merry {
+  --merry: #a1592c;
+  border-color: var(--merry);
+  background: var(--merry);
+}
+
+.merry > div {
+  filter: grayscale(0.7) brightness(0.6);
+}
+
+.merry span {
+  position: absolute;
+  width: 75%;
+  color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+}
+
+.merry strong {
+  font-family: 'Strawbale';
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--merry);
+}
+
+.merry:hover span {
+  max-height: 100px;
+  transition: 1s ease-in-out;
+}
+
+/* legolas */
+.legolas {
+  --legolas: #7fa88a;
+  border-color: var(--legolas);
+  background: var(--legolas);
+}
+
+.legolas > div {
+  filter: grayscale(0.5) brightness(1.1);
+}
+
+.legolas:before, .legolas:after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 0;
+  background: #fff;
+  top: 50%;
+  transition: 1s ease-in-out;
+}
+
+.legolas:before { left: 15px; }
+.legolas:after { right: 15px; }
+
+.legolas:hover:before, .legolas:hover:after {
+  height: 60%;
+  top: 20%;
+  transition: 1s ease-in-out;
+}
+
+.legolas span {
+  position: absolute;
+  width: 70%;
+  color: #fff;
+  opacity: 0;
+  transition: 1s ease-in-out .3s;
+}
+
+.legolas strong {
+  font-family: 'Orchid Regular';
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--legolas);
+}
+
+.legolas:hover span {
+  opacity: 1;
+  transition: 1s ease-in-out .3s;
+}
+
+/* gimli */
+.gimli {
+  --gimli: #4a4038;
+  border-color: var(--gimli);
+  background: var(--gimli);
+}
+
+.gimli > div {
+  filter: grayscale(1) brightness(0.5) contrast(1.2);
+  clip-path: polygon(0 10%, 10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%);
+}
+
+.gimli span {
+  position: absolute;
+  width: 75%;
+  color: #fff;
+  clip-path: inset(0 100% 0 0);
+  transition: 1s ease-in-out;
+}
+
+.gimli strong {
+  font-family: 'Stone Runes';
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--gimli);
+}
+
+.gimli:hover span {
+  clip-path: inset(0 0 0 0);
+  transition: 1s ease-in-out;
+}
+
+/* aragorn */
+.aragorn {
+  --aragorn: #3c4a3f;
+  border-color: var(--aragorn);
+  background: var(--aragorn);
+}
+
+.aragorn > div {
+  filter: grayscale(1) brightness(0.6);
+  transition: 1s ease-in-out;
+}
+
+.aragorn:hover > div {
+  filter: grayscale(0) brightness(0.9);
+  transition: 1s ease-in-out;
+}
+
+.aragorn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: var(--aragorn);
+  transition: 1s ease-in-out;
+}
+
+.aragorn:hover:before {
+  width: 100%;
+  left: 0;
+  transition: 1s ease-in-out;
+}
+
+.aragorn span {
+  position: absolute;
+  width: 75%;
+  color: #fff;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.aragorn strong {
+  font-family: 'Obelisk Stone';
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--aragorn);
+}
+
+.aragorn:hover span {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+/* gandalf */
+.gandalf {
+  --gandalf: #4a5568;
+  border-color: var(--gandalf);
+  background: #222;
+}
+
+.gandalf:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #fff, var(--gandalf) 60%, transparent 70%);
+  opacity: 0;
+  transform: scale(0.5);
+  mix-blend-mode: color-dodge;
+  transition: 1s ease-in-out;
+}
+
+.gandalf:hover:before {
+  opacity: 1;
+  transform: scale(1);
+  transition: 1s ease-in-out;
+}
+
+.gandalf span {
+  position: absolute;
+  width: 75%;
+  color: #fff;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.gandalf strong {
+  font-family: 'MEQANOR';
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--gandalf);
+}
+
+.gandalf:hover span {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+/* boromir */
+.boromir {
+  --boromir: #5c2b2b;
+  border-color: var(--boromir);
+  background: var(--boromir);
+}
+
+.boromir > div {
+  filter: grayscale(1) brightness(0.6);
+}
+
+.boromir:before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 3px;
+  background: var(--boromir);
+  transform: rotate(-20deg);
+  top: 50%;
+  left: -25%;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.boromir:hover:before {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.boromir span {
+  position: absolute;
+  width: 75%;
+  color: #fff;
+  right: -280px;
+  transition: 1s ease-in-out;
+}
+
+.boromir strong {
+  font-family: 'MIDWATCHES';
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--boromir);
+}
+
+.boromir:hover span {
+  right: 5px;
+  transition: 1s ease-in-out;
+}
+
+/* faramir */
+.faramir {
+  --faramir: #5f6b4a;
+  border-color: var(--faramir);
+  background: var(--faramir);
+}
+
+.faramir > div {
+  filter: grayscale(0.6) brightness(0.7);
+}
+
+.faramir:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(transparent, var(--faramir) 80%);
+  transition: 1.5s ease-in-out;
+}
+
+.faramir span {
+  position: absolute;
+  width: 75%;
+  color: #fff;
+  opacity: 0;
+  transition: 1.5s ease-in-out;
+}
+
+.faramir strong {
+  font-family: 'Restful-Silent';
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--faramir);
+}
+
+.faramir:hover:before {
+  opacity: 0;
+  transition: 1.5s ease-in-out;
+}
+
+.faramir:hover span {
+  opacity: 1;
+  transition: 1.5s ease-in-out;
+}
+
+/* eowyn */
+.eowyn {
+  --eowyn: #6d7d8c;
+  border-color: var(--eowyn);
+  background: var(--eowyn);
+}
+
+.eowyn > div {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
+  filter: grayscale(0.7) brightness(0.8);
+}
+
+.eowyn span {
+  position: absolute;
+  width: 75%;
+  color: #fff;
+  transform: scale(0.7);
+  opacity: 0;
+  transition: .5s ease-in-out;
+}
+
+.eowyn strong {
+  font-family: 'Sisterhood';
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--eowyn);
+}
+
+.eowyn:hover span {
+  transform: scale(1);
+  opacity: 1;
+  transition: .5s ease-in-out;
+}
+
+/* bilbo */
+.bilbo {
+  --bilbo: #8a6d3f;
+  border-color: var(--bilbo);
+  background: var(--bilbo);
+}
+
+.bilbo > div {
+  filter: sepia(0.5) brightness(0.8);
+  transform: rotateY(0deg);
+  transition: 1s ease-in-out;
+}
+
+.bilbo:hover > div {
+  transform: rotateY(15deg);
+  transition: 1s ease-in-out;
+}
+
+.bilbo span {
+  position: absolute;
+  width: 75%;
+  color: #fff;
+  letter-spacing: 4px;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.bilbo strong {
+  font-family: 'The Sugarploom';
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--bilbo);
+}
+
+.bilbo:hover span {
+  letter-spacing: 1px;
+  opacity: 1;
+  transition: 1s ease-in-out;
+}

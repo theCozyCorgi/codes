@@ -75,6 +75,8 @@
   width: 80%;
   opacity: 0;
   transition: 1s ease-in-out;
+  display: flex;
+  flex-flow: column;
 }
 
 .kaz strong {
@@ -163,6 +165,8 @@
   color: #fff;
   bottom: -100px;
   transition: 1s ease-in-out;
+  display: flex;
+  flex-flow: column;
 }
 
 .nina strong {

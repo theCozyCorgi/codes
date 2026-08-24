@@ -72,7 +72,7 @@
   border: 5px solid #000;
 }
 
-.shire > div {
+.shire>div {
   width: 250px;
   height: 150px;
   background: var(--image) center;
@@ -95,12 +95,12 @@
   background: var(--frodo);
 }
 
-.frodo > div {
+.frodo>div {
   filter: grayscale(1) brightness(0.6);
   transition: 1s ease-in-out;
 }
 
-.frodo:hover > div {
+.frodo:hover>div {
   filter: grayscale(0.3) brightness(0.9);
   transition: 1s ease-in-out;
 }
@@ -137,12 +137,12 @@
   background: var(--sam);
 }
 
-.sam > div {
+.sam>div {
   filter: sepia(0.6) brightness(0.6);
   transition: 1s ease-in-out;
 }
 
-.sam:hover > div {
+.sam:hover>div {
   filter: sepia(0.2) brightness(0.9);
   transition: 1s ease-in-out;
 }
@@ -192,11 +192,11 @@
   background: var(--pippin);
 }
 
-.pippin > div {
+.pippin>div {
   transition: .4s ease-in-out;
 }
 
-.pippin:hover > div {
+.pippin:hover>div {
   transform: rotate(-3deg) scale(1.05);
   transition: .4s ease-in-out;
 }
@@ -219,6 +219,8 @@
   font-weight: normal;
   color: #fff !important;
   text-shadow: 1px 1px var(--pippin);
+  text-transform: lowercase;
+  margin-top: -5px;
 }
 
 .pippin:hover span {
@@ -234,7 +236,7 @@
   background: var(--merry);
 }
 
-.merry > div {
+.merry>div {
   filter: grayscale(0.7) brightness(0.6);
 }
 
@@ -270,11 +272,12 @@
   background: var(--legolas);
 }
 
-.legolas > div {
+.legolas>div {
   filter: grayscale(0.5) brightness(1.1);
 }
 
-.legolas:before, .legolas:after {
+.legolas:before,
+.legolas:after {
   content: '';
   position: absolute;
   width: 1px;
@@ -284,10 +287,16 @@
   transition: 1s ease-in-out;
 }
 
-.legolas:before { left: 15px; }
-.legolas:after { right: 15px; }
+.legolas:before {
+  left: 15px;
+}
 
-.legolas:hover:before, .legolas:hover:after {
+.legolas:after {
+  right: 15px;
+}
+
+.legolas:hover:before,
+.legolas:hover:after {
   height: 60%;
   top: 20%;
   transition: 1s ease-in-out;
@@ -324,7 +333,7 @@
   background: var(--gimli);
 }
 
-.gimli > div {
+.gimli>div {
   filter: grayscale(1) brightness(0.5) contrast(1.2);
   clip-path: polygon(0 10%, 10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%);
 }
@@ -360,12 +369,12 @@
   background: var(--aragorn);
 }
 
-.aragorn > div {
+.aragorn>div {
   filter: grayscale(1) brightness(0.6);
   transition: 1s ease-in-out;
 }
 
-.aragorn:hover > div {
+.aragorn:hover>div {
   filter: grayscale(0) brightness(0.9);
   transition: 1s ease-in-out;
 }
@@ -404,6 +413,8 @@
   font-weight: normal;
   color: #fff !important;
   text-shadow: 1px 1px var(--aragorn);
+  text-transform: lowercase;
+  margin-top: -22px;
 }
 
 .aragorn:hover span {
@@ -467,7 +478,7 @@
   background: var(--boromir);
 }
 
-.boromir > div {
+.boromir>div {
   filter: grayscale(1) brightness(0.6);
 }
 
@@ -508,6 +519,7 @@
   color: #fff !important;
   text-shadow: 1px 1px var(--boromir);
   text-align: right;
+  text-transform: lowercase;
 }
 
 .boromir:hover span {
@@ -522,7 +534,7 @@
   background: var(--faramir);
 }
 
-.faramir > div {
+.faramir>div {
   filter: grayscale(0.6) brightness(0.7);
 }
 
@@ -571,7 +583,7 @@
   background: var(--eowyn);
 }
 
-.eowyn > div {
+.eowyn>div {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
   filter: grayscale(0.7) brightness(0.8);
 }
@@ -609,13 +621,13 @@
   background: var(--bilbo);
 }
 
-.bilbo > div {
+.bilbo>div {
   filter: sepia(0.5) brightness(0.8);
   transform: rotateY(0deg);
   transition: 1s ease-in-out;
 }
 
-.bilbo:hover > div {
+.bilbo:hover>div {
   transform: rotateY(15deg);
   transition: 1s ease-in-out;
 }

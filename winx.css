@@ -1,14 +1,13 @@
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css');
 
 @font-face {
-  font-family: 'MAGFIRE HYENA';
-  src: url('https://thecozycorgi.github.io/fonts/MAGFIRE HYENA.otf') format('opentype');
+  font-family: 'Blastine';
+  src: url('https://thecozycorgi.github.io/fonts/Blastine.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'Groth';
-  src: url('https://thecozycorgi.github.io/fonts/Groth.otf') format('opentype'),
-    url('https://thecozycorgi.github.io/fonts/Groth.ttf') format('ttf');
+  font-family: 'Aurantiaca';
+  src: url('https://thecozycorgi.github.io/fonts/Aurantiaca.ttf') format('ttf');
 }
 
 @font-face {
@@ -17,8 +16,8 @@
 }
 
 @font-face {
-  font-family: 'Glitterboard';
-  src: url('https://thecozycorgi.github.io/fonts/Glitterboard.ttf') format('ttf');
+  font-family: 'FancyGlow';
+  src: url('https://thecozycorgi.github.io/fonts/FancyGlow.otf') format('opentype');
 }
 
 @font-face {
@@ -27,8 +26,8 @@
 }
 
 @font-face {
-  font-family: 'Elista';
-  src: url('https://thecozycorgi.github.io/fonts/Elista.ttf') format('ttf');
+  font-family: 'AluvionDisplay';
+  src: url('https://thecozycorgi.github.io/fonts/AluvionDisplay.ttf') format('ttf');
 }
 
 @font-face {
@@ -38,9 +37,8 @@
 }
 
 @font-face {
-  font-family: 'Riqas';
-  src: url('https://thecozycorgi.github.io/fonts/Riqas.otf') format('opentype'),
-    url('https://thecozycorgi.github.io/fonts/Riqas.ttf') format('ttf');
+  font-family: 'Talks';
+  src: url('https://thecozycorgi.github.io/fonts/Talks.otf') format('opentype');
 }
 
 @font-face {
@@ -50,8 +48,8 @@
 }
 
 @font-face {
-  font-family: 'MonsteraGarden';
-  src: url('https://thecozycorgi.github.io/fonts/MonsteraGarden.ttf') format('ttf');
+  font-family: 'MoreCream';
+  src: url('https://thecozycorgi.github.io/fonts/MoreCream.otf') format('opentype');
 }
 
 @font-face {
@@ -100,23 +98,10 @@
 }
 
 /* bloom */
-@keyframes bloom-glow {
-
-  0%,
-  100% {
-    box-shadow: 0 0 0 var(--bloom-dark);
-  }
-
-  50% {
-    box-shadow: 0 0 16px var(--bloom-dark);
-  }
-}
-
 .bloom {
   --bloom: #ff6b35;
   --bloom-dark: #c81d11;
   background: #1a1210;
-  animation: bloom-glow 2.5s ease-in-out infinite;
 }
 
 .bloom>div {
@@ -164,7 +149,7 @@
 }
 
 .bloom strong {
-  font-family: 'MAGFIRE HYENA';
+  font-family: 'Blastine';
   font-size: 22px;
   line-height: 100%;
   font-weight: normal;
@@ -174,7 +159,7 @@
 }
 
 .bloom em {
-  font-family: 'Groth';
+  font-family: 'Aurantiaca';
   font-style: normal;
   font-size: 10px;
   line-height: 130%;
@@ -263,7 +248,7 @@
 }
 
 .stella em {
-  font-family: 'Glitterboard';
+  font-family: 'FancyGlow';
   font-style: normal;
   font-size: 12px;
   line-height: 140%;
@@ -343,7 +328,7 @@
 }
 
 .alisha em {
-  font-family: 'Elista';
+  font-family: 'AluvionDisplay';
   font-style: normal;
   font-size: 9px;
   line-height: 130% 11.7px;
@@ -426,7 +411,7 @@
 }
 
 .musa em {
-  font-family: 'Riqas';
+  font-family: 'Talks';
   font-style: normal;
   font-size: 11px;
   line-height: 140%;
@@ -486,7 +471,7 @@
 }
 
 .flora em {
-  font-family: 'MonsteraGarden';
+  font-family: 'MoreCream';
   font-style: normal;
   font-size: 12px;
   line-height: 130%;

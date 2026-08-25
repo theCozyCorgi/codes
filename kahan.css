@@ -110,7 +110,7 @@
 .everywhere span {
   position: absolute;
   width: 78%;
-  gap: 6px;
+  gap: 0px;
   align-items: center;
   text-align: center;
 }
@@ -141,6 +141,7 @@
   transform: translateX(40px);
   opacity: 0;
   transition: .6s ease-in-out;
+  margin-top: -5px;
 }
 
 .everywhere:hover em {

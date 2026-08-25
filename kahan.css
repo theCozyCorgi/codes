@@ -106,6 +106,8 @@
   position: absolute;
   width: 78%;
   gap: 6px;
+  align-items: center;
+  text-align: center;
 }
 
 .everywhere strong {
@@ -124,14 +126,13 @@
   background: var(--everywhere);
   color: #fff !important;
   padding: 4px 8px;
-  align-self: center;
-  transform: translateX(40px);
+  transform: translateY(20px);
   opacity: 0;
   transition: .6s ease-in-out;
 }
 
 .everywhere:hover em {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
   transition: .6s ease-in-out;
 }
@@ -419,161 +420,192 @@
 
 /* new perspective */
 .newperspective {
+  --newperspective: #6a5acd;
   border-color: #000;
-  background: #ddd;
+  padding: 0;
 }
 
 .newperspective > div {
-  filter: grayscale(1) contrast(1.1);
+  width: 125px;
+  filter: grayscale(1) contrast(1.05);
+}
+
+.newperspective > div:nth-child(2) {
+  transform: scaleX(-1);
+}
+
+.newperspective:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #fff;
+  opacity: .5;
 }
 
 .newperspective span {
   position: absolute;
   width: 75%;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.newperspective:hover span {
+  opacity: 1;
+  transition: 1s ease-in-out;
 }
 
 .newperspective strong {
-  --newperspective: #6a5acd;
   font-family: 'MilkyWalky';
-  font-size: 20px;
+  font-size: 18px;
   line-height: 110%;
   font-weight: normal;
-  color: var(--newperspective) !important;
-  text-shadow: 2px 2px #fff;
-  display: inline-block;
-  transform: rotate(-3deg);
-  transition: .5s ease-in-out;
-}
-
-.newperspective:hover strong {
-  transform: rotate(3deg) scale(1.05);
-  transition: .5s ease-in-out;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--newperspective);
 }
 
 /* she calls me back */
 .shecallsmeback {
   --shecalls: #b23a6b;
   border-color: #000;
+  background: #000;
 }
 
 .shecallsmeback > div {
-  filter: grayscale(0.6) brightness(0.7);
-  mix-blend-mode: luminosity;
+  filter: grayscale(1) contrast(1.05) brightness(0.85);
 }
 
 .shecallsmeback:before {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 100%;
+  left: 50%;
+  width: 0;
+  height: 32%;
+  top: 39%;
   background: var(--shecalls);
-  mix-blend-mode: color;
-  opacity: .5;
-  transition: 1s ease-in-out;
+  transition: .6s ease-in-out;
 }
 
 .shecallsmeback:hover:before {
-  opacity: .8;
-  transition: 1s ease-in-out;
+  left: 0;
+  width: 100%;
+  transition: .6s ease-in-out;
 }
 
 .shecallsmeback span {
   position: absolute;
-  width: 75%;
+  width: 78%;
+  opacity: 0;
+  transition: .6s ease-in-out .1s;
+}
+
+.shecallsmeback:hover span {
+  opacity: 1;
+  transition: .6s ease-in-out .1s;
 }
 
 .shecallsmeback strong {
   font-family: 'Chesalova';
-  font-size: 22px;
+  font-size: 18px;
   line-height: 100%;
   font-weight: normal;
   color: #fff !important;
-  text-shadow: 2px 2px var(--shecalls);
 }
 
 /* northern attitude */
 .northernattitude {
-  --northern: #8a1414;
+  --northern: #6d7d8c;
   border-color: #000;
-  background: #0d0d0d;
+  background: #10151a;
 }
 
 .northernattitude > div {
-  filter: grayscale(1) brightness(0.5) contrast(1.2);
+  filter: grayscale(1) brightness(0.6) contrast(1.1);
+}
+
+.northernattitude:before {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(255, 255, 255, .5);
+  pointer-events: none;
 }
 
 .northernattitude span {
   position: absolute;
-  width: 80%;
-  opacity: 0;
-  transform: scale(1.1);
-  transition: .4s ease-in-out;
-}
-
-.northernattitude:hover span {
-  opacity: 1;
-  transform: scale(1);
-  transition: .4s ease-in-out;
+  width: 78%;
+  align-items: center;
+  text-align: center;
 }
 
 .northernattitude strong {
   font-family: 'Black Bones';
-  font-size: 24px;
+  font-size: 22px;
   line-height: 100%;
   font-weight: normal;
-  color: var(--northern) !important;
-  text-shadow: 2px 0 #430a0a, -2px 0 #c94040;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--northern);
 }
 
 .northernattitude em {
   font-style: normal;
   font-size: 7px;
-  letter-spacing: 1px;
-  color: #ccc !important;
+  letter-spacing: 2px;
+  color: var(--northern) !important;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: .6s ease-in-out;
   margin-top: 4px;
+}
+
+.northernattitude:hover em {
+  transform: translateY(0);
+  opacity: 1;
+  transition: .6s ease-in-out;
 }
 
 /* mess */
 .mess {
   --mess: #6a3fa0;
   border-color: #000;
+  background: #000;
 }
 
 .mess > div {
-  filter: grayscale(1) contrast(1.1);
-  clip-path: polygon(0 0, 60% 0, 60% 100%, 0 100%);
+  filter: grayscale(1) contrast(1.05) brightness(0.8);
 }
 
 .mess:before {
   content: '';
   position: absolute;
   left: 0;
-  top: 0;
-  width: 60%;
-  height: 100%;
-  background: var(--mess);
-  mix-blend-mode: color;
-  opacity: .7;
-}
-
-.mess strong {
-  font-family: 'OMANY';
-  font-size: 54px;
-  position: absolute;
-  left: 8px;
-  top: -8px;
-  font-weight: normal;
-  color: var(--mess) !important;
-  opacity: .9;
+  bottom: 0;
+  width: 100%;
+  height: 55%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, .85), transparent);
 }
 
 .mess span {
   position: absolute;
-  width: 60%;
-  right: 8px;
-  left: auto;
-  align-items: flex-end;
-  text-align: right;
+  width: 82%;
+  bottom: 10px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: .6s ease-in-out;
+}
+
+.mess:hover span {
+  opacity: 1;
+  transform: translateY(0);
+  transition: .6s ease-in-out;
+}
+
+.mess strong {
+  font-family: 'OMANY';
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--mess) !important;
+  text-shadow: 1px 1px #fff;
 }
 
 .mess em {
@@ -584,4 +616,5 @@
   text-transform: none;
   letter-spacing: 0;
   color: #fff !important;
+  margin-top: 2px;
 }

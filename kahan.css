@@ -34,11 +34,6 @@
 }
 
 @font-face {
-  font-family: 'Chesalova';
-  src: url('https://thecozycorgi.github.io/fonts/Chesalova-Regular.ttf') format('ttf');
-}
-
-@font-face {
   font-family: 'Black Bones';
   src: url('https://thecozycorgi.github.io/fonts/Black Bones.ttf') format('ttf');
 }
@@ -497,72 +492,64 @@
 
 /* she calls me back */
 .shecallsmeback {
-  --shecalls: #b23a6b;
   border-color: #000;
   background: #000;
 }
 
 .shecallsmeback > div {
-  filter: grayscale(1) contrast(1.05) brightness(0.85);
+  filter: contrast(1.05) brightness(0.9);
+  transition: 1s ease-in-out;
 }
 
-.shecallsmeback:before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  width: 0;
-  height: 32%;
-  top: 39%;
-  background: var(--shecalls);
-  transition: .6s ease-in-out;
-}
-
-.shecallsmeback:hover:before {
-  left: 0;
-  width: 100%;
-  transition: .6s ease-in-out;
+.shecallsmeback:hover > div {
+  filter: grayscale(1) contrast(1.1) brightness(0.55);
+  transition: 1s ease-in-out;
 }
 
 .shecallsmeback span {
   position: absolute;
-  width: 78%;
+  width: 65%;
+  align-items: flex-start;
+  text-align: left;
+  gap: 3px;
   opacity: 0;
-  transition: .6s ease-in-out .1s;
+  transition: .8s ease-in-out;
 }
 
 .shecallsmeback:hover span {
   opacity: 1;
-  transition: .6s ease-in-out .1s;
-}
-
-.shecallsmeback strong {
-  font-family: 'Chesalova';
-  font-size: 18px;
-  line-height: 100%;
-  font-weight: normal;
-  color: #fff !important;
+  transition: .8s ease-in-out;
 }
 
 .shecallsmeback em {
-  font-style: normal;
-  font-size: 7px;
-  letter-spacing: 2px;
-  background: var(--shecalls);
+  font-style: italic;
+  font-weight: normal;
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: lowercase;
   color: #fff !important;
-  padding: 3px 8px;
-  margin-top: 6px;
-  align-self: center;
+}
+
+.shecallsmeback em strong {
+  font-weight: bold;
+  color: #fff !important;
 }
 
 /* northern attitude */
 .northernattitude {
-  --northern: #6d7d8c;
+  --northern: #a23b3b;
   border-color: #000;
-  background: #10151a;
+  background: #000;
 }
 
 .northernattitude > div {
-  filter: grayscale(1) brightness(0.6) contrast(1.1);
+  filter: contrast(1.05) brightness(0.95);
+  transition: 1s ease-in-out;
+}
+
+.northernattitude:hover > div {
+  filter: grayscale(1) contrast(1.1) brightness(0.55) blur(1px);
+  transition: 1s ease-in-out;
 }
 
 .northernattitude:before {
@@ -578,36 +565,29 @@
   width: 78%;
   align-items: center;
   text-align: center;
+  gap: 2px;
+  opacity: 0;
+  transition: .8s ease-in-out;
+}
+
+.northernattitude:hover span {
+  opacity: 1;
+  transition: .8s ease-in-out;
 }
 
 .northernattitude strong {
   font-family: 'Black Bones';
-  font-size: 22px;
-  line-height: 100%;
+  font-size: 15px;
+  line-height: 110%;
   font-weight: normal;
+  letter-spacing: 1px;
   color: #fff !important;
-  text-shadow: 1px 1px var(--northern);
+  text-shadow: 1px 1px #000;
 }
 
-.northernattitude em {
+.northernattitude strong em {
   font-style: normal;
-  font-size: 7px;
-  letter-spacing: 2px;
-  background: rgba(255, 255, 255, .12);
-  border: 1px solid var(--northern);
-  color: #fff !important;
-  padding: 3px 8px;
-  align-self: center;
-  transform: translateY(20px);
-  opacity: 0;
-  transition: .6s ease-in-out;
-  margin-top: 8px;
-}
-
-.northernattitude:hover em {
-  transform: translateY(0);
-  opacity: 1;
-  transition: .6s ease-in-out;
+  color: var(--northern) !important;
 }
 
 /* mess */

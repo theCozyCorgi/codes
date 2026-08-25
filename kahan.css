@@ -48,6 +48,41 @@
   src: url('https://thecozycorgi.github.io/fonts/Orchestra Italic.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Morgan';
+  src: url('https://thecozycorgi.github.io/fonts/Morgan.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Bonjour';
+  src: url('https://thecozycorgi.github.io/fonts/Bonjour.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Stanley';
+  src: url('https://thecozycorgi.github.io/fonts/Stanley.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Havana';
+  src: url('https://thecozycorgi.github.io/fonts/Havana.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Grafing';
+  src: url('https://thecozycorgi.github.io/fonts/Grafing.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Bilend';
+  src: url('https://thecozycorgi.github.io/fonts/Bilend.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Say Hello';
+  src: url('https://thecozycorgi.github.io/fonts/Say Hello.otf') format('opentype');
+}
+
 /* firmas kahan */
 .kahan {
   width: fit-content;
@@ -629,4 +664,273 @@
 .mess strong:after {
   top: 18px;
   opacity: .3;
+}
+
+/* growing sideways */
+.growingsideways {
+  --growing: #a37b4a;
+  border-color: #000;
+  background: #0d0d0d;
+}
+
+.growingsideways > div {
+  filter: grayscale(1) contrast(1.1) brightness(0.55);
+}
+
+.growingsideways:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, .04) 0 1px, transparent 1px 6px);
+  pointer-events: none;
+}
+
+.growingsideways span {
+  position: absolute;
+  width: 65%;
+  left: 12px;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1px;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.growingsideways:hover span {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.growingsideways strong {
+  font-family: 'Morgan';
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #fff !important;
+}
+
+.growingsideways strong em {
+  font-style: italic;
+  color: var(--growing) !important;
+}
+
+/* false confidence */
+.falseconfidence {
+  --falseconfidence: #c9a24a;
+  border-color: #000;
+  background: #1a1006;
+}
+
+.falseconfidence > div {
+  filter: sepia(0.5) contrast(1.05) brightness(0.6);
+}
+
+.falseconfidence span {
+  position: absolute;
+  width: 78%;
+  gap: 2px;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.falseconfidence:hover span {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.falseconfidence em {
+  font-family: 'Bonjour';
+  font-style: normal;
+  text-transform: lowercase;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--falseconfidence) !important;
+}
+
+.falseconfidence strong {
+  font-family: 'Stanley';
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #fff !important;
+  margin-top: 4px;
+}
+
+/* you're gonna go far */
+.yougofar {
+  border-color: #111;
+  background: #eee;
+}
+
+.yougofar:before {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(0, 0, 0, .6);
+  pointer-events: none;
+}
+
+.yougofar > div {
+  filter: grayscale(1) contrast(1.05) brightness(1.05);
+}
+
+.yougofar span {
+  position: absolute;
+  width: 80%;
+  gap: 3px;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.yougofar:hover span {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.yougofar strong {
+  font-family: 'Havana';
+  font-size: 16px;
+  line-height: 105%;
+  font-weight: normal;
+  color: #111 !important;
+}
+
+.yougofar strong:last-of-type:after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: #111;
+  margin: 4px auto 0;
+}
+
+.yougofar em {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 7px;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  color: #333 !important;
+  margin-top: 8px;
+}
+
+/* godlight */
+.godlight {
+  --godlight: #d7b56a;
+  border-color: #000;
+  padding: 0;
+}
+
+.godlight > div {
+  width: 125px;
+}
+
+.godlight > div:nth-child(1) {
+  filter: grayscale(1) brightness(0.4);
+}
+
+.godlight > div:nth-child(2) {
+  filter: grayscale(0.3) sepia(0.3) brightness(0.8);
+}
+
+.godlight:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #fff;
+  opacity: .5;
+}
+
+.godlight span {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.godlight:hover span {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.godlight strong {
+  font-family: 'Grafing';
+  font-size: 40px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--godlight);
+}
+
+.godlight em {
+  font-style: normal;
+  font-size: 7px;
+  letter-spacing: 3px;
+  color: var(--godlight) !important;
+  margin-top: -2px;
+}
+
+/* halloween */
+.halloween {
+  --halloween: #6b3f2e;
+  border-color: #000;
+  background: #0d0806;
+}
+
+.halloween > div {
+  filter: grayscale(0.7) brightness(0.5) sepia(0.15);
+}
+
+.halloween:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(var(--halloween) 1px, transparent 1px), linear-gradient(90deg, var(--halloween) 1px, transparent 1px);
+  background-size: 45px 34px;
+  opacity: .35;
+}
+
+.halloween:after {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 1px;
+  background: #fff;
+  top: 30%;
+  left: -25%;
+  transform: rotate(12deg);
+  opacity: .4;
+}
+
+.halloween span {
+  position: absolute;
+  width: 75%;
+  gap: 2px;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.halloween:hover span {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.halloween strong {
+  font-family: 'Bilend';
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--halloween);
+}
+
+.halloween em {
+  font-family: 'Say Hello';
+  font-style: normal;
+  text-transform: lowercase;
+  font-size: 20px;
+  line-height: 100%;
+  color: #cbb49a !important;
 }

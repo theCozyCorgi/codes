@@ -433,28 +433,6 @@
   filter: grayscale(1) contrast(1.05) brightness(0.85);
 }
 
-.newperspective:before {
-  content: '';
-  position: absolute;
-  left: 24px;
-  top: 12px;
-  width: 1px;
-  height: 28px;
-  background: #fff;
-  opacity: .8;
-}
-
-.newperspective:after {
-  content: '';
-  position: absolute;
-  left: 24px;
-  bottom: 12px;
-  width: 1px;
-  height: 28px;
-  background: #fff;
-  opacity: .8;
-}
-
 .newperspective span {
   position: absolute;
   width: 65%;
@@ -592,58 +570,62 @@
 
 /* mess */
 .mess {
-  --mess: #6a3fa0;
   border-color: #000;
   background: #000;
 }
 
 .mess > div {
-  filter: grayscale(1) contrast(1.05) brightness(0.8);
-}
-
-.mess:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 55%;
-  background: linear-gradient(0deg, rgba(0, 0, 0, .85), transparent);
+  filter: grayscale(1) contrast(1.1) brightness(0.85);
 }
 
 .mess span {
   position: absolute;
-  width: 82%;
-  bottom: 10px;
+  width: 80%;
+  left: 10%;
+  align-items: flex-start;
+  text-align: left;
   opacity: 0;
-  transform: translateY(10px);
-  transition: .6s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .mess:hover span {
   opacity: 1;
-  transform: translateY(0);
-  transition: .6s ease-in-out;
-}
-
-.mess strong {
-  font-family: 'OMANY';
-  font-size: 16px;
-  font-weight: normal;
-  color: #fff !important;
-  background: var(--mess);
-  padding: 4px 8px;
-  align-self: center;
-  margin-bottom: 4px;
+  transition: 1s ease-in-out;
 }
 
 .mess em {
-  font-style: italic;
-  font-family: Georgia, serif;
-  font-size: 7px;
-  line-height: 130%;
-  text-transform: none;
-  letter-spacing: 0;
+  font-style: normal;
+  font-size: 8px;
+  letter-spacing: 2px;
   color: #fff !important;
-  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.mess strong {
+  position: relative;
+  display: block;
+  font-family: 'OMANY';
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #fff !important;
+  mix-blend-mode: overlay;
+}
+
+.mess strong:before,
+.mess strong:after {
+  content: attr(data-word);
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.mess strong:before {
+  top: -18px;
+  opacity: .55;
+}
+
+.mess strong:after {
+  top: 18px;
+  opacity: .3;
 }

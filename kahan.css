@@ -34,8 +34,8 @@
 }
 
 @font-face {
-  font-family: 'Black Bones';
-  src: url('https://thecozycorgi.github.io/fonts/Black Bones.ttf') format('ttf');
+  font-family: 'Glinka';
+  src: url('https://thecozycorgi.github.io/fonts/Glinka.otf') format('opentype');
 }
 
 @font-face {
@@ -60,7 +60,7 @@
   border: 5px solid #000;
 }
 
-.kahan > div {
+.kahan>div {
   width: 250px;
   height: 150px;
   background: var(--image) center;
@@ -85,7 +85,7 @@
   background: #f5f1ea;
 }
 
-.everywhere > div {
+.everywhere>div {
   filter: grayscale(1) brightness(0.95) contrast(1.05);
 }
 
@@ -147,7 +147,7 @@
   background: #111;
 }
 
-.stickseason > div {
+.stickseason>div {
   filter: grayscale(1) brightness(0.5);
 }
 
@@ -208,7 +208,7 @@
   background: #000;
 }
 
-.homesick > div {
+.homesick>div {
   filter: grayscale(1) contrast(1.1) brightness(0.85);
 }
 
@@ -259,13 +259,13 @@
   background: #1a1a1a;
 }
 
-.dialdrunk > div {
+.dialdrunk>div {
   filter: grayscale(1) brightness(0.75);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
   transition: 1s ease-in-out;
 }
 
-.dialdrunk:hover > div {
+.dialdrunk:hover>div {
   filter: grayscale(0.3) brightness(0.85);
   transition: 1s ease-in-out;
 }
@@ -328,15 +328,15 @@
   padding: 0;
 }
 
-.villages > div {
+.villages>div {
   width: 125px;
 }
 
-.villages > div:nth-child(1) {
+.villages>div:nth-child(1) {
   filter: sepia(0.4) brightness(0.9);
 }
 
-.villages > div:nth-child(2) {
+.villages>div:nth-child(2) {
   filter: grayscale(1) brightness(0.55);
 }
 
@@ -388,7 +388,7 @@
   background: #b7b7b2;
 }
 
-.allmylove > div {
+.allmylove>div {
   filter: grayscale(0.3) sepia(0.15) contrast(1.1);
   mix-blend-mode: multiply;
 }
@@ -428,7 +428,7 @@
   padding: 0;
 }
 
-.newperspective > div {
+.newperspective>div {
   width: 125px;
   filter: grayscale(1) contrast(1.05) brightness(0.85);
 }
@@ -474,12 +474,12 @@
   background: #000;
 }
 
-.shecallsmeback > div {
+.shecallsmeback>div {
   filter: contrast(1.05) brightness(0.9);
   transition: 1s ease-in-out;
 }
 
-.shecallsmeback:hover > div {
+.shecallsmeback:hover>div {
   filter: grayscale(1) contrast(1.1) brightness(0.55);
   transition: 1s ease-in-out;
 }
@@ -520,12 +520,12 @@
   background: #000;
 }
 
-.northernattitude > div {
+.northernattitude>div {
   filter: contrast(1.05) brightness(0.95);
   transition: 1s ease-in-out;
 }
 
-.northernattitude:hover > div {
+.northernattitude:hover>div {
   filter: grayscale(1) contrast(1.1) brightness(0.55) blur(1px);
   transition: 1s ease-in-out;
 }
@@ -554,13 +554,14 @@
 }
 
 .northernattitude strong {
-  font-family: 'Black Bones';
-  font-size: 15px;
-  line-height: 110%;
-  font-weight: normal;
+  font-family: 'Glinka';
+  font-size: 18px;
+  line-height: 90%;
+  font-weight: bolder;
   letter-spacing: 1px;
   color: #fff !important;
   text-shadow: 1px 1px #000;
+  text-transform: lowercase;
 }
 
 .northernattitude strong em {
@@ -574,8 +575,8 @@
   background: #000;
 }
 
-.mess > div {
-  filter: grayscale(1) contrast(1.1) brightness(0.85);
+.mess>div {
+  filter: contrast(1.1) brightness(0.85);
 }
 
 .mess span {

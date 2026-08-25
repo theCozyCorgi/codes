@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'BasicBold';
-  src: url('https://thecozycorgi.github.io/fonts/BasicBitch_Bold.ttf') format('ttf');
+  font-family: 'StackedStrong';
+  src: url('https://thecozycorgi.github.io/fonts/StackedStrong-Regular.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'Roadblock';
-  src: url('https://thecozycorgi.github.io/fonts/Roadblock-Regular.ttf') format('ttf');
+  font-family: 'MARLONG';
+  src: url('https://thecozycorgi.github.io/fonts/MARLONG.otf') format('opentype');
 }
 
 @font-face {
@@ -109,7 +109,7 @@
 }
 
 .everywhere strong {
-  font-family: 'BasicBold';
+  font-family: 'StackedStrong';
   font-size: 20px;
   line-height: 100%;
   font-weight: normal;
@@ -182,7 +182,7 @@
 }
 
 .stickseason strong {
-  font-family: 'Roadblock';
+  font-family: 'MARLONG';
   font-size: 18px;
   letter-spacing: 1px;
   color: #fff !important;

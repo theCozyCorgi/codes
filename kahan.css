@@ -53,6 +53,11 @@
   src: url('https://thecozycorgi.github.io/fonts/OMANY.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Orchestra Italic';
+  src: url('https://thecozycorgi.github.io/fonts/Orchestra Italic.otf') format('opentype');
+}
+
 /* firmas kahan */
 .kahan {
   width: fit-content;
@@ -117,6 +122,13 @@
   font-weight: normal;
   color: #fff !important;
   text-shadow: 1px 1px #111;
+  transform: translateY(10px);
+  transition: .6s ease-in-out;
+}
+
+.everywhere:hover strong {
+  transform: translateY(-6px);
+  transition: .6s ease-in-out;
 }
 
 .everywhere em {
@@ -126,13 +138,13 @@
   background: var(--everywhere);
   color: #fff !important;
   padding: 4px 8px;
-  transform: translateY(20px);
+  transform: translateX(40px);
   opacity: 0;
   transition: .6s ease-in-out;
 }
 
 .everywhere:hover em {
-  transform: translateY(0);
+  transform: translateX(0);
   opacity: 1;
   transition: .6s ease-in-out;
 }
@@ -464,6 +476,18 @@
   text-shadow: 1px 1px var(--newperspective);
 }
 
+.newperspective em {
+  font-family: 'Orchestra Italic';
+  font-style: italic;
+  font-size: 9px;
+  letter-spacing: 1px;
+  background: #fff;
+  color: var(--newperspective) !important;
+  padding: 3px 8px;
+  margin-top: 6px;
+  align-self: center;
+}
+
 /* she calls me back */
 .shecallsmeback {
   --shecalls: #b23a6b;
@@ -512,6 +536,17 @@
   color: #fff !important;
 }
 
+.shecallsmeback em {
+  font-style: normal;
+  font-size: 7px;
+  letter-spacing: 2px;
+  background: var(--shecalls);
+  color: #fff !important;
+  padding: 3px 8px;
+  margin-top: 6px;
+  align-self: center;
+}
+
 /* northern attitude */
 .northernattitude {
   --northern: #6d7d8c;
@@ -551,11 +586,15 @@
   font-style: normal;
   font-size: 7px;
   letter-spacing: 2px;
-  color: var(--northern) !important;
+  background: rgba(255, 255, 255, .12);
+  border: 1px solid var(--northern);
+  color: #fff !important;
+  padding: 3px 8px;
+  align-self: center;
   transform: translateY(20px);
   opacity: 0;
   transition: .6s ease-in-out;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 .northernattitude:hover em {
@@ -602,10 +641,13 @@
 
 .mess strong {
   font-family: 'OMANY';
-  font-size: 20px;
+  font-size: 16px;
   font-weight: normal;
-  color: var(--mess) !important;
-  text-shadow: 1px 1px #fff;
+  color: #fff !important;
+  background: var(--mess);
+  padding: 4px 8px;
+  align-self: center;
+  margin-bottom: 4px;
 }
 
 .mess em {

@@ -81,7 +81,14 @@
   height: 100%;
   background: radial-gradient(circle, var(--jolene), transparent 70%);
   mix-blend-mode: color-dodge;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.jolene:hover:before {
+  opacity: 1;
   animation: jolene-pulse 3s ease-in-out infinite;
+  transition: 1s ease-in-out;
 }
 
 .jolene span {
@@ -233,6 +240,11 @@
 }
 
 /* coat of many colors */
+@keyframes coat-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
 .coatofmanycolors {
   --stitch: rgba(0, 0, 0, .35);
   border-color: #000;
@@ -250,8 +262,10 @@
     repeating-linear-gradient(90deg, transparent 0 48px, var(--stitch) 48px 50px),
     repeating-linear-gradient(0deg, transparent 0 48px, var(--stitch) 48px 50px),
     linear-gradient(120deg, #8a5a3a, #b98a4a 30%, #6a7a4a 55%, #a34a4a 80%, #4a6a7a);
+  background-size: 200% 200%;
   mix-blend-mode: color;
   opacity: .8;
+  animation: coat-shift 6s ease-in-out infinite;
 }
 
 .coatofmanycolors span {
@@ -277,10 +291,9 @@
 
 .coatofmanycolors em {
   font-style: italic;
-  font-size: 7px;
+  font-size: 9px;
   letter-spacing: 1px;
   color: #fff !important;
-  margin-top: 4px;
 }
 
 /* here you come again */
@@ -347,7 +360,12 @@
 
 .islandsinthestream > div {
   filter: grayscale(0.5) brightness(0.75) sepia(0.05);
+  transition: 1s ease-in-out;
+}
+
+.islandsinthestream:hover > div {
   mix-blend-mode: luminosity;
+  transition: 1s ease-in-out;
 }
 
 .islandsinthestream span {

@@ -1,0 +1,380 @@
+@font-face {
+  font-family: 'Kaithryn';
+  src: url('https://thecozycorgi.github.io/fonts/Kaithryn.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Boostone';
+  src: url('https://thecozycorgi.github.io/fonts/Boostone.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Amaris';
+  src: url('https://thecozycorgi.github.io/fonts/Amaris-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gellatio';
+  src: url('https://thecozycorgi.github.io/fonts/Gellatio Regular.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Bargemo';
+  src: url('https://thecozycorgi.github.io/fonts/Bargemo.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Galery';
+  src: url('https://thecozycorgi.github.io/fonts/Galery.otf') format('opentype');
+}
+
+/* firmas dolly */
+.dolly {
+  width: fit-content;
+  margin: 10px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 5px solid #000;
+}
+
+.dolly > div {
+  width: 250px;
+  height: 150px;
+  background: var(--image) center;
+  background-size: cover;
+}
+
+.dolly span {
+  font: 8px / 10px Roboto;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  hyphens: none;
+  display: flex;
+  flex-flow: column;
+}
+
+/* jolene */
+@keyframes jolene-pulse {
+  0%, 100% { opacity: .3; }
+  50% { opacity: .6; }
+}
+
+.jolene {
+  --jolene: #7a1f1f;
+  border-color: #000;
+  background: #150707;
+}
+
+.jolene > div {
+  filter: grayscale(1) contrast(1.1) brightness(0.6);
+}
+
+.jolene:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, var(--jolene), transparent 70%);
+  mix-blend-mode: color-dodge;
+  animation: jolene-pulse 3s ease-in-out infinite;
+}
+
+.jolene span {
+  position: absolute;
+  width: 75%;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.jolene:hover span {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.jolene strong {
+  font-family: 'Kaithryn';
+  font-style: normal;
+  text-transform: lowercase;
+  font-size: 26px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--jolene);
+}
+
+.jolene em {
+  font-style: normal;
+  font-size: 7px;
+  letter-spacing: 2px;
+  color: #e0b3b3 !important;
+  margin-top: 4px;
+}
+
+/* 9 to 5 */
+@keyframes ninetofive-tick {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.ninetofive {
+  --ninetofive: #c9932a;
+  border-color: #000;
+  background: var(--ninetofive);
+}
+
+.ninetofive > div {
+  filter: grayscale(1) contrast(1.1) brightness(0.75);
+}
+
+.ninetofive:before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.ninetofive:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 1px;
+  height: 6px;
+  background: #fff;
+  transform-origin: bottom center;
+  animation: ninetofive-tick 4s linear infinite;
+}
+
+.ninetofive span {
+  position: absolute;
+  width: 78%;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: .6s ease-in-out;
+}
+
+.ninetofive:hover span {
+  opacity: 1;
+  transform: translateY(0);
+  transition: .6s ease-in-out;
+}
+
+.ninetofive strong {
+  font-family: 'Boostone';
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 2px 2px #000;
+}
+
+.ninetofive em {
+  font-style: normal;
+  font-size: 7px;
+  letter-spacing: 2px;
+  color: #fff !important;
+  margin-top: 4px;
+}
+
+/* i will always love you */
+.iwillalwaysloveyou {
+  --farewell: #b98a94;
+  border-color: #000;
+  background: #1a1214;
+}
+
+.iwillalwaysloveyou > div {
+  filter: grayscale(0.7) sepia(0.15) brightness(0.75);
+  transform: scale(1);
+  transition: 4s ease-in-out;
+}
+
+.iwillalwaysloveyou:hover > div {
+  transform: scale(1.08);
+  transition: 4s ease-in-out;
+}
+
+.iwillalwaysloveyou span {
+  position: absolute;
+  width: 75%;
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+
+.iwillalwaysloveyou:hover span {
+  opacity: 1;
+  transition: 1.2s ease-in-out;
+}
+
+.iwillalwaysloveyou strong {
+  font-family: 'Amaris';
+  font-size: 15px;
+  line-height: 120%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--farewell);
+}
+
+.iwillalwaysloveyou em {
+  font-style: italic;
+  font-size: 7px;
+  letter-spacing: 1px;
+  color: var(--farewell) !important;
+  margin-top: 4px;
+}
+
+/* coat of many colors */
+.coatofmanycolors {
+  --stitch: rgba(0, 0, 0, .35);
+  border-color: #000;
+}
+
+.coatofmanycolors > div {
+  filter: grayscale(1) contrast(1.05) brightness(0.7);
+}
+
+.coatofmanycolors:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(90deg, transparent 0 48px, var(--stitch) 48px 50px),
+    repeating-linear-gradient(0deg, transparent 0 48px, var(--stitch) 48px 50px),
+    linear-gradient(120deg, #8a5a3a, #b98a4a 30%, #6a7a4a 55%, #a34a4a 80%, #4a6a7a);
+  mix-blend-mode: color;
+  opacity: .8;
+}
+
+.coatofmanycolors span {
+  position: absolute;
+  width: 75%;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.coatofmanycolors:hover span {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.coatofmanycolors strong {
+  font-family: 'Gellatio';
+  font-size: 16px;
+  line-height: 110%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px #000;
+}
+
+.coatofmanycolors em {
+  font-style: italic;
+  font-size: 7px;
+  letter-spacing: 1px;
+  color: #fff !important;
+  margin-top: 4px;
+}
+
+/* here you come again */
+.hereyoucomeagain {
+  --hereyou: #d99a2b;
+  border-color: #000;
+  background: #1a1206;
+}
+
+.hereyoucomeagain > div {
+  filter: grayscale(1) contrast(1.1) brightness(0.7);
+}
+
+.hereyoucomeagain:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 30%, rgba(255, 220, 150, .5), transparent 60%);
+  mix-blend-mode: color-dodge;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.hereyoucomeagain:hover:before {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.hereyoucomeagain span {
+  position: absolute;
+  width: 75%;
+  opacity: 0;
+  transition: .6s ease-in-out;
+}
+
+.hereyoucomeagain:hover span {
+  opacity: 1;
+  transition: .6s ease-in-out;
+}
+
+.hereyoucomeagain strong {
+  font-family: 'Bargemo';
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: normal;
+  color: var(--hereyou) !important;
+  text-shadow: 1px 1px #fff;
+}
+
+/* islands in the stream */
+@keyframes islands-drift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.islandsinthestream {
+  --islands: #2f6f6a;
+  border-color: #000;
+  background: linear-gradient(120deg, var(--islands), #16302e, var(--islands));
+  background-size: 200% 200%;
+  animation: islands-drift 6s ease-in-out infinite;
+}
+
+.islandsinthestream > div {
+  filter: grayscale(0.5) brightness(0.75) sepia(0.05);
+  mix-blend-mode: luminosity;
+}
+
+.islandsinthestream span {
+  position: absolute;
+  width: 75%;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.islandsinthestream:hover span {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.islandsinthestream strong {
+  font-family: 'Galery';
+  font-size: 20px;
+  line-height: 110%;
+  font-weight: normal;
+  color: #fff !important;
+  text-shadow: 1px 1px var(--islands);
+}
+
+.islandsinthestream em {
+  font-style: normal;
+  font-size: 7px;
+  letter-spacing: 2px;
+  color: #cfe8e5 !important;
+  margin-top: 4px;
+}

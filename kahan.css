@@ -645,7 +645,6 @@
   line-height: 100%;
   font-weight: normal;
   color: #fff !important;
-  mix-blend-mode: overlay;
 }
 
 .mess strong:before,

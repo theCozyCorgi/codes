@@ -298,12 +298,12 @@
 }
 
 .homesick:hover em {
-  margin-left: auto;
+  margin-left: 0;
   transition: 1s ease-in-out;
 }
 
 .homesick:hover strong {
-  margin-right: auto;
+  margin-right: 0;
   transition: 1s ease-in-out;
 }
 

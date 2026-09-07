@@ -470,6 +470,13 @@
   text-transform: lowercase;
   color: #fff !important;
   text-shadow: 1px 1px var(--allmylove);
+  margin-right: -300%;
+  transition: 1s ease-in-out;
+}
+
+.allmylove:hover strong {
+  margin-right: 0;
+  transition: 1s ease-in-out;
 }
 
 /* new perspective */

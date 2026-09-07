@@ -674,7 +674,8 @@
 }
 
 .growingsideways > div {
-  filter: grayscale(1) contrast(1.1) brightness(0.55);
+  filter: grayscale(0) contrast(1.1) brightness(0.55);
+  transition: 1s ease-in-out;
 }
 
 .growingsideways:before {
@@ -693,6 +694,11 @@
   text-align: left;
   gap: 1px;
   opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.growingsideways:hover > div {
+  filter: grayscale(1) contrast(1.1) brightness(0.55);
   transition: 1s ease-in-out;
 }
 

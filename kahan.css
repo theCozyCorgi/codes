@@ -83,8 +83,8 @@
   src: url('https://thecozycorgi.github.io/fonts/Say Hello.otf') format('opentype');
 }
 
-/* firmas kahan */
-.kahan {
+/* firmas co-so */
+.co-so {
   width: fit-content;
   margin: 10px auto;
   position: relative;
@@ -95,14 +95,14 @@
   border: 5px solid #000;
 }
 
-.kahan>div {
+.co-so>div {
   width: 250px;
   height: 150px;
   background: var(--image) center;
   background-size: cover;
 }
 
-.kahan span {
+.co-so span {
   font: 8px / 10px Roboto;
   color: #fff;
   text-transform: uppercase;
@@ -114,21 +114,21 @@
 }
 
 /* everywhere, everything */
-.everywhere {
+.vir {
   --everywhere: #a78bc9;
-  border-color: #111;
+  border-color: var(--everywhere);
   background: #f5f1ea;
 }
 
-.everywhere>div {
+.vir>div {
   filter: grayscale(.3) brightness(0.95) contrast(1.05);
 }
 
-.everywhere:hover>div {
+.vir:hover>div {
   filter: grayscale(1) brightness(0.95) contrast(1.05);
 }
 
-.everywhere span {
+.vir span {
   position: absolute;
   width: 78%;
   gap: 0px;
@@ -136,7 +136,7 @@
   text-align: center;
 }
 
-.everywhere strong {
+.vir strong {
   font-family: 'StackedStrong';
   font-size: 20px;
   line-height: 100%;
@@ -147,12 +147,12 @@
   transition: .6s ease-in-out;
 }
 
-.everywhere:hover strong {
+.vir:hover strong {
   transform: translateY(-6px);
   transition: .6s ease-in-out;
 }
 
-.everywhere em {
+.vir em {
   font-style: normal;
   font-size: 7px;
   letter-spacing: 2px;
@@ -165,7 +165,7 @@
   margin-top: -5px;
 }
 
-.everywhere:hover em {
+.vir:hover em {
   transform: translateX(0);
   opacity: 1;
   transition: .6s ease-in-out;
@@ -234,22 +234,22 @@
 }
 
 /* homesick */
-.homesick {
+.ksenia {
   border-color: #000;
   background: #000;
 }
 
-.homesick>div {
+.ksenia>div {
   filter: grayscale(0) contrast(1.1) brightness(0.85);
   transition: 1s ease-in-out;
 }
 
-.homesick:hover>div {
+.ksenia:hover>div {
   filter: grayscale(1) contrast(1.1) brightness(0.85);
   transition: 1s ease-in-out;
 }
 
-.homesick:before {
+.ksenia:before {
   content: '';
   position: absolute;
   left: 0;
@@ -259,7 +259,7 @@
   background: #000;
 }
 
-.homesick span {
+.ksenia span {
   position: absolute;
   width: calc(100% - 20px);
   flex-flow: row;
@@ -271,7 +271,7 @@
   box-sizing: border-box;
 }
 
-.homesick em {
+.ksenia em {
   font-style: normal;
   text-align: left;
   font-size: 7px;
@@ -281,7 +281,7 @@
   transition: 1s ease-in-out;
 }
 
-.homesick strong {
+.ksenia strong {
   font-family: 'Orchestra Regular';
   font-size: 15px;
   letter-spacing: 2px;
@@ -293,12 +293,12 @@
   transition: 1s ease-in-out;
 }
 
-.homesick:hover em {
+.ksenia:hover em {
   margin-left: 0;
   transition: 1s ease-in-out;
 }
 
-.homesick:hover strong {
+.ksenia:hover strong {
   margin-right: 0;
   transition: 1s ease-in-out;
 }
@@ -373,25 +373,25 @@
 }
 
 /* the view between villages */
-.villages {
+.yuna {
   --villages: #7a6a55;
-  border-color: #000;
+  border-color: var(--villages);
   padding: 0;
 }
 
-.villages>div {
+.yuna>div {
   width: 125px;
 }
 
-.villages>div:nth-child(1) {
+.yuna>div:nth-child(1) {
   filter: sepia(0.4) brightness(0.9);
 }
 
-.villages>div:nth-child(2) {
+.yuna>div:nth-child(2) {
   filter: grayscale(1) brightness(0.55);
 }
 
-.villages:before {
+.yuna:before {
   content: '';
   position: absolute;
   width: 1px;
@@ -400,19 +400,19 @@
   opacity: .5;
 }
 
-.villages span {
+.yuna span {
   position: absolute;
   width: 80%;
   opacity: 0;
   transition: 1s ease-in-out;
 }
 
-.villages:hover span {
+.yuna:hover span {
   opacity: 1;
   transition: 1s ease-in-out;
 }
 
-.villages strong {
+.yuna strong {
   font-family: 'Casley';
   font-size: 13px;
   letter-spacing: 3px;
@@ -421,7 +421,7 @@
   text-shadow: 1px 1px #000;
 }
 
-.villages em {
+.yuna em {
   font-style: normal;
   font-size: 7px;
   letter-spacing: 1px;
@@ -433,18 +433,18 @@
 }
 
 /* all my love */
-.allmylove {
+.jazz {
   --allmylove: #7a2e2e;
-  border-color: #000;
+  border-color: var(--allmylove);
   background: #b7b7b2;
 }
 
-.allmylove>div {
+.jazz>div {
   filter: grayscale(0.3) sepia(0.15) contrast(1.1);
   mix-blend-mode: multiply;
 }
 
-.allmylove b.tag {
+.jazz b.tag {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -457,12 +457,12 @@
   opacity: .8;
 }
 
-.allmylove span {
+.jazz span {
   position: absolute;
   width: 70%;
 }
 
-.allmylove strong {
+.jazz strong {
   font-family: 'Groth';
   font-size: 26px;
   line-height: 90%;
@@ -474,7 +474,7 @@
   transition: 1s ease-in-out;
 }
 
-.allmylove:hover strong {
+.jazz:hover strong {
   margin-right: 0;
   transition: 1s ease-in-out;
 }
@@ -527,22 +527,22 @@
 }
 
 /* she calls me back */
-.shecallsmeback {
-  border-color: #000;
+.uranus {
+  border-color: var(--shecalls);
   background: #000;
 }
 
-.shecallsmeback>div {
+.uranus>div {
   filter: contrast(1.05) brightness(0.9);
   transition: 1s ease-in-out;
 }
 
-.shecallsmeback:hover>div {
+.uranus:hover>div {
   filter: grayscale(1) contrast(1.1) brightness(0.55);
   transition: 1s ease-in-out;
 }
 
-.shecallsmeback span {
+.uranus span {
   position: absolute;
   width: 65%;
   align-items: flex-start;
@@ -552,12 +552,12 @@
   transition: .8s ease-in-out;
 }
 
-.shecallsmeback:hover span {
+.uranus:hover span {
   opacity: 1;
   transition: .8s ease-in-out;
 }
 
-.shecallsmeback em {
+.uranus em {
   font-style: italic;
   font-weight: normal;
   font-size: 9px;
@@ -566,7 +566,7 @@
   color: #fff !important;
 }
 
-.shecallsmeback em strong {
+.uranus em strong {
   font-weight: bold;
   color: #fff !important;
 }
@@ -628,16 +628,16 @@
 }
 
 /* mess */
-.mess {
-  border-color: #000;
+.finn {
+  border-color: var(--mess);
   background: #000;
 }
 
-.mess>div {
+.finn>div {
   filter: contrast(1.1) brightness(0.85);
 }
 
-.mess span {
+.finn span {
   position: absolute;
   width: 80%;
   left: 10%;
@@ -647,12 +647,12 @@
   transition: 1s ease-in-out;
 }
 
-.mess:hover span {
+.finn:hover span {
   opacity: 1;
   transition: 1s ease-in-out;
 }
 
-.mess em {
+.finn em {
   font-style: normal;
   font-size: 8px;
   letter-spacing: 1px;
@@ -661,7 +661,7 @@
   text-shadow: 1px 1px 2px #000;
 }
 
-.mess strong {
+.finn strong {
   position: relative;
   display: block;
   font-family: 'OMANY';
@@ -671,37 +671,37 @@
   color: #fff !important;
 }
 
-.mess strong:before,
-.mess strong:after {
+.finn strong:before,
+.finn strong:after {
   content: attr(data-word);
   position: absolute;
   left: 0;
   width: 100%;
 }
 
-.mess strong:before {
+.finn strong:before {
   top: -18px;
   opacity: .35;
 }
 
-.mess strong:after {
+.finn strong:after {
   top: 18px;
   opacity: .3;
 }
 
 /* growing sideways */
-.growingsideways {
+.rory {
   --growing: #a37b4a;
   border-color: #000;
   background: #0d0d0d;
 }
 
-.growingsideways > div {
+.rory > div {
   filter: grayscale(0) contrast(1.1) brightness(0.55);
   transition: 1s ease-in-out;
 }
 
-.growingsideways:before {
+.rory:before {
   content: '';
   position: absolute;
   inset: 0;
@@ -709,7 +709,7 @@
   pointer-events: none;
 }
 
-.growingsideways span {
+.rory span {
   position: absolute;
   width: 65%;
   left: 12px;
@@ -720,17 +720,17 @@
   transition: 1s ease-in-out;
 }
 
-.growingsideways:hover > div {
+.rory:hover > div {
   filter: grayscale(1) contrast(1.1) brightness(0.55);
   transition: 1s ease-in-out;
 }
 
-.growingsideways:hover span {
+.rory:hover span {
   opacity: 1;
   transition: 1s ease-in-out;
 }
 
-.growingsideways strong {
+.rory strong {
   font-family: 'Morgan';
   font-size: 11px;
   letter-spacing: 2px;
@@ -738,7 +738,7 @@
   color: #fff !important;
 }
 
-.growingsideways strong em {
+.rory strong em {
   font-style: italic;
   color: var(--growing) !important;
 }

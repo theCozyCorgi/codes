@@ -379,10 +379,6 @@
   padding: 0;
 }
 
-.yuna>div {
-  width: 125px;
-}
-
 .yuna>div:nth-child(1) {
   filter: sepia(0.4) brightness(0.9);
 }

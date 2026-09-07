@@ -692,7 +692,7 @@
 /* growing sideways */
 .rory {
   --rory: #a37b4a;
-  border-color: #000;
+  border-color: var(--rory);
   background: #0d0d0d;
 }
 

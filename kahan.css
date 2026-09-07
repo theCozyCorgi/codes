@@ -632,9 +632,10 @@
 .mess em {
   font-style: normal;
   font-size: 8px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #fff !important;
   margin-bottom: 2px;
+  text-shadow: 1px 1px 2px #000;
 }
 
 .mess strong {
@@ -657,7 +658,7 @@
 
 .mess strong:before {
   top: -18px;
-  opacity: .55;
+  opacity: .35;
 }
 
 .mess strong:after {

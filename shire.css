@@ -584,8 +584,15 @@
 }
 
 .eowyn>div {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+  filter: grayscale(0.7) brightness(0.8);
+  transition: 1.5s ease-in-out;
+}
+
+.eowyn:hover >div {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
   filter: grayscale(0.7) brightness(0.8);
+  transition: 1.5s ease-in-out;
 }
 
 .eowyn span {

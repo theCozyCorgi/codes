@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: 'Home Kitchen Sans Bold';
-  src: url('https://thecozycorgi.github.io/fonts/Home Kitchen Sans Bold.otf') format('opentype');
+  font-family: 'Mighty Origin';
+  src: url('https://thecozycorgi.github.io/fonts/Mighty Origin.otf') format('opentype');
 }
 
 @font-face {
@@ -172,10 +172,12 @@
 }
 
 .sam strong {
-  font-family: 'Home Kitchen Sans Bold';
-  font-size: 14px;
+  font-family: 'Mighty Origin';
+  font-size: 20px;
   line-height: 100%;
   font-weight: normal;
+  text-transform: lowercase;
+  margin-top: -5px;
   color: #fff !important;
   text-shadow: 1px 1px var(--sam);
 }
